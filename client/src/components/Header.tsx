@@ -11,6 +11,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   const [, setLocation] = useLocation();
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const basename = process.env.NODE_ENV === 'production' ? '/site_mruva' : '';
 
   const formacoes = [
     { name: "Marketing Digital", href: "/marketing" },
@@ -34,7 +35,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-white/5 border-b border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+        <a href={basename + '/'} className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
           Mr. Uva
         </a>
 

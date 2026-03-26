@@ -15,8 +15,10 @@ import Services from "./pages/Services";
 import English from "./pages/English";
 
 function Router() {
+  const basename = process.env.NODE_ENV === 'production' ? '/site_mruva' : '';
+  
   return (
-    <Switch>
+    <Switch base={basename}>
       <Route path="/" component={Home} />
       <Route path="/sobre" component={About} />
       <Route path="/marketing" component={Marketing} />
