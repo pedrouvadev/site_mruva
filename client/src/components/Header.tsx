@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { useLocation } from "wouter";
+import { useLocation, Link } from "wouter";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface HeaderProps {
@@ -11,7 +11,6 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   const [, setLocation] = useLocation();
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const basename = process.env.NODE_ENV === 'production' ? '/site_mruva' : '';
 
   const formacoes = [
     { name: "Marketing Digital", href: "/marketing" },
@@ -35,15 +34,15 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-white/5 border-b border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href={basename + '/'} className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
           Mr. Uva
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
-          <a href="/sobre" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
+          <Link href="/sobre" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
             Sobre
-          </a>
+          </Link>
 
           {/* Submenu Formações */}
           <div className="relative group">
@@ -53,20 +52,20 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
             </button>
             <div className="absolute left-0 mt-0 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
               {formacoes.map((formacao) => (
-                <a
+                <Link
                   key={formacao.href}
                   href={formacao.href}
                   className="block px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] text-sm"
                 >
                   {formacao.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
 
-          <a href="/servicos" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
+          <Link href="/servicos" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
             Serviços
-          </a>
+          </Link>
 
           {showScheduleButton && (
             <button 
@@ -88,20 +87,20 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
             </SheetTrigger>
             <SheetContent side="right" className="w-64 bg-[#1E293B] border-l border-cyan-500/30">
               <div className="flex flex-col gap-4 mt-8">
-                <a 
+                <Link 
                   href="/" 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
                   Home
-                </a>
-                <a 
+                </Link>
+                <Link 
                   href="/sobre" 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
                   Sobre
-                </a>
+                </Link>
 
                 {/* Mobile Formações Submenu */}
                 <div className="border-t border-cyan-500/20 pt-4">
@@ -127,13 +126,13 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                   )}
                 </div>
 
-                <a 
+                <Link 
                   href="/servicos" 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
                   Serviços
-                </a>
+                </Link>
 
                 {showScheduleButton && (
                   <button 
