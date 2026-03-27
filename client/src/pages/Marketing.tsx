@@ -8,8 +8,17 @@ export default function Marketing() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleWhatsApp = () => {
+    window.location.href = 'https://wa.me/5511978768690';
+  };
+
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0]">
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
+      {/* Background Layers */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
+
       {/* Navigation */}
       <Header />
 
@@ -43,7 +52,7 @@ export default function Marketing() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6">
+            <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
               Quero Parar de Perder Dinheiro <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -150,7 +159,7 @@ export default function Marketing() {
         </div>
       </section>
 
-      {/* Certificações & Credenciais Section - Combinada */}
+      {/* Certificações & Credenciais Section */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-center">Menos de 1% do Mercado Tem Esta Combinação</h2>
@@ -158,7 +167,6 @@ export default function Marketing() {
             Certificações que comprovam expertise em Google Ads, GA4, Meta Ads e estratégia de marketing digital
           </p>
 
-          {/* Descrição dos Certificados */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="glass-card p-6">
               <h3 className="text-lg font-bold mb-3 text-indigo-400">🏆 Google Ads Certificado</h3>
@@ -178,7 +186,6 @@ export default function Marketing() {
             </div>
           </div>
 
-          {/* Imagens dos Certificados */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="glass-card p-4 hover:scale-105 transition-transform cursor-pointer">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-marketing-digital_4c3373a5.png" alt="Certificado Marketing Digital" className="w-full h-auto rounded-lg" />
@@ -286,25 +293,16 @@ export default function Marketing() {
             A cada dia que seu site roda sem inteligência de dados e com lentidão, seu concorrente ganha mercado com um CPA mais barato usando IA. A escolha é sua: ser o predador de conversões ou a presa do mercado.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8">
-              Candidatar-se para Consultoria Estratégica
+          <div className="flex justify-center">
+            <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
+              Solicitar Auditoria Estratégica <ArrowRight className="ml-2" />
             </Button>
-            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp: +55 11 97876-8690
-              </Button>
-            </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
-          <p>© 2026 Pedro Luiz Uva Junior. Especialista em Marketing Digital de Performance.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

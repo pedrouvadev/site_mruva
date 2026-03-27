@@ -9,11 +9,15 @@ export default function English() {
     window.scrollTo(0, 0);
   }, []);
 
+  const handleWhatsApp = () => {
+    window.location.href = 'https://wa.me/5511978768690';
+  };
+
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
-      <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
+      {/* Background Layers */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
       
       <div className="relative z-10">
         <Header />
@@ -48,7 +52,7 @@ export default function English() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in animation-delay-300">
-              <Button className="btn-gradient text-lg py-6" onClick={() => window.location.href = 'https://wa.me/5511978768690'}>
+              <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
                 Agendar Call <ArrowRight className="ml-2" />
               </Button>
             </div>
@@ -220,12 +224,11 @@ export default function English() {
               Posso ajudar você a encontrar a melhor estratégia para aprender inglês ou integrar isso em seus projetos de transformação digital.
             </p>
 
-            <button 
-              onClick={() => window.location.href = 'https://wa.me/5511978768690'}
-              className="btn-gradient text-lg py-6 inline-flex items-center gap-2 animate-fade-in animation-delay-200"
-            >
-              Agendar Call <ArrowRight className="w-5 h-5" />
-            </button>
+            <div className="flex justify-center">
+              <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
+                Agendar Call <ArrowRight className="ml-2" />
+              </Button>
+            </div>
           </div>
         </section>
 

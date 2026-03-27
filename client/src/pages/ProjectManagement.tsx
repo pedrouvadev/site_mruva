@@ -8,8 +8,17 @@ export default function ProjectManagement() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleWhatsApp = () => {
+    window.location.href = 'https://wa.me/5511978768690';
+  };
+
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0]">
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
+      {/* Background Layers */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
+
       {/* Navigation */}
       <Header />
 
@@ -43,7 +52,7 @@ export default function ProjectManagement() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6">
+            <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
               Conhecer Metodologia <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -240,25 +249,15 @@ export default function ProjectManagement() {
             Minha metodologia Scrum garante previsibilidade, qualidade e entrega de valor contínuo.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8">
-              Agendar Consultoria
+          <div className="flex justify-center">
+            <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
+              Solicitar Orçamento de Gestão <ArrowRight className="ml-2" />
             </Button>
-            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp
-              </Button>
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
-          <p>© 2026 Pedro Luiz Uva Junior. Especialista em Gestão de Projetos de TI.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
