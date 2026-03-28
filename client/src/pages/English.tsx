@@ -37,9 +37,9 @@ export default function English() {
           <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-6 inline-block animate-fade-in">
-              <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400">
-                🌍 Inglês Avançado • 2 Anos de Estudo
+            <div className="mb-8 inline-block animate-fade-in mt-8">
+              <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 whitespace-nowrap">
+                🌐 Inglês Avançado • 2 Anos de Estudo
               </span>
             </div>
 

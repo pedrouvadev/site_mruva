@@ -37,8 +37,8 @@ export default function ProjectManagement() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-6 inline-block">
-            <span className="glass-card px-4 py-2 text-sm font-semibold text-orange-400">
+          <div className="mb-8 inline-block mt-8">
+            <span className="glass-card px-4 py-2 text-sm font-semibold text-orange-400 whitespace-nowrap">
               📊 Gestão de Projetos • Qualifica SP & FAT (120 horas)
             </span>
           </div>

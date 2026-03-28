@@ -18,6 +18,20 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
+<<<<<<< HEAD
+=======
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/hero-3d-neon-ETM4gefM3NZLJ3bB38yXCc.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.3,
+        }}
+      />
+>>>>>>> 891c928 (fix: Add background images, fix subtitle wrapping, improve header spacing)
       {/* Background Layers */}
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
       <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
@@ -34,8 +48,13 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Texto */}
               <div>
+<<<<<<< HEAD
                 <div className="mb-6 inline-block">
                   <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400">
+=======
+                <div className="mb-8 inline-block mt-8">
+                  <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 whitespace-nowrap">
+>>>>>>> 891c928 (fix: Add background images, fix subtitle wrapping, improve header spacing)
                     👨‍💻 Desenvolvedor & Estrategista Digital
                   </span>
                 </div>
