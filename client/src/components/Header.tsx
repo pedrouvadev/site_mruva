@@ -12,13 +12,11 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const formacoes = [
     { name: "Marketing Digital", href: "/marketing" },
     { name: "Desenvolvimento", href: "/desenvolvimento" },
     { name: "Gestão de Projetos", href: "/gestao" },
     { name: "IA & Google Cloud", href: "/ia" },
     { name: "Fullstack Empower", href: "/fullstack" },
-    { name: "Inglês Avançado", href: "/ingles" },
   ];
 
   const handleNavigation = (href: string) => {
@@ -67,14 +65,23 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
             Serviços
           </Link>
 
-          {showScheduleButton && (
-            <button 
-              onClick={() => window.location.href = 'https://wa.me/5511978768690'}
-              className="btn-gradient"
+          <div className="flex items-center gap-4 border-l border-white/10 pl-6 ml-2">
+            <Link 
+              href="/en" 
+              className="text-[#E2E8F0] text-sm font-semibold hover:text-cyan-400 transition-all flex items-center gap-2 border border-white/10 bg-white/5 rounded-full px-4 py-1.5 hover:bg-white/10"
             >
-              Agendar uma Call
-            </button>
-          )}
+              🇺🇸 <span className="hidden lg:inline">English version</span><span className="lg:hidden">EN</span>
+            </Link>
+
+            {showScheduleButton && (
+              <button 
+                onClick={() => window.location.href = 'https://wa.me/5511978768690'}
+                className="btn-gradient"
+              >
+                Agendar uma Call
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -134,17 +141,27 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                   Serviços
                 </Link>
 
-                {showScheduleButton && (
-                  <button 
-                    onClick={() => {
-                      window.location.href = 'https://wa.me/5511978768690';
-                      setIsOpen(false);
-                    }}
-                    className="btn-gradient mt-4 w-full"
+                <div className="border-t border-cyan-500/20 pt-6 mt-2 pb-4 flex flex-col gap-4">
+                  <Link 
+                    href="/en" 
+                    onClick={() => setIsOpen(false)}
+                    className="flex justify-center items-center gap-2 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-[#E2E8F0] font-semibold hover:bg-white/10 hover:text-cyan-400 transition-colors"
                   >
-                    Agendar uma Call
-                  </button>
-                )}
+                    🇺🇸 Switch to English
+                  </Link>
+
+                  {showScheduleButton && (
+                    <button 
+                      onClick={() => {
+                        window.location.href = 'https://wa.me/5511978768690';
+                        setIsOpen(false);
+                      }}
+                      className="btn-gradient w-full"
+                    >
+                      Agendar uma Call
+                    </button>
+                  )}
+                </div>
               </div>
             </SheetContent>
           </Sheet>

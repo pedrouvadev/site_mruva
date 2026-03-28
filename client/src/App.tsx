@@ -12,7 +12,7 @@ import ProjectManagement from "./pages/ProjectManagement";
 import AI from "./pages/AI";
 import Fullstack from "./pages/Fullstack";
 import Services from "./pages/Services";
-import English from "./pages/English";
+import En from "./pages/English";
 
 function Router() {
   return (
@@ -25,7 +25,7 @@ function Router() {
       <Route path="/ia" component={AI} />
       <Route path="/fullstack" component={Fullstack} />
       <Route path="/servicos" component={Services} />
-      <Route path="/ingles" component={English} />
+      <Route path="/en" component={En} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
