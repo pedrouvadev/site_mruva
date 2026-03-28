@@ -28,7 +28,7 @@ export default function Services() {
       icon: TrendingUp,
       title: "Marketing Digital & Growth",
       headline: "Transformo cliques em faturamento real com estratégia baseada em dados.",
-      description: "Não acredito em 'métricas de vaidade'. Minha abordagem foca no ROI. Utilizo Google Ads, Meta Ads e SEO avançado para colocar sua marca na frente de quem realmente quer comprar de você.",
+      description: "Não acredito em &quot;métricas de vaidade&quot; Minha abordagem foca no ROI. Utilizo Google Ads, Meta Ads e SEO avançado para colocar sua marca na frente de quem realmente quer comprar de você.",
       features: ["Gestão de Tráfego Pago (Google/Meta)", "SEO Técnico para Rankeamento Real", "Análise de Dados e Funis de Conversão", "Estratégias de Growth Hacking", "Otimização de Taxa de Conversão (CRO)"],
       cta: "Quero vender mais",
       color: "from-cyan-500 to-cyan-600"
@@ -84,10 +84,11 @@ export default function Services() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in animation-delay-100 tracking-tight">
-              Mais que serviços, projeto a evolução do seu negócio: estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI.</span>            </h1>
+              Estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI.</span>            
+            </h1>
 
             <p className="text-xl md:text-2xl text-[#94A3B8] mb-10 max-w-3xl mx-auto animate-fade-in animation-delay-200 leading-relaxed">
-              Com mais de 25 anos no campo de batalha da tecnologia, eu uno <strong className="text-white">Código de Elite</strong>, <strong className="text-white">Marketing de Dados</strong> e <strong className="text-white">Inteligência Artificial</strong> para escalar sua operação.
+              Mais que serviços, projeto a evolução do seu negócio. Com mais de 25 anos no campo de batalha da tecnologia e dos negócios, uno <strong className="text-white">Código de Elite</strong>, <strong className="text-white">Marketing de Dados</strong> e <strong className="text-white">Inteligência Artificial</strong> para escalar sua operação.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-300">
