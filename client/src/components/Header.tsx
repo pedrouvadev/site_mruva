@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, Globe } from "lucide-react";
 import { useLocation, Link } from "wouter";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -12,6 +12,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  const formacoes = [
     { name: "Marketing Digital", href: "/marketing" },
     { name: "Desenvolvimento", href: "/desenvolvimento" },
     { name: "Gestão de Projetos", href: "/gestao" },

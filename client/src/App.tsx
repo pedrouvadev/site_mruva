@@ -12,7 +12,7 @@ import ProjectManagement from "./pages/ProjectManagement";
 import AI from "./pages/AI";
 import Fullstack from "./pages/Fullstack";
 import Services from "./pages/Services";
-import En from "./pages/English";
+import En from "./pages/en";
 
 function Router() {
   return (

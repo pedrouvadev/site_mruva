@@ -35,7 +35,7 @@ export default function En() {
           <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-6 animate-fade-in flex justify-center inline-block max-w-full">
+            <div className="mb-6 animate-fade-in flex justify-center">
               <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30">
                 <Rocket className="w-4 h-4" /> The Trinity Marketing AI Baseline
               </div>
@@ -60,7 +60,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 2. The Arsenal (Services) */}
+        {/* 2. Services Grid (Synthesis) */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-16 animate-fade-in">
@@ -79,12 +79,12 @@ export default function En() {
                 },
                 {
                   icon: <Bot className="w-8 h-8 text-indigo-400" />,
-                  title: "Artificial Intelligence",
+                  title: "AI",
                   desc: "Workflow automation & LLM integration."
                 },
                 {
                   icon: <TrendingUp className="w-8 h-8 text-blue-400" />,
-                  title: "Digital Marketing",
+                  title: "Marketing",
                   desc: "ROI-driven global campaigns."
                 }
               ].map((service, idx) => (
@@ -144,7 +144,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 4. The "Global Ready" Section (Cambly Integration) */}
+        {/* 4. Fluency Section (Cambly) */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 relative bg-black/40">
           <div className="max-w-5xl mx-auto relative z-10">
             <div className="text-center mb-16">
@@ -152,7 +152,7 @@ export default function En() {
                 <Shield className="w-4 h-4" /> Verified Communication
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Professional English Fluency for <span className="text-blue-400">Global Business</span>.
+                Verified Professional English Fluency for <span className="text-blue-400">Global Business</span>.
               </h2>
             </div>
 
@@ -172,7 +172,7 @@ export default function En() {
                 <div className="glass-card p-6 border-l-4 border-l-blue-500">
                   <h4 className="text-2xl font-bold text-white mb-2">Seamless Communication</h4>
                   <p className="text-[#94A3B8] text-lg">
-                    Over <strong>69+ Verified Hours</strong> of Conversational English with Native Speakers. Ready for dailies, stakeholder management, and high-stakes negotiations without any friction.
+                    Over <strong>69+ Verified Hours</strong> of Conversational English with Native Speakers. Ready for dailies, stakeholder management, and negotiations.
                   </p>
                 </div>
                 
@@ -194,7 +194,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 5. Final Aggressive CTA */}
+        {/* 5. Final CTA */}
         <section className="py-32 px-4 sm:px-6 lg:px-8 relative">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/20 to-[#0F172A]" />
           

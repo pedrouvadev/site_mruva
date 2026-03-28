@@ -107,7 +107,7 @@ export default function Home() {
               { title: "Gestão de Projetos", icon: Layers, href: "/gestao", color: "from-purple-500 to-purple-600" },
               { title: "IA & Google Cloud", icon: Brain, href: "/ia", color: "from-orange-500 to-orange-600" },
               { title: "Fullstack Empower", icon: Zap, href: "/fullstack", color: "from-pink-500 to-pink-600" },
-              { title: "Inglês Avançado", icon: Globe, href: "/ingles", color: "from-blue-500 to-blue-600" },
+              { title: "Inglês Avançado", icon: Globe, href: "/en", color: "from-blue-500 to-blue-600" },
             ].map((formacao, index) => {
               const Icon = formacao.icon;
               return (
