@@ -84,7 +84,7 @@ export default function Services() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in animation-delay-100 tracking-tight">
-              Estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI.</span>            
+              Estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI</span>            
             </h1>
 
             <p className="text-xl md:text-2xl text-[#94A3B8] mb-10 max-w-3xl mx-auto animate-fade-in animation-delay-200 leading-relaxed">
