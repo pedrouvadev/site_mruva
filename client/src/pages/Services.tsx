@@ -84,9 +84,7 @@ export default function Services() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in animation-delay-100 tracking-tight">
-              Eu não entrego apenas serviços.<br />
-              Entrego <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">Resultados de Negócio.</span>
-            </h1>
+              Mais que serviços, projeto a evolução do seu negócio: estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI.</span>            </h1>
 
             <p className="text-xl md:text-2xl text-[#94A3B8] mb-10 max-w-3xl mx-auto animate-fade-in animation-delay-200 leading-relaxed">
               Com mais de 25 anos no campo de batalha da tecnologia, eu uno <strong className="text-white">Código de Elite</strong>, <strong className="text-white">Marketing de Dados</strong> e <strong className="text-white">Inteligência Artificial</strong> para escalar sua operação.

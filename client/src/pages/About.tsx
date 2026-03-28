@@ -54,7 +54,7 @@ export default function About() {
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button 
-                  onClick={() => navigate("/marketing")}
+                  onClick={() => navigate("/servicos")}
                   className="btn-gradient text-lg py-6 flex items-center justify-center gap-2"
                 >
                   Conhecer Serviços <ArrowRight className="w-5 h-5" />

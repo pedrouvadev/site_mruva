@@ -44,7 +44,7 @@ export default function En() {
             </div>
 
             <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight animate-fade-in animation-delay-100 tracking-tighter">
-              Full-Stack Code, Scalable AI, & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing.</span>
+              Full-Stack Code, Scalable AI, & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing</span>
             </h1>
 
             <p className="text-xl md:text-3xl text-[#94A3B8] mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 leading-relaxed font-medium">
@@ -100,7 +100,7 @@ export default function En() {
               </div>
 
               <div>
-                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engineering Excellence Since <span className="text-indigo-400">1997.</span></h2>
+                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engineering Excellence Since <span className="text-indigo-400">1997</span></h2>
                 <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
                   I am not just a developer. I am a <strong className="text-white">strategist</strong> who understands that code is a tool for profit. From the early days of hardware and networks to modern AI-driven architectures, my journey has been defined by one thing: <strong className="text-white">Solving Complex Problems.</strong>
                 </p>
@@ -230,10 +230,10 @@ export default function En() {
                 <Globe className="w-4 h-4" /> Global Business Ready
               </div>
               <h2 className="text-4xl md:text-7xl font-bold mb-8">
-                Professional English Fluency.
+                Professional Working Proficiency
               </h2>
               <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
-                Verified Professional Fluency for high-stakes communication, dailies, and stakeholder management.
+                Verified Professional Working Proficiency for high-stakes communication, dailies, and stakeholder management.
               </p>
             </div>
 

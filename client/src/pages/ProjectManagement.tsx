@@ -31,11 +31,11 @@ export default function ProjectManagement() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
-            Seu Projeto com <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">Entrega Blindada.</span>
+            Seu Projeto com <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">Entrega Blindada</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-[#94A3B8] mb-8 max-w-3xl mx-auto leading-relaxed">
-            Eu não apenas desenvolvo; eu gerencio a complexidade para que você não precise. Minha gestão Scrum é a ferramenta que utilizo para garantir o sucesso dos projetos de <strong className="text-white">Desenvolvimento e Marketing</strong> que você contrata.
+            Eu não apenas desenvolvo; eu gerencio a complexidade. Minha gestão usa a ferramenta Scrum para garantir o sucesso dos projetos de <strong className="text-white">Desenvolvimento e Marketing Digital</strong> que você contrata.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in animation-delay-200">
@@ -55,7 +55,7 @@ export default function ProjectManagement() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Gestão Ágil como <span className="text-orange-400">Pilar de Sucesso</span></h2>
             <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
-              Quando você me contrata para Full-Stack ou IA, você leva um Certified Scrum Professional para configurar seu projeto, garantindo transparência e entregas no prazo.
+              Quando você me contrata para Full-Stack, Marketing Digital ou IA, você leva um Certified Scrum Professional para configurar seu projeto, garantindo transparência e entregas no prazo.
             </p>
           </div>
 
@@ -105,7 +105,7 @@ export default function ProjectManagement() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
                 A Base Técnica da<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-400 tracking-tight">
-                  Sua Tranquilidade.
+                  Sua Tranquilidade
                 </span>
               </h2>
               <p className="text-[#94A3B8] text-xl leading-relaxed mb-6 font-medium">
@@ -125,11 +125,11 @@ export default function ProjectManagement() {
         
         <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-16 border border-orange-500/20 shadow-[0_0_100px_rgba(249,115,22,0.1)]">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-            Pronto para um projeto <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">Sem Caos e Com Resultados?</span>
+            Vamos desenvolver o seu projeto <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">sem caos e com resultados?</span>
           </h2>
           <p className="text-xl text-[#94A3B8] mb-12 leading-relaxed">
-            Pare de sofrer com atrasos e falta de transparência. Vamos unir tecnologia de ponta com uma gestão profissional focada na sua entrega.
+            Pare de sofrer com atrasos e falta de transparência. Vamos juntos unir tecnologia de ponta com uma gestão profissional focada na sua entrega.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
