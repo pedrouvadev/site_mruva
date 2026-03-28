@@ -8,17 +8,8 @@ export default function Fullstack() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/5511978768690';
-  };
-
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
-      {/* Background Layers */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
-
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0]">
       {/* Navigation */}
       <Header />
 
@@ -37,8 +28,8 @@ export default function Fullstack() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8 inline-block mt-8">
-            <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 whitespace-nowrap">
+          <div className="mb-6 inline-block">
+            <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400">
               ⚡ Fullstack Empower • Vai na Web
             </span>
           </div>
@@ -52,7 +43,7 @@ export default function Fullstack() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
+            <Button className="btn-gradient text-lg py-6">
               Conhecer Stack Fullstack <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -155,7 +146,7 @@ export default function Fullstack() {
                 <Code2 className="w-6 h-6 text-cyan-400" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Desenvolvimento de Plataformas</h3>
-              <p className="text-[#94A3B8] mb-6" onClick={handleWhatsApp}>
+              <p className="text-[#94A3B8] mb-6">
                 Aplicações web de alta performance com React, Node.js e PostgreSQL. Escaláveis e seguras.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
@@ -163,7 +154,6 @@ export default function Fullstack() {
                 <li>✓ TypeScript end-to-end</li>
                 <li>✓ Testes automatizados</li>
               </ul>
-              <Button className="btn-gradient w-full mt-4" onClick={handleWhatsApp}>Solicitar Auditoria</Button>
             </div>
 
             <div className="glass-card p-8">
@@ -179,7 +169,6 @@ export default function Fullstack() {
                 <li>✓ SEO técnico</li>
                 <li>✓ Conversão aumentada</li>
               </ul>
-              <Button className="btn-gradient w-full mt-4" onClick={handleWhatsApp}>Solicitar Auditoria</Button>
             </div>
 
             <div className="glass-card p-8">
@@ -195,7 +184,6 @@ export default function Fullstack() {
                 <li>✓ Webhooks</li>
                 <li>✓ Segurança em camadas</li>
               </ul>
-              <Button className="btn-gradient w-full mt-4" onClick={handleWhatsApp}>Solicitar Auditoria</Button>
             </div>
 
             <div className="glass-card p-8">
@@ -211,7 +199,6 @@ export default function Fullstack() {
                 <li>✓ Monitoramento em tempo real</li>
                 <li>✓ Disaster recovery</li>
               </ul>
-              <Button className="btn-gradient w-full mt-4" onClick={handleWhatsApp}>Solicitar Auditoria</Button>
             </div>
           </div>
         </div>
@@ -290,15 +277,25 @@ export default function Fullstack() {
             Vamos conversar sobre como arquitetura fullstack moderna pode transformar sua visão em um produto de sucesso.
           </p>
 
-          <div className="flex justify-center">
-            <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
-              Solicitar Orçamento Fullstack <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="btn-gradient text-lg py-6 px-8">
+              Agendar Consultoria
             </Button>
+            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
+                WhatsApp
+              </Button>
+            </a>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* Footer */}
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
+          <p>© 2026 Pedro Luiz Uva Junior. Especialista em Desenvolvimento Fullstack.</p>
+        </div>
+      </footer>
     </div>
   );
 }

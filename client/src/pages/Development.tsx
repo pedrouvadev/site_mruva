@@ -8,17 +8,8 @@ export default function Development() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/5511978768690';
-  };
-
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
-      {/* Background Layers */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
-
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0]">
       {/* Navigation */}
       <Header />
 
@@ -37,8 +28,8 @@ export default function Development() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8 inline-block mt-8">
-            <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 whitespace-nowrap">
+          <div className="mb-6 inline-block">
+            <span className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400">
               ⚡ Desenvolvimento de Sistemas • FAT (1.200 horas)
             </span>
           </div>
@@ -52,7 +43,7 @@ export default function Development() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
+            <Button className="btn-gradient text-lg py-6">
               Solicitar Consultoria Técnica <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -110,7 +101,7 @@ export default function Development() {
         </div>
       </section>
 
-      {/* Certificado Section */}
+      {/* Certificado Section - Placeholder para PNG */}
       <section className="py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-4 text-center">Certificação Oficial</h2>
@@ -158,7 +149,7 @@ export default function Development() {
                 <li>✓ Proteção contra ransomware</li>
                 <li>✓ Relatório de conformidade técnica</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={handleWhatsApp}>Solicitar Auditoria</Button>
+              <Button className="btn-gradient w-full">Solicitar Auditoria</Button>
             </div>
 
             {/* Serviço 2 */}
@@ -176,7 +167,7 @@ export default function Development() {
                 <li>✓ Integração com Google Ads</li>
                 <li>✓ Banco de dados escalável</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={handleWhatsApp}>Conhecer Solução</Button>
+              <Button className="btn-gradient w-full">Conhecer Solução</Button>
             </div>
 
             {/* Serviço 3 */}
@@ -194,7 +185,7 @@ export default function Development() {
                 <li>✓ Dashboards Power BI</li>
                 <li>✓ Redução de custos operacionais</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={handleWhatsApp}>Transformar Dados</Button>
+              <Button className="btn-gradient w-full">Transformar Dados</Button>
             </div>
 
             {/* Serviço 4 */}
@@ -212,7 +203,7 @@ export default function Development() {
                 <li>✓ Mentoria técnica contínua</li>
                 <li>✓ Implementação de metodologias ágeis</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={handleWhatsApp}>Agendar Consulta</Button>
+              <Button className="btn-gradient w-full">Agendar Consulta</Button>
             </div>
           </div>
         </div>
@@ -256,28 +247,82 @@ export default function Development() {
                 <li>• Vercel & Deployment</li>
               </ul>
             </div>
+
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-indigo-400">Banco de Dados</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• MySQL & SQL Server</li>
+                <li>• PostgreSQL</li>
+                <li>• Modelagem de Dados</li>
+                <li>• Otimização de Queries</li>
+                <li>• Backup & Segurança</li>
+              </ul>
+            </div>
+
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-cyan-400">Segurança</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• Criptografia</li>
+                <li>• LGPD Compliance</li>
+                <li>• Proteção de Dados</li>
+                <li>• Análise de Vulnerabilidades</li>
+                <li>• Boas Práticas de Segurança</li>
+              </ul>
+            </div>
+
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-orange-400">Metodologias</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• Scrum & Kanban</li>
+                <li>• Agile Development</li>
+                <li>• User Stories</li>
+                <li>• Sprint Planning</li>
+                <li>• Continuous Integration</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-500/10 via-transparent to-cyan-500/10" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h2 className="text-4xl font-bold mb-6">Vamos Construir sua Próxima Solução?</h2>
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.15,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl font-bold mb-6">Pronto para Elevar Sua Tecnologia?</h2>
           <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-            A tecnologia deve ser uma aliada do seu lucro, não um gargalo. Vamos conversar sobre como escalar seu projeto com segurança e performance.
+            Vamos conversar sobre como engenharia de software de alta performance pode transformar seu negócio.
           </p>
 
-          <div className="flex justify-center">
-            <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
-              Solicitar Orçamento Técnico <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="btn-gradient text-lg py-6 px-8">
+              Solicitar Consultoria Técnica
             </Button>
+            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
+                WhatsApp: +55 11 97876-8690
+              </Button>
+            </a>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* Footer */}
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
+          <p>© 2026 Pedro Luiz Uva Junior. Especialista em Desenvolvimento de Sistemas.</p>
+        </div>
+      </footer>
     </div>
   );
 }

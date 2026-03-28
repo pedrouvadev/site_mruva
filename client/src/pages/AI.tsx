@@ -8,17 +8,8 @@ export default function AI() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handleWhatsApp = () => {
-    window.location.href = 'https://wa.me/5511978768690';
-  };
-
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative overflow-hidden">
-      {/* Background Layers */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-indigo-500/5 via-transparent to-cyan-500/5" />
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.1),transparent_50%)]" />
-
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0]">
       {/* Navigation */}
       <Header />
 
@@ -37,8 +28,8 @@ export default function AI() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-8 inline-block mt-8">
-            <span className="glass-card px-4 py-2 text-sm font-semibold text-indigo-400 whitespace-nowrap">
+          <div className="mb-6 inline-block">
+            <span className="glass-card px-4 py-2 text-sm font-semibold text-indigo-400">
               🧠 IA & Google Cloud • 25 Skill Badges Oficiais
             </span>
           </div>
@@ -52,7 +43,7 @@ export default function AI() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={handleWhatsApp}>
+            <Button className="btn-gradient text-lg py-6">
               Conhecer Expertise em IA <ArrowRight className="ml-2" />
             </Button>
           </div>
@@ -264,13 +255,55 @@ export default function AI() {
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2022%20-%20Prompt%20Design%20in%20Vertex%20AI_79546e72.jpg" alt="Badge 22" className="w-full h-auto rounded-lg" />
             </div>
             <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2023%20-%20Develop%20Gen%20AI%20Apps%20with%20Gemini%20and%20LangChain_67302f3e.jpg" alt="Badge 23" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2023%20-%20Responsible%20AI%20for%20Developers%20Interpretability%20%26%20Transparency_735ea51f.jpg" alt="Badge 23" className="w-full h-auto rounded-lg" />
             </div>
             <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2024%20-%20Inspect%20Rich%20Documents%20with%20Gemini%20Multimodality%20and%20Multimodal%20RAG_33e0856d.jpg" alt="Badge 24" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2024%20-%20Responsible%20AI%20for%20Developers%20Privacy%20%26%20Safety_a3572dbf.jpg" alt="Badge 24" className="w-full h-auto rounded-lg" />
             </div>
             <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2025%20-%20Streamline%20Business%20Processes%20with%20Gemini%20Models_12151124.jpg" alt="Badge 25" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2025%20-%20Inspect%20Rich%20Documents%20with%20Gemini%20Multimodality%20and%20Multimodal%20RAG_5ede7e92.jpg" alt="Badge 25" className="w-full h-auto rounded-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stack Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Stack de IA Dominado</h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-indigo-400">Modelos e Frameworks</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• Gemini (Google)</li>
+                <li>• Vertex AI</li>
+                <li>• TensorFlow</li>
+                <li>• LangChain</li>
+                <li>• Hugging Face</li>
+              </ul>
+            </div>
+
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-cyan-400">Dados e ML</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• BigQuery</li>
+                <li>• BigQuery ML</li>
+                <li>• Dataflow</li>
+                <li>• Pub/Sub</li>
+                <li>• Cloud Storage</li>
+              </ul>
+            </div>
+
+            <div className="glass-card p-6">
+              <h3 className="text-lg font-bold mb-4 text-orange-400">Deployment e Ops</h3>
+              <ul className="space-y-2 text-sm text-[#94A3B8]">
+                <li>• Cloud Run</li>
+                <li>• Cloud Functions</li>
+                <li>• App Engine</li>
+                <li>• Monitoring</li>
+                <li>• MLOps</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -278,22 +311,43 @@ export default function AI() {
 
       {/* Final CTA */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-indigo-500/10 via-transparent to-cyan-500/10" />
-        <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h2 className="text-4xl font-bold mb-6">Pronto para a Era da IA?</h2>
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.15,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl font-bold mb-6">Pronto para Adicionar Inteligência ao Seu Negócio?</h2>
           <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-            Não fique para trás na maior revolução tecnológica da década. Vamos conversar sobre como aplicar IA de forma prática e lucrativa.
+            Vamos conversar sobre como IA pode transformar seus processos e gerar resultados mensuráveis.
           </p>
 
-          <div className="flex justify-center">
-            <Button className="btn-gradient text-lg py-6 px-12" onClick={handleWhatsApp}>
-              Solicitar Orçamento de IA <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="btn-gradient text-lg py-6 px-8">
+              Agendar Consultoria
             </Button>
+            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
+                WhatsApp
+              </Button>
+            </a>
           </div>
         </div>
       </section>
 
-      <Footer />
+      {/* Footer */}
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
+          <p>© 2026 Pedro Luiz Uva Junior. Especialista em IA e Google Cloud.</p>
+        </div>
+      </footer>
     </div>
   );
 }
