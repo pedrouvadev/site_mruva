@@ -314,8 +314,6 @@ export default function Services() {
         </div>
       </section>
 
-      <Footer />
-
       {/* FAQ Schema for SEO */}
       <script type="application/ld+json">
         {`{

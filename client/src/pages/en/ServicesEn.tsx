@@ -312,8 +312,6 @@ export default function ServicesEn() {
         </div>
       </section>
 
-      <Footer lang="en" />
-
       {/* FAQ Schema for SEO */}
       <script type="application/ld+json">
         {`{
