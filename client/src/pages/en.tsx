@@ -138,7 +138,7 @@ export default function En() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-20" />
                 <div className="relative flex flex-col items-center">
-                  <div className="relative overflow-hidden rounded-xl border border-white/10 max-w-sm mx-auto -mt-8">
+                  <div className="relative overflow-hidden rounded-xl max-w-sm mx-auto -mt-8">
                     <img
                       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png"
                       alt="Pedro Uva - Full-Stack Developer & Digital Strategist in São Paulo"
@@ -298,18 +298,21 @@ export default function En() {
                   title: "Development",
                   desc: "End-to-end scalable web applications using React 19, Node.js, and TypeScript. Architecture designed for high performance and zero friction.",
                   tags: ["Full-Stack", "Architecture", "Performance"],
+                  link: "/en/development",
                 },
                 {
                   icon: <Bot className="w-10 h-10 text-indigo-400" />,
                   title: "Artificial Intelligence",
                   desc: "Custom LLM integrations, workflow automation, and predictive analytics. I put AI to work for your profit, not just for the hype.",
                   tags: ["LLMs", "Automation", "GPT-4"],
+                  link: "/en/artificial-intelligence",
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-blue-400" />,
                   title: "Growth Marketing",
                   desc: "Data-driven global campaigns. Google and Meta ad management focused on ROI and advanced technical SEO for international markets.",
                   tags: ["ROI", "Google Ads", "SEO"],
+                  link: "/en/growth-marketing",
                 },
               ].map((service, idx) => (
                 <article
@@ -325,7 +328,7 @@ export default function En() {
                   <p className="text-[#94A3B8] text-lg leading-relaxed mb-8 flex-grow">
                     {service.desc}
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {service.tags.map(tag => (
                       <span
                         key={tag}
@@ -335,6 +338,12 @@ export default function En() {
                       </span>
                     ))}
                   </div>
+                  <a
+                    href={service.link}
+                    className="mt-auto inline-flex items-center gap-2 text-cyan-400 font-bold hover:text-cyan-300 transition-colors"
+                  >
+                    Know More <ArrowRight className="w-4 h-4" />
+                  </a>
                 </article>
               ))}
             </div>
@@ -452,7 +461,7 @@ export default function En() {
                 <Globe className="w-4 h-4" /> Ready for Global Business
               </div>
               <h2 className="text-4xl md:text-7xl font-bold mb-8">
-                Fluent Professional Proficiency
+                Professional Proficiency
               </h2>
               <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
                 Verified proficiency for high-level communication, daily

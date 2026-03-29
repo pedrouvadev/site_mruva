@@ -102,15 +102,18 @@ export default function Header({
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
           {/* Submenu Formações - funciona com hover em desktop e clique em tablets */}
-          <div className="relative group">
+          <div
+            className="relative group"
+            onMouseEnter={() =>
+              window.innerWidth >= 1024 && setTabletMenuOpen(true)
+            }
+          >
             <button
               className="flex items-center gap-2 hover:text-cyan-400 transition-colors text-[#E2E8F0]"
               onClick={() => setTabletMenuOpen(!tabletMenuOpen)}
-              onMouseEnter={() =>
-                window.innerWidth >= 1024 && setTabletMenuOpen(true)
-              }
               onMouseLeave={() =>
-                window.innerWidth >= 1024 && setTabletMenuOpen(false)
+                window.innerWidth >= 1024 &&
+                setTimeout(() => setTabletMenuOpen(false), 200)
               }
               aria-expanded={tabletMenuOpen}
               aria-haspopup="true"
@@ -121,7 +124,12 @@ export default function Header({
               />
             </button>
             <div
-              className={`absolute left-0 mt-0 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl transition-all duration-200 py-2 ${tabletMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+              className={`absolute left-0 top-full mt-1 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl transition-all duration-200 py-2 ${tabletMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+              onMouseEnter={() => setTabletMenuOpen(true)}
+              onMouseLeave={() =>
+                window.innerWidth >= 1024 &&
+                setTimeout(() => setTabletMenuOpen(false), 200)
+              }
             >
               {formacoes.map(formacao => (
                 <Link
