@@ -347,6 +347,7 @@ export default function ServicesEn() {
           ]
         }`}
       </script>
+      <Footer />
     </div>
   );
 }

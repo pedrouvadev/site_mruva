@@ -305,14 +305,14 @@ export default function En() {
                   title: "Artificial Intelligence",
                   desc: "Custom LLM integrations, workflow automation, and predictive analytics. I put AI to work for your profit, not just for the hype.",
                   tags: ["LLMs", "Automation", "GPT-4"],
-                  link: "/en/artificial-intelligence",
+                  link: "/en/ai",
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-blue-400" />,
                   title: "Growth Marketing",
                   desc: "Data-driven global campaigns. Google and Meta ad management focused on ROI and advanced technical SEO for international markets.",
                   tags: ["ROI", "Google Ads", "SEO"],
-                  link: "/en/growth-marketing",
+                  link: "/en/marketing",
                 },
               ].map((service, idx) => (
                 <article

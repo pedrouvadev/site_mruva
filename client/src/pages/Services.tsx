@@ -349,6 +349,7 @@ export default function Services() {
           ]
         }`}
       </script>
+      <Footer />
     </div>
   );
 }

@@ -308,14 +308,14 @@ export default function Home() {
                   title: "Inteligência Artificial",
                   desc: "Integrações personalizadas de LLM, automação de fluxo de trabalho e análise preditiva. Coloco a IA para trabalhar pelo seu lucro, não apenas pelo hype.",
                   tags: ["LLMs", "Automação", "GPT-4"],
-                  link: "/inteligencia-artificial",
+                  link: "/ia",
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-blue-400" />,
                   title: "Growth Marketing",
                   desc: "Campanhas globais baseadas em dados. Gestão de anúncios Google e Meta focada em ROI e SEO técnico avançado para mercados internacionais.",
                   tags: ["ROI", "Google Ads", "SEO"],
-                  link: "/growth-marketing",
+                  link: "/marketing",
                 },
               ].map((service, idx) => (
                 <article
