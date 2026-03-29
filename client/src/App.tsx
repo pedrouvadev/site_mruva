@@ -36,7 +36,7 @@ function Router() {
       <Route path="/en/about" component={AboutEn} />
       <Route path="/en/marketing" component={MarketingEn} />
       <Route path="/en/development" component={DevelopmentEn} />
-      <Route path="/en/project-management" component={ProjectManagementEn} />
+      <Route path="/en/management" component={ProjectManagementEn} />
       <Route path="/en/ai" component={AIEn} />
       <Route path="/en/fullstack" component={FullstackEn} />
       <Route path="/en/services" component={ServicesEn} />
