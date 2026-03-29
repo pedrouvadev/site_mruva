@@ -19,7 +19,7 @@ export default function Home() {
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
       
       <div className="relative z-10">
-        <Header />
+        <Header showStatus={true} />
 
         {/* 1. Hero Section - O Gancho */}
         <section id="hero" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
@@ -87,14 +87,29 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity" />
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
-                  alt="Pedro Uva - Desenvolvedor Full-Stack & Estrategista de IA" 
-                  className="relative w-full h-auto rounded-xl shadow-2xl border border-white/10"
-                />
-                <div className="absolute bottom-6 left-6 right-6 glass-card p-6 border-l-4 border-cyan-400">
-                  <h4 className="text-xl font-bold text-white">Pedro Uva</h4>
-                  <p className="text-cyan-400 text-sm font-semibold">Profissional Multidisciplinar</p>
+                <div className="relative group">
+                  <div className="relative overflow-hidden rounded-xl border border-white/10 max-w-sm mx-auto">
+                    <img 
+                      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
+                      alt="Pedro Uva - Desenvolvedor Full-Stack & Estrategista Digital" 
+                      className="w-full h-auto transition-all duration-700"
+                    />
+                  </div>
+                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[90%] glass-card p-4 border-l-4 border-cyan-400 shadow-2xl z-20">
+                    <h4 className="text-xl font-bold text-white">Pedro Luiz Uva Jr.</h4>
+                    <p className="text-cyan-400 text-sm font-semibold mb-3">FullStack e Estrategista Digital</p>
+                    <div className="flex gap-4 justify-start">
+                      <a href="https://github.com/pedrouvadev" target="_blank" className="text-[#94A3B8] hover:text-white transition-colors">
+                        <Github className="w-5 h-5" />
+                      </a>
+                      <a href="https://wa.me/5511978768690" target="_blank" className="text-[#94A3B8] hover:text-[#25D366] transition-colors">
+                        <MessageCircle className="w-5 h-5" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/mruva/" target="_blank" className="text-[#94A3B8] hover:text-[#0077B5] transition-colors">
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -509,7 +524,7 @@ export default function Home() {
                   alt="Pedro Uva" 
                   className="w-full h-auto rounded-lg"
                 />
-                <p className="text-[#94A3B8] mt-4 text-sm">Momento de criação e reflexão</p>
+                <p className="text-[#94A3B8] mt-4 text-sm font-medium">Home Office: Estratégia e Planejamento</p>
               </div>
 
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">

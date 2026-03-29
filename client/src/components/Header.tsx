@@ -6,9 +6,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 interface HeaderProps {
   showScheduleButton?: boolean;
   lang?: "pt" | "en";
+  showStatus?: boolean;
 }
 
-export default function Header({ showScheduleButton = true, lang = "pt" }: HeaderProps) {
+export default function Header({ showScheduleButton = true, lang = "pt", showStatus = false }: HeaderProps) {
   const [, setLocation] = useLocation();
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,8 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
       switchLabel: "English version",
       switchLabelMobile: "Switch to English",
       switchHref: "/en",
-      switchIcon: "🇺🇸"
+      switchIcon: "🇺🇸",
+      available: "Disponível para projetos"
     },
     en: {
       training: "Training",
@@ -36,7 +38,8 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
       switchLabel: "Versão Português",
       switchLabelMobile: "Mudar para Português",
       switchHref: "/",
-      switchIcon: "🇧🇷"
+      switchIcon: "🇧🇷",
+      available: "Available for projects"
     }
   };
 
@@ -67,9 +70,23 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-white/5 border-b border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href={t.homeHref} className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-          Mr. Uva
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href={t.homeHref} className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+            Mr. Uva
+          </Link>
+          
+          {showStatus && (
+            <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span className="text-[10px] uppercase tracking-wider font-bold text-emerald-400/90 whitespace-nowrap">
+                {t.available}
+              </span>
+            </div>
+          )}
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
@@ -130,9 +147,20 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
                 <Link 
                   href={t.homeHref} 
                   onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
+                  className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg flex items-center justify-between"
                 >
-                  {t.home}
+                  <span>{t.home}</span>
+                  {showStatus && (
+                    <div className="flex items-center gap-2 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20">
+                      <span className="relative flex h-1.5 w-1.5">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+                      </span>
+                      <span className="text-[8px] uppercase tracking-wider font-bold text-emerald-400/80">
+                        Live
+                      </span>
+                    </div>
+                  )}
                 </Link>
 
 

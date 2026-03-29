@@ -54,13 +54,13 @@ export default function ServicesEn() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans">
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
       {/* Background Gradient */}
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
       
       <div className="relative z-10">
-        <Header lang="en" />
+        <Header lang="en" showStatus={true} />
 
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">

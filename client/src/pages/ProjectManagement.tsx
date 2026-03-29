@@ -12,8 +12,15 @@ export default function ProjectManagement() {
   const whatsappLink = "https://wa.me/5511978768690?text=Olá%20Pedro!%20Quero%20meu%20projeto%20com%20essa%20gestão.";
 
   return (
-    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] font-sans">
-      <Header />
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
+      {/* Navigation */}
+      <div className="relative z-10">
+        <Header showStatus={true} />
+        
+        {/* Background Glows */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+      </div>
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">

@@ -86,15 +86,27 @@ export default function En() {
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity" />
-                <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
-                  alt="Pedro Uva - Full-Stack Developer & AI Strategist" 
-                  className="relative w-full h-auto rounded-xl shadow-2xl border border-white/10"
-                />
-                <div className="absolute bottom-6 left-6 right-6 glass-card p-6 border-l-4 border-cyan-400">
-                  <h4 className="text-xl font-bold text-white">Pedro Uva</h4>
-                  <p className="text-cyan-400 text-sm font-semibold">Multidisciplinary Professional</p>
+                <div className="relative overflow-hidden rounded-xl border border-white/10 max-w-sm mx-auto">
+                  <img 
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
+                    alt="Pedro Luiz Uva Jr. - Full-Stack Developer & Digital Strategist" 
+                    className="w-full h-auto transition-all duration-700"
+                  />
+                </div>
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[90%] glass-card p-4 border-l-4 border-cyan-400 shadow-2xl z-20">
+                  <h4 className="text-xl font-bold text-white">Pedro Luiz Uva Jr.</h4>
+                  <p className="text-cyan-400 text-sm font-semibold mb-3">FullStack & Digital Strategist</p>
+                  <div className="flex gap-4 justify-start">
+                    <a href={githubLink} target="_blank" className="text-[#94A3B8] hover:text-white transition-colors">
+                      <Github className="w-5 h-5" />
+                    </a>
+                    <a href={whatsappLink} target="_blank" className="text-[#94A3B8] hover:text-[#25D366] transition-colors">
+                      <MessageCircle className="w-5 h-5" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/mruva/" target="_blank" className="text-[#94A3B8] hover:text-[#0077B5] transition-colors">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -240,7 +252,7 @@ export default function En() {
               <div className="order-1 lg:order-2 glass-card p-4 relative animate-fade-in">
                 <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-indigo-500 rounded-2xl blur opacity-20" />
                 <img 
-                  src="https://d2xsxph8kpxj0.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png" 
                   alt="Scrum Certification - Mr. Uva" 
                   className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
                 />
@@ -509,7 +521,7 @@ export default function En() {
                   alt="Pedro Uva" 
                   className="w-full h-auto rounded-lg"
                 />
-                <p className="text-[#94A3B8] mt-4 text-sm">A moment of creation and reflection</p>
+                <p className="text-[#94A3B8] mt-4 text-sm font-medium">Home Office: Strategy & Planning</p>
               </div>
 
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
