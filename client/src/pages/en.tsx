@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Bot, TrendingUp, Presentation, MessageCircle, Shield, Rocket, CheckCircle, Code2, Briefcase, Zap, Globe, Users, Target, Award, ExternalLink, Linkedin, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Code, Bot, TrendingUp, Presentation, MessageCircle, Shield, Rocket, CheckCircle, Code2, Briefcase, Zap, Globe, Users, Target, Award, ExternalLink, Linkedin, CheckCircle2, Github } from "lucide-react";
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,17 +10,16 @@ export default function En() {
   }, []);
 
   const whatsappLink = "https://wa.me/5511978768690?text=Hi%20Pedro!%20I'm%20ready%20to%20scale%20my%20business.%20Let's%20talk!";
+  const githubLink = "https://github.com/pedrouvadev";
 
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
-      {/* SEO Metadata & JSON-LD (Structured Data) could be added here if using a Meta component */}
-      
       {/* Background Layer */}
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
       
       <div className="relative z-10">
-        <Header lang="en" showScheduleButton={true} />
+        <Header lang="en" showStatus={true} />
 
         {/* 1. Hero Section - The Hook */}
         <section id="hero" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
@@ -39,16 +38,17 @@ export default function En() {
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="mb-6 animate-fade-in flex justify-center">
               <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+                <{/* Note: I should use "Rocket" if it was used in PT, or keep as is. */}
                 <Rocket className="w-4 h-4" /> The Trinity Marketing AI Baseline
               </div>
             </div>
 
             <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight animate-fade-in animation-delay-100 tracking-tighter">
-              Full-Stack Code, Scalable AI, & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing</span>
+              Full-Stack Code, Scalable AI & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing</span>
             </h1>
 
             <p className="text-xl md:text-3xl text-[#94A3B8] mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 leading-relaxed font-medium">
-              <span className="text-white">One Mind. Global Delivery.</span> Engineering high-performance digital solutions for companies ready to disrupt the market.
+              <span className="text-white">One Single Mind. Global Delivery.</span> Engineering high-performance digital solutions for companies ready to revolutionize the market.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
@@ -56,7 +56,7 @@ export default function En() {
                 className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
                 onClick={() => window.open(whatsappLink, '_blank')}
               >
-                Book a Strategy Call <ArrowRight className="ml-2 w-6 h-6" />
+                Book a Strategic Call <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -67,12 +67,12 @@ export default function En() {
                 <div className="text-xs uppercase tracking-widest text-cyan-400">Years of Experience</div>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <div className="text-3xl font-bold text-white">33</div>
+                <div className="text-3xl font-bold text-white">33+</div>
                 <div className="text-xs uppercase tracking-widest text-indigo-400">Certifications</div>
               </div>
               <div className="flex flex-col items-center gap-2">
-                <div className="text-3xl font-bold text-white">100%</div>
-                <div className="text-xs uppercase tracking-widest text-orange-400">Delivery Rate</div>
+                <div className="text-3xl font-bold text-white">100+</div>
+                <div className="text-xs uppercase tracking-widest text-orange-400">Delivered Projects</div>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <div className="text-3xl font-bold text-white">Global</div>
@@ -82,15 +82,15 @@ export default function En() {
           </div>
         </section>
 
-        {/* 2. The Expert Section - Authority & History */}
-        <section id="expert" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/20">
+        {/* 2. The Expert - Authority & History */}
+        <section id="expert" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/20 text-left">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity" />
                 <img 
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
-                  alt="Pedro Uva - Full-Stack Engineer & AI Strategist" 
+                  alt="Pedro Uva - Full-Stack Developer & AI Strategist" 
                   className="relative w-full h-auto rounded-xl shadow-2xl border border-white/10"
                 />
                 <div className="absolute bottom-6 left-6 right-6 glass-card p-6 border-l-4 border-cyan-400">
@@ -100,23 +100,23 @@ export default function En() {
               </div>
 
               <div>
-                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engineering Excellence Since <span className="text-indigo-400">1997</span></h2>
+                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engineering Excellence since <span className="text-indigo-400">1997</span></h2>
                 <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
-                  I am not just a developer. I am a <strong className="text-white">strategist</strong> who understands that code is a tool for profit. From the early days of hardware and networks to modern AI-driven architectures, my journey has been defined by one thing: <strong className="text-white">Solving Complex Problems.</strong>
+                  I'm not just a developer. I'm a <strong className="text-white">strategist</strong> who understands that code is a tool to generate profit. From the beginning with hardware and networks to modern AI-driven architectures, my journey has been defined by one thing: <strong className="text-white">Solving Complex Problems.</strong>
                 </p>
                 
-                <div className="space-y-6 mb-10">
+                <div className="space-y-6 mb-10 text-left">
                   <div className="flex items-start gap-4">
                     <div className="bg-cyan-500/10 p-2 rounded-lg mt-1"><CheckCircle2 className="w-6 h-6 text-cyan-400" /></div>
-                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">Technical Foundation:</strong> 25+ years evolving from technical support to Full-Stack & AI Engineering.</p>
+                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">Technical Foundation:</strong> Over 25 years evolving from technical support to Full-Stack and AI Engineering.</p>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-indigo-500/10 p-2 rounded-lg mt-1"><CheckCircle2 className="w-6 h-6 text-indigo-400" /></div>
-                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">Business Acumen:</strong> Former trader with a deep understanding of ROI, financial markets, and growth strategies.</p>
+                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">Business Vision:</strong> Former trader with deep understanding of ROI, financial markets, and growth strategies.</p>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="bg-orange-500/10 p-2 rounded-lg mt-1"><CheckCircle2 className="w-6 h-6 text-orange-400" /></div>
-                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">AI Specialization:</strong> Google Cloud & Oracle ONE certified, specializing in LLM integration and workflow automation.</p>
+                    <p className="text-lg text-[#CBD5E1]"><strong className="text-white">AI Specialization:</strong> Certified by Google Cloud and Oracle ONE, specialist in LLM integration and workflow automation.</p>
                   </div>
                 </div>
 
@@ -130,7 +130,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 3. The Services Grid - The Solution */}
+        {/* 3. The Services Arsenal - The Solution */}
         <section id="services" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-20">
@@ -151,17 +151,17 @@ export default function En() {
                 {
                   icon: <Bot className="w-10 h-10 text-indigo-400" />,
                   title: "Artificial Intelligence",
-                  desc: "Custom LLM integrations, workflow automation, and predictive analytics. I put AI to work for your bottom line, not just for the hype.",
+                  desc: "Custom LLM integrations, workflow automation, and predictive analytics. I put AI to work for your profit, not just for the hype.",
                   tags: ["LLMs", "Automation", "GPT-4"]
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-blue-400" />,
                   title: "Growth Marketing",
-                  desc: "Data-driven global campaigns. ROI-focused Google & Meta Ads management and advanced technical SEO for international markets.",
+                  desc: "Data-driven global campaigns. Google and Meta ad management focused on ROI and advanced technical SEO for international markets.",
                   tags: ["ROI", "Google Ads", "SEO"]
                 }
               ].map((service, idx) => (
-                <article key={idx} className="glass-card p-10 hover:scale-[1.05] transition-all duration-500 border border-white/5 hover:border-cyan-500/30 flex flex-col h-full group">
+                <article key={idx} className="glass-card p-10 hover:scale-[1.05] transition-all duration-500 border border-white/5 hover:border-cyan-500/30 flex flex-col h-full group text-left">
                   <div className="bg-[#0F172A] p-5 rounded-2xl w-fit mb-8 shadow-inner border border-white/5 group-hover:border-cyan-500/50 transition-colors">
                     {service.icon}
                   </div>
@@ -180,22 +180,51 @@ export default function En() {
           </div>
         </section>
 
-        {/* 4. The Workflow Guarantee - The Predictability */}
+        {/* 4. GitHub Section - Open Source & Transparency */}
+        <section id="github" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/20">
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl md:text-6xl font-bold mb-8">Open Source & <span className="text-cyan-400">Clean Code</span></h2>
+                <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
+                  I believe in transparency and continuous contribution to the developer community. My GitHub reflects my commitment to code quality and the constant exploration of new technologies.
+                </p>
+                <button 
+                  onClick={() => window.open(githubLink, '_blank')}
+                  className="group flex items-center gap-3 px-10 py-5 bg-white/5 border border-white/10 rounded-full text-xl font-bold hover:bg-white/10 transition-all"
+                >
+                  <{/* Note: I should use "Github" icon */}
+                  <Github className="w-8 h-8" />
+                  View Github Profile
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+              <div className="flex justify-center">
+                <div className="relative">
+                   <div className="absolute -inset-4 bg-cyan-500/20 blur-2xl rounded-full animate-pulse" />
+                   <Github className="w-48 h-48 md:w-64 md:h-64 text-white/10 relative z-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. The Workflow Guarantee - Predictability */}
         <section id="workflow" className="py-32 px-4 sm:px-6 lg:px-8 relative">
           <div className="absolute inset-0 z-0 bg-gradient-to-tr from-indigo-900/20 via-[#0F172A] to-cyan-900/10" />
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
-              <div className="order-2 lg:order-1">
+              <div className="order-2 lg:order-1 text-left">
                 <h2 className="text-4xl md:text-6xl font-bold mb-8">The Workflow <span className="bg-gradient-to-r from-orange-400 to-indigo-400 bg-clip-text text-transparent">Guarantee</span></h2>
                 <p className="text-xl text-[#94A3B8] mb-10 leading-relaxed">
-                  Your project is managed using standardized <strong className="text-white">Scrum frameworks</strong> to guarantee predictability, transparency, and high-quality deliverables. I don't just develop; I manage the complexity so you don't have to.
+                  Your project is managed using <strong className="text-white">standardized Scrum frameworks</strong> to ensure predictability, transparency, and high-quality deliverables. I don't just develop; I manage the complexity so you don't have to.
                 </p>
                 
                 <ul className="space-y-8">
                   {[
-                    { title: "Predictable Delivery", desc: "Organized sprints with clear milestones and daily updates." },
-                    { title: "Transparency", desc: "Strict timeline tracking and constant stakeholder alignment." },
-                    { title: "Zero Chaos", desc: "Scrum-certified methodology to eliminate 'scope creep' and delays." }
+                    { title: "Predictable Delivery", desc: "Organized sprints with clear milestones and frequent updates." },
+                    { title: "Transparency", desc: "Strict timeline tracking and constant alignment with stakeholders." },
+                    { title: "Zero Chaos", desc: "Scrum-certified methodology to eliminate uncontrolled scope creep and delays." }
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-5">
                       <div className="mt-1 bg-orange-500/20 p-2 rounded-full border border-orange-500/30">
@@ -213,7 +242,7 @@ export default function En() {
               <div className="order-1 lg:order-2 glass-card p-4 relative animate-fade-in">
                 <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-indigo-500 rounded-2xl blur opacity-20" />
                 <img 
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png" 
+                  src="https://d2xsxph8kpxj0.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png" 
                   alt="Scrum Certification - Mr. Uva" 
                   className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
                 />
@@ -222,18 +251,18 @@ export default function En() {
           </div>
         </section>
 
-        {/* 5. Global Ready - The Communication */}
+        {/* 6. Ready for the World - Communication */}
         <section id="communication" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/40">
           <div className="max-w-6xl mx-auto relative z-10">
-            <div className="text-center mb-20">
-              <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-bold mb-8 uppercase tracking-widest">
-                <Globe className="w-4 h-4" /> Global Business Ready
+            <div className="text-center mb-20 text-center">
+              <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-bold mb-8 uppercase tracking-widest mx-auto">
+                <Globe className="w-4 h-4" /> Ready for Global Business
               </div>
               <h2 className="text-4xl md:text-7xl font-bold mb-8">
-                Professional Working Proficiency
+                Fluent Professional Proficiency
               </h2>
               <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
-                Verified Professional Working Proficiency for high-stakes communication, dailies, and stakeholder management.
+                Verified proficiency for high-level communication, daily meetings, and management of international stakeholders.
               </p>
             </div>
 
@@ -249,11 +278,11 @@ export default function En() {
                 </div>
               </div>
 
-              <div className="space-y-10">
+              <div className="space-y-10 text-left">
                 <div className="glass-card p-10 border-l-4 border-l-blue-500 bg-white/5">
-                  <h4 className="text-3xl font-bold text-white mb-4">Seamless Communication</h4>
+                  <h4 className="text-3xl font-bold text-white mb-4">Fluid Communication</h4>
                   <p className="text-[#94A3B8] text-xl leading-relaxed">
-                    Over <strong>69+ Verified Hours</strong> of Conversational English with Native Speakers. Ready for high-level negotiations and global team collaboration without friction.
+                    Over <strong>69 verified hours</strong> of conversational English with native speakers. Ready for high-level negotiations and collaboration in global teams without friction.
                   </p>
                 </div>
                 
@@ -273,8 +302,317 @@ export default function En() {
           </div>
         </section>
 
-        {/* 6. Final CTA - The Conversion */}
-        <section id="contact" className="py-40 px-4 sm:px-6 lg:px-8 relative">
+        {/* 7. Professional Trajectory */}
+        <section id="trajectory" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">Professional Trajectory</h2>
+            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+              From technical support to digital strategist: a journey of continuous learning and transformation
+            </p>
+
+            <div className="space-y-6">
+              {/* Timeline Item 1 */}
+              <div className="glass-card p-6 border-l-4 border-indigo-500">
+                <div className="flex items-start gap-4">
+                  <Code2 className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">1997-2001: First Steps in Tech</h3>
+                    <p className="text-[#94A3B8] mb-2">
+                       Started as a support technician in telecommunications companies (Prest Service, System Informática, UOL, AT&T Latin America). Learned to work under pressure, solve complex problems, and handle large-scale clients.
+                    </p>
+                    <p className="text-sm text-cyan-400">Technologies: Hardware, Networks, Technical Support</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 2 */}
+              <div className="glass-card p-6 border-l-4 border-cyan-500">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <div className="flex-1">
+                    <div className="flex items-start gap-4">
+                      <TrendingUp className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
+                      <div>
+                        <h3 className="text-xl font-bold mb-2">2008-2013: Financial Market</h3>
+                        <p className="text-[#94A3B8] mb-2">
+                          Worked as a trader and commercial specialist at Um Investimentos. Led the "Retomada ao Topo" campaign with Google Ads, capturing 340 new investors with proven ROI. Consolidated knowledge in finance, marketing, and resilience.
+                        </p>
+                        <p className="text-sm text-cyan-400">Technologies: Trading, Google Ads, Digital Marketing</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="md:w-48 flex-shrink-0">
+                    <img 
+                      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg" 
+                      alt="Pedro Uva - Professional Financial Market Trader" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 3 */}
+              <div className="glass-card p-6 border-l-4 border-orange-500">
+                <div className="flex items-start gap-4">
+                  <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">2014-2020: Entrepreneurship</h3>
+                    <p className="text-[#94A3B8] mb-2">
+                      Founded Respiro Aventura (adventure tourism) and Engenharia de Conteúdo (digital agency). Developed skills in management, content creation, SEO, and digital marketing. Operated as an independent trader with discipline and risk management.
+                    </p>
+                    <p className="text-sm text-cyan-400">Technologies: PHP, MySQL, SEO, Google Ads, Meta Ads</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 4 */}
+              <div className="glass-card p-6 border-l-4 border-indigo-500">
+                <div className="flex items-start gap-4">
+                  <Zap className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">2020-2025: Digital Transformation</h3>
+                    <p className="text-[#94A3B8] mb-2">
+                      Returned to Lavanderia Umarizal (family business) and implemented a complete digital transformation: new website, Google Ads campaigns (220% ROI), process automation, AI for customer service. Manages 18 employees and own VPS infrastructure.
+                    </p>
+                    <p className="text-sm text-cyan-400">Technologies: React, Node.js, IA, Google Cloud, DevOps</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 5 */}
+              <div className="glass-card p-6 border-l-4 border-cyan-500">
+                <div className="flex items-start gap-4">
+                  <Globe className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">2025-2026: Education & Specialization</h3>
+                    <p className="text-[#94A3B8] mb-2">
+                       Pursuing a degree in Systems Development (FAT/Fatec), participating in Oracle ONE, studying advanced English at Cambly. Accumulates 25 Google Cloud Skill Badges in AI/ML. Preparing to operate at an international level.
+                    </p>
+                    <p className="text-sm text-cyan-400">Technologies: Full Stack, IA, Google Cloud, Advanced English</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 8. Technical Skills */}
+        <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 relative text-left">
+          <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-indigo-500/5 to-transparent" />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">Technical Skills</h2>
+            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+              Complete stack for development, marketing, and automation
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-indigo-400">Front-end</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ React 19 + TypeScript</li>
+                  <li>✓ HTML5 + CSS3</li>
+                  <li>✓ Tailwind CSS v4</li>
+                  <li>✓ Advanced JavaScript</li>
+                  <li>✓ Responsive Design</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-cyan-400">Back-end</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ Node.js + Express</li>
+                  <li>✓ PHP + Laravel</li>
+                  <li>✓ MySQL + PostgreSQL</li>
+                  <li>✓ REST APIs</li>
+                  <li>✓ Authentication & Security</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-orange-400">DevOps</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ Linux (25+ years)</li>
+                  <li>✓ Docker & Containers</li>
+                  <li>✓ Git & GitHub</li>
+                  <li>✓ VPS & Cloud</li>
+                  <li>✓ CI/CD Pipelines</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-indigo-400">Digital Marketing</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ Google Ads & GA4</li>
+                  <li>✓ Meta Ads</li>
+                  <li>✓ On-page & Off-page SEO</li>
+                  <li>✓ Content Strategy</li>
+                  <li>✓ Measurable ROI</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-cyan-400">AI & Automation</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ ChatGPT & LLMs</li>
+                  <li>✓ Process Automation</li>
+                  <li>✓ Google Cloud AI/ML</li>
+                  <li>✓ Advanced Integrations</li>
+                  <li>✓ Prompt Engineering</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-orange-400">Finance & Trading</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ Technical Analysis</li>
+                  <li>✓ Trading (Index & Dollar)</li>
+                  <li>✓ Risk Management</li>
+                  <li>✓ Compliance</li>
+                  <li>✓ Trading Psychology</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-indigo-400">Business Management</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ People Management</li>
+                  <li>✓ Strategic Planning</li>
+                  <li>✓ Digital Transformation</li>
+                  <li>✓ Project Management</li>
+                  <li>✓ Leadership & Mentoring</li>
+                </ul>
+              </div>
+
+              <div className="glass-card p-6">
+                <h3 className="text-lg font-bold mb-4 text-cyan-400">Languages</h3>
+                <ul className="space-y-2 text-[#94A3B8] text-sm">
+                  <li>✓ Portuguese (Native)</li>
+                  <li>✓ English (Advanced)</li>
+                  <li>✓ Global Communication</li>
+                  <li>✓ 1.5 years Cambly</li>
+                  <li>✓ Ready for Int'l Market</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 9. Personal Gallery */}
+        <section id="gallery" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-center">Personal Gallery</h2>
+            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+              Moments that reflect the professional journey and a passion for technology
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/no-meu-quarto_998b2075.jpg" 
+                  alt="Pedro Uva" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <p className="text-[#94A3B8] mt-4 text-sm">A moment of creation and reflection</p>
+              </div>
+
+              <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
+                <img 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg" 
+                  alt="Pedro Uva - Professional Trader" 
+                  className="w-full h-auto rounded-lg"
+                />
+                <p className="text-[#94A3B8] mt-4 text-sm">Professional Financial Market Trader</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 10. Professional Philosophy */}
+        <section id="philosophy" className="py-24 px-4 sm:px-6 lg:px-8 relative text-left">
+          <div className="absolute inset-0 z-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-indigo-500/5" />
+          <div className="max-w-4xl mx-auto relative z-10">
+            <h2 className="text-4xl font-bold mb-12 text-center">Professional Philosophy</h2>
+
+            <div className="space-y-6">
+              <div className="glass-card p-8 border-cyan-500/50">
+                <h3 className="text-xl font-bold mb-3 text-cyan-400">🎯 Purpose Above All</h3>
+                <p className="text-[#94A3B8]">
+                  I decline projects that are not aligned with my values. I seek work with "soul" — something that generates real impact, continuous learning, and a genuine contribution to the community.
+                </p>
+              </div>
+
+              <div className="glass-card p-8 border-indigo-500/50">
+                <h3 className="text-xl font-bold mb-3 text-indigo-400">🔄 Continuous Learning</h3>
+                <p className="text-[#94A3B8]">
+                  I have never stopped studying. Even without complete formal degrees, I have accumulated knowledge equivalent or superior to many graduations, with the advantage of immediate practical application.
+                </p>
+              </div>
+
+              <div className="glass-card p-8 border-orange-500/50">
+                <h3 className="text-xl font-bold mb-3 text-orange-400">💪 Resilience as a Competency</h3>
+                <p className="text-[#94A3B8]">
+                  The crises I faced — bankruptcies, layoffs, family problems, business failures — did not paralyze me. From each one, I extracted learning and started again stronger.
+                </p>
+              </div>
+
+              <div className="glass-card p-8 border-cyan-500/50">
+                <h3 className="text-xl font-bold mb-3 text-cyan-400">🌍 Ubuntu in Business</h3>
+                <p className="text-[#94A3B8]">
+                  "I am because we are". I value win-win partnerships, build communities, and promote transparency, collaboration, and meritocracy in everything I do.
+                </p>
+              </div>
+
+              <div className="glass-card p-8 border-indigo-500/50">
+                <h3 className="text-xl font-bold mb-3 text-indigo-400">🚀 Geographical Freedom & Autonomy</h3>
+                <p className="text-[#94A3B8]">
+                  I dream of geographical freedom (motorhome, Starlink) and professional autonomy: working from anywhere, on meaningful projects, without corporate constraints.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 11. Certifications & Recognition */}
+        <section id="certifications" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-center">Certifications & Recognition</h2>
+            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+              Continuous education and recognition of expertise
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="glass-card p-6 text-center">
+                <p className="text-3xl font-bold text-indigo-400 mb-2">33</p>
+                <p className="text-[#94A3B8]">Official Certifications</p>
+                <p className="text-sm text-cyan-400 mt-2">Google, Oracle, Goobec, Qualifica SP</p>
+              </div>
+              <div className="glass-card p-6 text-center">
+                <p className="text-3xl font-bold text-cyan-400 mb-2">25</p>
+                <p className="text-[#94A3B8]">Google Cloud Skill Badges</p>
+                <p className="text-sm text-orange-400 mt-2">AI, ML, Cloud Infrastructure</p>
+              </div>
+              <div className="glass-card p-6 text-center">
+                <p className="text-3xl font-bold text-orange-400 mb-2">22K+</p>
+                <p className="text-[#94A3B8]">LinkedIn Followers</p>
+                <p className="text-sm text-indigo-400 mt-2">Authority in Tech & Entrepreneurship</p>
+              </div>
+            </div>
+
+            <div className="glass-card p-8 border-cyan-500/50">
+              <h3 className="text-xl font-bold mb-4 text-cyan-400">Ongoing Education</h3>
+              <ul className="space-y-3 text-[#94A3B8]">
+                <li>✓ <strong>Systems Development Technologist</strong> - FAT/Fatec (2025-2026)</li>
+                <li>✓ <strong>Oracle ONE</strong> - 12-month Development Program (2024-2025)</li>
+                <li>✓ <strong>Google Cloud Skills Boost</strong> - 25 Skill Badges in AI/ML (2024-2026)</li>
+                <li>✓ <strong>Digital Marketing</strong> - Goobec (Google Partner) - Google Ads, Meta Ads, GA4</li>
+                <li>✓ <strong>IT Project Management</strong> - Qualifica SP</li>
+                <li>✓ <strong>Advanced English</strong> - Cambly (1.5 years with native speakers)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* 12. Final CTA */}
+        <section id="finalcta" className="py-40 px-4 sm:px-6 lg:px-8 relative">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/30 to-[#0F172A]" />
           
           <div className="max-w-5xl mx-auto relative z-10 text-center glass-card p-16 md:p-32 border border-cyan-500/20 shadow-[0_0_150px_rgba(34,211,238,0.15)]">
@@ -291,7 +629,7 @@ export default function En() {
               className="group relative inline-flex items-center justify-center gap-4 px-16 py-8 text-3xl font-black text-white transition-all duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full hover:from-cyan-400 hover:to-indigo-500 hover:scale-105 shadow-[0_0_60px_rgba(34,211,238,0.5)]"
             >
               <MessageCircle className="w-8 h-8" />
-              Book a Strategy Call
+              Book a Strategic Call
               <ArrowRight className="w-8 h-8 group-hover:translate-x-2 transition-transform" />
             </button>
             

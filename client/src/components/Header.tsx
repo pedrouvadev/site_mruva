@@ -15,8 +15,6 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
 
   const translations = {
     pt: {
-      about: "Sobre",
-      aboutHref: "/sobre",
       training: "Formações",
       services: "Serviços",
       servicesHref: "/servicos",
@@ -29,8 +27,6 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
       switchIcon: "🇺🇸"
     },
     en: {
-      about: "About",
-      aboutHref: "/en/about",
       training: "Training",
       services: "Services",
       servicesHref: "/en/services",
@@ -51,13 +47,11 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
     { name: "Desenvolvimento", href: "/desenvolvimento" },
     { name: "Gestão de Projetos", href: "/gestao" },
     { name: "IA & Google Cloud", href: "/ia" },
-    { name: "Fullstack Empower", href: "/fullstack" },
   ] : [
     { name: "Digital Marketing", href: "/en/marketing" },
     { name: "Development", href: "/en/development" },
     { name: "Project Management", href: "/en/management" },
     { name: "AI & Google Cloud", href: "/en/ai" },
-    { name: "Fullstack Empower", href: "/en/fullstack" },
   ];
 
   const handleNavigation = (href: string) => {
@@ -79,9 +73,7 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
-          <Link href={t.aboutHref} className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
-            {t.about}
-          </Link>
+
 
           {/* Submenu Formações */}
           <div className="relative group">
@@ -142,13 +134,7 @@ export default function Header({ showScheduleButton = true, lang = "pt" }: Heade
                 >
                   {t.home}
                 </Link>
-                <Link 
-                  href={t.aboutHref} 
-                  onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
-                >
-                  {t.about}
-                </Link>
+
 
                 {/* Mobile Formações Submenu */}
                 <div className="border-t border-cyan-500/20 pt-4">
