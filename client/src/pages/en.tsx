@@ -38,7 +38,6 @@ export default function En() {
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="mb-6 animate-fade-in flex justify-center">
               <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
-                <{/* Note: I should use "Rocket" if it was used in PT, or keep as is. */}
                 <Rocket className="w-4 h-4" /> The Trinity Marketing AI Baseline
               </div>
             </div>
@@ -193,7 +192,6 @@ export default function En() {
                   onClick={() => window.open(githubLink, '_blank')}
                   className="group flex items-center gap-3 px-10 py-5 bg-white/5 border border-white/10 rounded-full text-xl font-bold hover:bg-white/10 transition-all"
                 >
-                  <{/* Note: I should use "Github" icon */}
                   <Github className="w-8 h-8" />
                   View Github Profile
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
