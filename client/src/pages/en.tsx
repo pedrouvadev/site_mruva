@@ -94,22 +94,25 @@ export default function En() {
                 <div className="relative overflow-hidden rounded-xl border border-white/10 max-w-sm mx-auto">
                   <img 
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedrouva_3x4_55f0cfe1.png" 
-                    alt="Pedro Luiz Uva Jr. - Full-Stack Developer & Digital Strategist" 
+                    alt="Pedro Luiz Uva Jr. - Full-Stack Developer & Digital Strategist in São Paulo" 
                     className="w-full h-auto transition-all duration-700"
+                    width="384"
+                    height="512"
+                    loading="eager"
                   />
                 </div>
                 <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[90%] glass-card p-4 border-l-4 border-cyan-400 shadow-2xl z-20">
                   <h4 className="text-xl font-bold text-white">Pedro Luiz Uva Jr.</h4>
                   <p className="text-cyan-400 text-sm font-semibold mb-3">FullStack & Digital Strategist</p>
                   <div className="flex gap-4 justify-start">
-                    <a href={githubLink} target="_blank" className="text-[#94A3B8] hover:text-white transition-colors">
-                      <Github className="w-5 h-5" />
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer" aria-label="Pedro Uva's GitHub profile" className="text-[#94A3B8] hover:text-white transition-colors">
+                      <Github className="w-5 h-5" aria-hidden="true" />
                     </a>
-                    <a href={whatsappLink} target="_blank" className="text-[#94A3B8] hover:text-[#25D366] transition-colors">
-                      <MessageCircle className="w-5 h-5" />
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp" className="text-[#94A3B8] hover:text-[#25D366] transition-colors">
+                      <MessageCircle className="w-5 h-5" aria-hidden="true" />
                     </a>
-                    <a href="https://www.linkedin.com/in/mruva/" target="_blank" className="text-[#94A3B8] hover:text-[#0077B5] transition-colors">
-                      <Linkedin className="w-5 h-5" />
+                    <a href="https://www.linkedin.com/in/mruva/" target="_blank" rel="noopener noreferrer" aria-label="Pedro Uva's LinkedIn profile" className="text-[#94A3B8] hover:text-[#0077B5] transition-colors">
+                      <Linkedin className="w-5 h-5" aria-hidden="true" />
                     </a>
                   </div>
                 </div>

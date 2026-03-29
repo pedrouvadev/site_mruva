@@ -138,8 +138,8 @@ export default function Header({ showScheduleButton = true, lang = "pt", showSta
         <div className="md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-                <Menu className="w-6 h-6 text-[#E2E8F0]" />
+              <button aria-label="Abrir menu de navegação" className="p-2 hover:bg-white/10 rounded-lg transition-colors">
+                <Menu className="w-6 h-6 text-[#E2E8F0]" aria-hidden="true" />
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-64 bg-[#1E293B] border-l border-cyan-500/30">

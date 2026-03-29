@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="author" content="Pedro Luiz Uva Junior" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0F172A" />
 
   <title>Pedro Uva | Full-Stack Engineer & Estrategista Digital em São Paulo</title>
@@ -37,11 +37,30 @@
 
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%236366F1'>U</text></svg>" />
+
+  <!-- Performance: DNS prefetch & resource hints -->
+  <link rel="dns-prefetch" href="https://d2xsxph8kpxj0f.cloudfront.net" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image"
+    href="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/hero-3d-neon-ETM4gefM3NZLJ3bB38yXCc.webp"
+    type="image/webp" />
+
+  <!-- Preload critical font subset -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" />
+  </noscript>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet" media="print" onload="this.media='all'" />
 
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
