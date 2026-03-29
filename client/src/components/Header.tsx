@@ -5,19 +5,59 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 interface HeaderProps {
   showScheduleButton?: boolean;
+  lang?: "pt" | "en";
 }
 
-export default function Header({ showScheduleButton = true }: HeaderProps) {
+export default function Header({ showScheduleButton = true, lang = "pt" }: HeaderProps) {
   const [, setLocation] = useLocation();
   const [openSubmenu, setOpenSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
-  const formacoes = [
+  const translations = {
+    pt: {
+      about: "Sobre",
+      aboutHref: "/sobre",
+      training: "Formações",
+      services: "Serviços",
+      servicesHref: "/servicos",
+      schedule: "Agendar uma Call",
+      home: "Home",
+      homeHref: "/",
+      switchLabel: "English version",
+      switchLabelMobile: "Switch to English",
+      switchHref: "/en",
+      switchIcon: "🇺🇸"
+    },
+    en: {
+      about: "About",
+      aboutHref: "/en/about",
+      training: "Training",
+      services: "Services",
+      servicesHref: "/en/services",
+      schedule: "Book a Call",
+      home: "Home",
+      homeHref: "/en",
+      switchLabel: "Versão Português",
+      switchLabelMobile: "Mudar para Português",
+      switchHref: "/",
+      switchIcon: "🇧🇷"
+    }
+  };
+
+  const t = translations[lang];
+
+  const formacoes = lang === "pt" ? [
     { name: "Marketing Digital", href: "/marketing" },
     { name: "Desenvolvimento", href: "/desenvolvimento" },
     { name: "Gestão de Projetos", href: "/gestao" },
     { name: "IA & Google Cloud", href: "/ia" },
     { name: "Fullstack Empower", href: "/fullstack" },
+  ] : [
+    { name: "Digital Marketing", href: "/en/marketing" },
+    { name: "Development", href: "/en/development" },
+    { name: "Project Management", href: "/en/management" },
+    { name: "AI & Google Cloud", href: "/en/ai" },
+    { name: "Fullstack Empower", href: "/en/fullstack" },
   ];
 
   const handleNavigation = (href: string) => {
@@ -33,20 +73,20 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-white/5 border-b border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+        <Link href={t.homeHref} className="text-2xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent hover:opacity-80 transition-opacity">
           Mr. Uva
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
-          <Link href="/sobre" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
-            Sobre
+          <Link href={t.aboutHref} className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
+            {t.about}
           </Link>
 
           {/* Submenu Formações */}
           <div className="relative group">
             <button className="flex items-center gap-2 hover:text-cyan-400 transition-colors text-[#E2E8F0]">
-              Formações
+              {t.training}
               <ChevronDown className="w-4 h-4 group-hover:rotate-180 transition-transform" />
             </button>
             <div className="absolute left-0 mt-0 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
@@ -62,16 +102,16 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
             </div>
           </div>
 
-          <Link href="/servicos" className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
-            Serviços
+          <Link href={t.servicesHref} className="hover:text-cyan-400 transition-colors text-[#E2E8F0]">
+            {t.services}
           </Link>
 
           <div className="flex items-center gap-4 border-l border-white/10 pl-6 ml-2">
             <Link 
-              href="/en" 
+              href={t.switchHref} 
               className="text-[#E2E8F0] text-sm font-semibold hover:text-cyan-400 transition-all flex items-center gap-2 border border-white/10 bg-white/5 rounded-full px-4 py-1.5 hover:bg-white/10"
             >
-              🇺🇸 <span className="hidden lg:inline">English version</span><span className="lg:hidden">EN</span>
+              {t.switchIcon} <span className="hidden lg:inline">{t.switchLabel}</span><span className="lg:hidden">{lang === "pt" ? "EN" : "PT"}</span>
             </Link>
 
             {showScheduleButton && (
@@ -79,7 +119,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                 onClick={() => window.location.href = 'https://wa.me/5511978768690'}
                 className="btn-gradient"
               >
-                Agendar uma Call
+                {t.schedule}
               </button>
             )}
           </div>
@@ -96,18 +136,18 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
             <SheetContent side="right" className="w-64 bg-[#1E293B] border-l border-cyan-500/30">
               <div className="flex flex-col gap-4 mt-8">
                 <Link 
-                  href="/" 
+                  href={t.homeHref} 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
-                  Home
+                  {t.home}
                 </Link>
                 <Link 
-                  href="/sobre" 
+                  href={t.aboutHref} 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
-                  Sobre
+                  {t.about}
                 </Link>
 
                 {/* Mobile Formações Submenu */}
@@ -116,7 +156,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                     onClick={() => setOpenSubmenu(!openSubmenu)}
                     className="w-full px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg flex items-center justify-between"
                   >
-                    Formações
+                    {t.training}
                     <ChevronDown className={`w-4 h-4 transition-transform ${openSubmenu ? 'rotate-180' : ''}`} />
                   </button>
                   {openSubmenu && (
@@ -135,20 +175,20 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                 </div>
 
                 <Link 
-                  href="/servicos" 
+                  href={t.servicesHref} 
                   onClick={() => setIsOpen(false)}
                   className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
                 >
-                  Serviços
+                  {t.services}
                 </Link>
 
                 <div className="border-t border-cyan-500/20 pt-6 mt-2 pb-4 flex flex-col gap-4">
                   <Link 
-                    href="/en" 
+                    href={t.switchHref} 
                     onClick={() => setIsOpen(false)}
                     className="flex justify-center items-center gap-2 px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-[#E2E8F0] font-semibold hover:bg-white/10 hover:text-cyan-400 transition-colors"
                   >
-                    🇺🇸 Switch to English
+                    {t.switchIcon} {t.switchLabelMobile}
                   </Link>
 
                   {showScheduleButton && (
@@ -159,7 +199,7 @@ export default function Header({ showScheduleButton = true }: HeaderProps) {
                       }}
                       className="btn-gradient w-full"
                     >
-                      Agendar uma Call
+                      {t.schedule}
                     </button>
                   )}
                 </div>

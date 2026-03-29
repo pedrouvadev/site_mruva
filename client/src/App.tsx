@@ -13,6 +13,13 @@ import AI from "./pages/AI";
 import Fullstack from "./pages/Fullstack";
 import Services from "./pages/Services";
 import En from "./pages/en";
+import AboutEn from "./pages/en/AboutEn";
+import MarketingEn from "./pages/en/MarketingEn";
+import DevelopmentEn from "./pages/en/DevelopmentEn";
+import ProjectManagementEn from "./pages/en/ProjectManagementEn";
+import AIEn from "./pages/en/AIEn";
+import FullstackEn from "./pages/en/FullstackEn";
+import ServicesEn from "./pages/en/ServicesEn";
 
 function Router() {
   return (
@@ -26,6 +33,13 @@ function Router() {
       <Route path="/fullstack" component={Fullstack} />
       <Route path="/servicos" component={Services} />
       <Route path="/en" component={En} />
+      <Route path="/en/about" component={AboutEn} />
+      <Route path="/en/marketing" component={MarketingEn} />
+      <Route path="/en/development" component={DevelopmentEn} />
+      <Route path="/en/project-management" component={ProjectManagementEn} />
+      <Route path="/en/ai" component={AIEn} />
+      <Route path="/en/fullstack" component={FullstackEn} />
+      <Route path="/en/services" component={ServicesEn} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

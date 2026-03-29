@@ -20,7 +20,7 @@ export default function En() {
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
       
       <div className="relative z-10">
-        <Header showScheduleButton={false} />
+        <Header lang="en" showScheduleButton={false} />
 
         {/* 1. Hero Section - The Hook */}
         <section id="hero" className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
