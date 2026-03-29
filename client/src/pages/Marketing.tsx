@@ -31,39 +31,42 @@ export default function Marketing() {
             opacity: 0.3,
           }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
-            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 text-center inline-block max-w-full leading-relaxed">
-              🚨 Alerta: Seu Dinheiro em Anúncios Está Sendo Desperdiçado
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
+              <Target className="w-4 h-4" /> Marketing de Performance & ROI
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
             Pare de Financiar a <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Incompetência</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
             Enquanto você lê esta página, o Google e Meta estão engolindo 40% da sua margem de lucro. Eu sou Pedro Uva, o Engenheiro de Lucro que une rigor técnico com inteligência bélica de aquisição.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6">
-              Quero Parar de Perder Dinheiro <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Quero Parar de Perder Dinheiro <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
 
-          <p className="text-sm text-[#94A3B8] italic">
+          <p className="text-sm text-[#94A3B8] italic animate-fade-in animation-delay-400">
             ⚠️ Aviso: Aceito apenas 4 novos projetos por mês devido à complexidade da engenharia de dados.
           </p>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Você Está "Voando às Cegas"</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Você Está "Voando às Cegas"</h2>
 
           <div className="space-y-6 mb-12">
             <div className="glass-card p-6">
@@ -96,7 +99,7 @@ export default function Marketing() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -110,8 +113,8 @@ export default function Marketing() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl font-bold mb-4 text-center">A Santíssima Trindade do Crescimento Previsível</h2>
-          <p className="text-center text-[#94A3B8] mb-16">Como eu transformo seu marketing em máquina de vendas</p>
+          <h2 className="title-standard text-center text-4xl font-bold">A Santíssima Trindade do Crescimento Previsível</h2>
+          <p className="text-center text-[#94A3B8] mb-16 text-lg">Como eu transformo seu marketing em máquina de vendas</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Pilar 1 */}
@@ -157,10 +160,10 @@ export default function Marketing() {
       </section>
 
       {/* Certificações & Credenciais Section - Combinada */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Menos de 1% do Mercado Tem Esta Combinação</h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <h2 className="title-standard text-center text-4xl font-bold">Menos de 1% do Mercado Tem Esta Combinação</h2>
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Certificações que comprovam expertise em Google Ads, GA4, Meta Ads e estratégia de marketing digital
           </p>
 
@@ -209,9 +212,9 @@ export default function Marketing() {
       </section>
 
       {/* Anti-Venda Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Eu Não Sou Para Você Se...</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Eu Não Sou Para Você Se...</h2>
 
           <div className="space-y-4 mb-12">
             <div className="glass-card p-6 border-red-500/30">
@@ -243,9 +246,9 @@ export default function Marketing() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Perguntas Frequentes</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Perguntas Frequentes</h2>
 
           <div className="space-y-6">
             <div className="glass-card p-6">
@@ -273,7 +276,7 @@ export default function Marketing() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -286,31 +289,24 @@ export default function Marketing() {
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">A Inação Custa Mais Caro Que a Intervenção</h2>
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">A Inação Custa Mais Caro Que a Intervenção</h2>
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             A cada dia que seu site roda sem inteligência de dados e com lentidão, seu concorrente ganha mercado com um CPA mais barato usando IA. A escolha é sua: ser o predador de conversões ou a presa do mercado.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8">
-              Candidatar-se para Consultoria Estratégica
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Candidatar-se para Consultoria <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
-            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp: +55 11 97876-8690
-              </Button>
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
-          <p>© 2026 Pedro Luiz Uva Junior. Especialista em Marketing Digital de Performance.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

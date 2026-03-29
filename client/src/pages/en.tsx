@@ -42,11 +42,11 @@ export default function En() {
               </div>
             </div>
 
-            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight animate-fade-in animation-delay-100 tracking-tighter">
+            <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
               Full-Stack Code, Scalable AI & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing</span>
             </h1>
 
-            <p className="text-xl md:text-3xl text-[#94A3B8] mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 leading-relaxed font-medium">
+            <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
               <span className="text-white">One Single Mind. Global Delivery.</span> Engineering high-performance digital solutions for companies ready to revolutionize the market.
             </p>
 
@@ -82,7 +82,7 @@ export default function En() {
         </section>
 
         {/* 2. The Expert - Authority & History */}
-        <section id="expert" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/20 text-left">
+        <section id="expert" className="section-standard bg-black/20 text-left">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative group">
@@ -111,8 +111,8 @@ export default function En() {
               </div>
 
               <div>
-                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engineering Excellence since <span className="text-indigo-400">1997</span></h2>
-                <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
+                <h2 className="title-standard">Engineering Excellence since <span className="text-indigo-400">1997</span></h2>
+                <p className="mb-8">
                   I'm not just a developer. I'm a <strong className="text-white">strategist</strong> who understands that code is a tool to generate profit. From the beginning with hardware and networks to modern AI-driven architectures, my journey has been defined by one thing: <strong className="text-white">Solving Complex Problems.</strong>
                 </p>
                 
@@ -142,7 +142,7 @@ export default function En() {
         </section>
 
         {/* 3. The Services Arsenal - The Solution */}
-        <section id="services" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
+        <section id="services" className="section-standard bg-[#0B1120]">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-7xl font-bold mb-6">The <span className="text-cyan-400">Arsenal</span></h2>
@@ -507,9 +507,9 @@ export default function En() {
         </section>
 
         {/* 9. Personal Gallery */}
-        <section id="gallery" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+        <section id="gallery" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center">Personal Gallery</h2>
+            <h2 className="title-standard text-center">Personal Gallery</h2>
             <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
               Moments that reflect the professional journey and a passion for technology
             </p>
@@ -537,10 +537,10 @@ export default function En() {
         </section>
 
         {/* 10. Professional Philosophy */}
-        <section id="philosophy" className="py-24 px-4 sm:px-6 lg:px-8 relative text-left">
+        <section id="philosophy" className="section-standard text-left">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-indigo-500/5" />
           <div className="max-w-4xl mx-auto relative z-10">
-            <h2 className="text-4xl font-bold mb-12 text-center">Professional Philosophy</h2>
+            <h2 className="title-standard text-center">Professional Philosophy</h2>
 
             <div className="space-y-6">
               <div className="glass-card p-8 border-cyan-500/50">
@@ -582,9 +582,9 @@ export default function En() {
         </section>
 
         {/* 11. Certifications & Recognition */}
-        <section id="certifications" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+        <section id="certifications" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center">Certifications & Recognition</h2>
+            <h2 className="title-standard text-center">Certifications & Recognition</h2>
             <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
               Continuous education and recognition of expertise
             </p>
@@ -622,11 +622,11 @@ export default function En() {
         </section>
 
         {/* 12. Final CTA */}
-        <section id="finalcta" className="py-40 px-4 sm:px-6 lg:px-8 relative">
+        <section id="finalcta" className="section-standard">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/30 to-[#0F172A]" />
           
           <div className="max-w-5xl mx-auto relative z-10 text-center glass-card p-16 md:p-32 border border-cyan-500/20 shadow-[0_0_150px_rgba(34,211,238,0.15)]">
-            <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter leading-tight">
+            <h2 className="title-standard tracking-tighter">
               Ready to execute <br className="hidden md:block"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">at the highest level?</span>
             </h2>
@@ -649,7 +649,7 @@ export default function En() {
           </div>
         </section>
 
-        <Footer />
+        <Footer lang="en" />
       </div>
     </div>
   );

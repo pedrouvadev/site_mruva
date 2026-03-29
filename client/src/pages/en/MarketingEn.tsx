@@ -31,26 +31,29 @@ export default function MarketingEn() {
             opacity: 0.3,
           }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
-            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 text-center inline-block max-w-full leading-relaxed">
-              🚨 Alert: Your Ad Spend is Being Wasted
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
+              <Target className="w-4 h-4" /> Performance Marketing & ROI
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
             Stop Funding <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Incompetence</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
             While you read this page, Google and Meta are swallowing 40% of your profit margin. I am Pedro Uva, the Profit Engineer who combines technical rigor with military-grade acquisition intelligence.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-              I Want to Stop Losing Money <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              I Want to Stop Losing Money <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
 
@@ -61,9 +64,9 @@ export default function MarketingEn() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">You Are "Flying Blind"</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">You Are "Flying Blind"</h2>
 
           <div className="space-y-6 mb-12">
             <div className="glass-card p-6">
@@ -96,7 +99,7 @@ export default function MarketingEn() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -110,8 +113,8 @@ export default function MarketingEn() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl font-bold mb-4 text-center">The Holy Trinity of Predictable Growth</h2>
-          <p className="text-center text-[#94A3B8] mb-16">How I turn your marketing into a sales machine</p>
+          <h2 className="title-standard text-center text-4xl font-bold">The Holy Trinity of Predictable Growth</h2>
+          <p className="text-center text-[#94A3B8] mb-16 text-lg">How I turn your marketing into a sales machine</p>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Pilar 1 */}
@@ -157,10 +160,10 @@ export default function MarketingEn() {
       </section>
 
       {/* Certifications & Credentials Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Less Than 1% of the Market Has This Combination</h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <h2 className="title-standard text-center text-4xl font-bold">Less Than 1% of the Market Has This Combination</h2>
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Certifications proving expertise in Google Ads, GA4, Meta Ads, and digital marketing strategy
           </p>
 
@@ -209,9 +212,9 @@ export default function MarketingEn() {
       </section>
 
       {/* Anti-Sale Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">I Am Not For You If...</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">I Am Not For You If...</h2>
 
           <div className="space-y-4 mb-12">
             <div className="glass-card p-6 border-red-500/30">
@@ -243,9 +246,9 @@ export default function MarketingEn() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Frequently Asked Questions</h2>
 
           <div className="space-y-6">
             <div className="glass-card p-6">
@@ -273,7 +276,7 @@ export default function MarketingEn() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -286,31 +289,24 @@ export default function MarketingEn() {
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">Inaction Costs More Than Intervention</h2>
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">Inaction Costs More Than Intervention</h2>
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Every day your site runs without data intelligence and with slowness, your competitor gains market share with a cheaper CPA using AI. The choice is yours: be the conversion predator or the market prey.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-              Apply for Strategic Consulting
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Apply for Strategic Consulting <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
-            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp: +55 11 97876-8690
-              </Button>
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
-          <p>© 2026 Pedro Luiz Uva Junior. Performance Digital Marketing Specialist.</p>
-        </div>
-      </footer>
+      <Footer lang="en" />
     </div>
   );
 }

@@ -42,11 +42,11 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-tight animate-fade-in animation-delay-100 tracking-tighter">
+            <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
               Código Full-Stack, IA Escalonável & <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Growth Marketing</span>
             </h1>
 
-            <p className="text-xl md:text-3xl text-[#94A3B8] mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 leading-relaxed font-medium">
+            <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
               <span className="text-white">Uma Única Mente. Entrega Global.</span> Engenharia de soluções digitais de alto desempenho para empresas prontas para revolucionar o mercado.
             </p>
 
@@ -82,7 +82,7 @@ export default function Home() {
         </section>
 
         {/* 2. O Especialista - Autoridade & História */}
-        <section id="expert" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-black/20 text-left">
+        <section id="expert" className="section-standard bg-black/20 text-left">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative group">
@@ -114,8 +114,8 @@ export default function Home() {
               </div>
 
               <div>
-                <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Engenharia de Excelência desde <span className="text-indigo-400">1997</span></h2>
-                <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
+                <h2 className="title-standard">Engenharia de Excelência desde <span className="text-indigo-400">1997</span></h2>
+                <p className="mb-8">
                   Não sou apenas um desenvolvedor. Sou um <strong className="text-white">estrategista</strong> que entende que o código é uma ferramenta para gerar lucro. Desde o início com hardware e redes até as arquiteturas modernas impulsionadas por IA, minha jornada foi definida por uma coisa: <strong className="text-white">Resolver Problemas Complexos.</strong>
                 </p>
                 
@@ -145,7 +145,7 @@ export default function Home() {
         </section>
 
         {/* 3. O Arsenal de Serviços - A Solução */}
-        <section id="services" className="py-32 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
+        <section id="services" className="section-standard bg-[#0B1120]">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-7xl font-bold mb-6">O <span className="text-cyan-400">Arsenal</span></h2>
@@ -510,9 +510,9 @@ export default function Home() {
         </section>
 
         {/* 9. Galeria Pessoal */}
-        <section id="galeria" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+        <section id="galeria" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center">Galeria Pessoal</h2>
+            <h2 className="title-standard text-center">Galeria Pessoal</h2>
             <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
               Momentos que refletem a jornada profissional e a paixão por tecnologia
             </p>
@@ -540,10 +540,10 @@ export default function Home() {
         </section>
 
         {/* 10. Filosofia Profissional */}
-        <section id="filosofia" className="py-24 px-4 sm:px-6 lg:px-8 relative text-left">
+        <section id="filosofia" className="section-standard text-left">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-indigo-500/5" />
           <div className="max-w-4xl mx-auto relative z-10">
-            <h2 className="text-4xl font-bold mb-12 text-center">Filosofia Profissional</h2>
+            <h2 className="title-standard text-center">Filosofia Profissional</h2>
 
             <div className="space-y-6">
               <div className="glass-card p-8 border-cyan-500/50">
@@ -585,9 +585,9 @@ export default function Home() {
         </section>
 
         {/* 11. Certificações & Reconhecimento */}
-        <section id="certificacoes" className="py-24 px-4 sm:px-6 lg:px-8 text-left">
+        <section id="certificacoes" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center">Certificações & Reconhecimento</h2>
+            <h2 className="title-standard text-center">Certificações & Reconhecimento</h2>
             <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
               Formação contínua e reconhecimento de expertise
             </p>
@@ -625,11 +625,11 @@ export default function Home() {
         </section>
 
         {/* 12. CTA Final */}
-        <section id="contatofinal" className="py-40 px-4 sm:px-6 lg:px-8 relative">
+        <section id="contatofinal" className="section-standard">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/30 to-[#0F172A]" />
           
           <div className="max-w-5xl mx-auto relative z-10 text-center glass-card p-16 md:p-32 border border-cyan-500/20 shadow-[0_0_150px_rgba(34,211,238,0.15)]">
-            <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter leading-tight">
+            <h2 className="title-standard tracking-tighter">
               Pronto para executar <br className="hidden md:block"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">no mais alto nível?</span>
             </h2>

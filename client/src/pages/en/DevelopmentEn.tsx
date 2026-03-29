@@ -40,45 +40,44 @@ export default function DevelopmentEn() {
             opacity: 0.3,
           }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
-            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 text-center inline-block max-w-full leading-relaxed">
-              ⚡ Two degree programs • One mission: High Performance Software
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+              <Code2 className="w-4 h-4" /> Full-Stack & Software Architecture
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Software{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
-              Engineering
-            </span>{" "}
-            with Purpose
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
+            Software <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Engineering</span> with Purpose
           </h1>
 
-          <p className="text-lg md:text-xl text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-            A hybrid education that combines the academic tradition of the FAT Foundation (created by Fatec-SP professors) with the innovation and digital inclusion of Vai na Web. 1,200h of technical knowledge + a human approach to build solutions that transform businesses and lives.
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            Hybrid training merging academic tradition from Fundação FAT (Fatec-SP) with digital innovation. 1,200h of technical knowledge to build business-transforming solutions.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={() => {
-              const element = document.getElementById('certifications');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              Discover the Programs <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => {
+                const element = document.getElementById('certifications');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Explore Programs <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
       {/* Certifications in progress */}
-      <section id="certifications" className="py-24 px-4 sm:px-6 lg:px-8">
+      <section id="certifications" className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Certifications in Development
           </h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Two journeys of technical excellence, both scheduled for completion in the coming months.
           </p>
 
@@ -137,9 +136,9 @@ export default function DevelopmentEn() {
       </section>
 
       {/* Integrated Formations */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-[#0F172A]">
+      <section className="section-standard bg-gradient-to-b from-transparent to-[#0F172A]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             The Best of Both Worlds
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -172,7 +171,7 @@ export default function DevelopmentEn() {
       </section>
 
       {/* Technical Services */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -186,10 +185,10 @@ export default function DevelopmentEn() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl font-bold mb-4 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             High-Performance Technical Solutions
           </h2>
-          <p className="text-center text-[#94A3B8] mb-16">
+          <p className="text-center text-[#94A3B8] mb-16 text-lg">
             Combine academic depth with market agility for extraordinary results.
           </p>
 
@@ -286,9 +285,9 @@ export default function DevelopmentEn() {
       </section>
 
       {/* Consolidated Stack */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Unified Tech Stack
           </h2>
 
@@ -375,7 +374,8 @@ export default function DevelopmentEn() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
+        {/* ... (background divs omitted for brevity but I'll include them in the real call) */}
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -388,35 +388,26 @@ export default function DevelopmentEn() {
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Ready to Elevate Your Technology?
           </h2>
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             With two cutting-edge education programs and an approach that merges theory and practice, I deliver solutions that transform businesses and generate real results.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-              Request Technical Consulting
-            </Button>
-            <a
-              href="https://wa.me/5511978768690"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
-              <Button
-                variant="outline"
-                className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full"
-              >
-                WhatsApp: +55 11 97876-8690
-              </Button>
-            </a>
+              Request Technical Consulting <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer lang="en" />
     </div>
   );
 }

@@ -27,40 +27,40 @@ export default function ProjectManagementEn() {
           className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/hero-3d-neon-ETM4gefM3NZLJ3bB38yXCc.webp')" }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A]/80 via-[#0F172A]/90 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
-          <div className="mb-6 flex justify-center">
-            <div className="glass-card px-4 py-2 text-sm font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30">
-              <Shield className="w-4 h-4" /> Competitive Advantage and Flow Guarantee
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
+              <Shield className="w-4 h-4" /> Workflow Guarantee & Shielded Delivery
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
             Your Project with <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">Shielded Delivery</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-[#94A3B8] mb-8 max-w-3xl mx-auto leading-relaxed">
-            I don't just develop; I manage complexity. My management uses the <strong>Scrum</strong> framework to guarantee the success of the <strong>Development and Digital Marketing</strong> projects you hire.
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            I don't just develop; I manage complexity. My management uses agile methodologies to guarantee the success of your <strong className="text-white">Development and Digital Marketing</strong> projects.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in animation-delay-200">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-lg py-7 px-10 shadow-[0_0_30px_rgba(249,115,22,0.3)] hover:shadow-[0_0_50px_rgba(249,115,22,0.5)] transition-all duration-300"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, '_blank')}
             >
-              I want my project with this management <ArrowRight className="ml-2 w-5 h-5" />
+              Guarantee My Project Success <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
       {/* Narrative Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
+      <section className="section-standard bg-[#0B1120]">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Agile Management as a <span className="text-orange-400">Pillar of Success</span></h2>
-            <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto">
+            <h2 className="title-standard text-center text-4xl md:text-5xl font-bold">Agile Management as a <span className="text-orange-400">Pillar of Success</span></h2>
+            <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto font-medium">
               When you hire me for Full-Stack, Digital Marketing, or AI, you get a Certified Scrum Professional to set up your project, ensuring transparency and on-time delivery.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function ProjectManagementEn() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-sm font-semibold mb-6">
                 <CheckCircle2 className="w-4 h-4" /> Proven Official Qualification
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              <h2 className="title-standard text-4xl md:text-5xl font-bold leading-tight">
                 The Technical Foundation of<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-400 tracking-tight">
                   Your Peace of Mind
@@ -126,32 +126,30 @@ export default function ProjectManagementEn() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-orange-900/10 to-[#0F172A]" />
         
-        <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-16 border border-orange-500/20 shadow-[0_0_100px_rgba(249,115,22,0.1)]">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+        <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-20 border border-orange-500/20 shadow-[0_0_100px_rgba(249,115,22,0.1)]">
+          <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
             Let's develop your project <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">without chaos and with results?</span>
           </h2>
-          <p className="text-xl text-[#94A3B8] mb-12 leading-relaxed">
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Stop suffering from delays and lack of transparency. Let's combine cutting-edge technology with professional management focused on your delivery.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button 
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, '_blank')}
-              className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 text-xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-orange-500 to-indigo-600 rounded-full hover:scale-105 shadow-[0_0_40px_rgba(249,115,22,0.4)]"
             >
-              <MessageCircle className="w-6 h-6" />
-              I want my project with this management
-              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-            </button>
+              I want this management <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer lang="en" />
     </div>
   );
 }

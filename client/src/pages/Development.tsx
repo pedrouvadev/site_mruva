@@ -41,45 +41,41 @@ export default function DevelopmentUnified() {
             opacity: 0.3,
           }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
-            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 text-center inline-block max-w-full leading-relaxed">
-              ⚡ Duas formações • Uma missão: Software de Alta Performance
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+              <Code2 className="w-4 h-4" /> Full-Stack & Arquitetura de Software
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Engenharia de{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
-              Software
-            </span>{" "}
-            com Propósito
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
+            Engenharia de <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Software</span> com Propósito
           </h1>
 
-          <p className="text-lg md:text-xl text-[#94A3B8] mb-8 max-w-2xl mx-auto">
-            Formação híbrida que une a tradição acadêmica da Fundação FAT
-            (criada por professores da Fatec-SP) com a inovação e inclusão
-            digital da Vai na Web. 1.200h de conhecimento técnico + abordagem
-            humana para construir soluções que transformam negócios e vidas.
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium text-lg">
+            Formação híbrida que une a tradição acadêmica da Fundação FAT (Fatec-SP) com a inovação digital. 1.200h de conhecimento técnico para construir soluções que transformam negócios.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6">
-              Conheça as Formações <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Solicitar Diagnóstico Técnico <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
       {/* Certificações em andamento */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Certificações em Desenvolvimento
           </h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Duas jornadas de excelência técnica, ambas com conclusão prevista
             para os próximos meses.
           </p>
@@ -143,9 +139,9 @@ export default function DevelopmentUnified() {
       </section>
 
       {/* Formações Integradas */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-[#0F172A]">
+      <section className="section-standard bg-gradient-to-b from-transparent to-[#0F172A]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             O Melhor dos Dois Mundos
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
@@ -178,7 +174,7 @@ export default function DevelopmentUnified() {
       </section>
 
       {/* Serviços Técnicos */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -192,10 +188,10 @@ export default function DevelopmentUnified() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl font-bold mb-4 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Soluções Técnicas de Alta Performance
           </h2>
-          <p className="text-center text-[#94A3B8] mb-16">
+          <p className="text-center text-[#94A3B8] mb-16 text-lg">
             Combine a profundidade acadêmica com a agilidade do mercado para
             resultados extraordinários.
           </p>
@@ -219,7 +215,7 @@ export default function DevelopmentUnified() {
                 <li>✓ Proteção contra ransomware</li>
                 <li>✓ Relatório de conformidade técnica</li>
               </ul>
-              <Button className="btn-gradient w-full">
+              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
                 Solicitar Auditoria
               </Button>
             </div>
@@ -242,7 +238,7 @@ export default function DevelopmentUnified() {
                 <li>✓ Integração com Google Ads</li>
                 <li>✓ Banco de dados escalável</li>
               </ul>
-              <Button className="btn-gradient w-full">
+              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
                 Conhecer Solução
               </Button>
             </div>
@@ -264,7 +260,7 @@ export default function DevelopmentUnified() {
                 <li>✓ Dashboards Power BI</li>
                 <li>✓ Redução de custos operacionais</li>
               </ul>
-              <Button className="btn-gradient w-full">
+              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
                 Transformar Dados
               </Button>
             </div>
@@ -287,7 +283,7 @@ export default function DevelopmentUnified() {
                 <li>✓ Mentoria técnica contínua</li>
                 <li>✓ Implementação de metodologias ágeis</li>
               </ul>
-              <Button className="btn-gradient w-full">
+              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
                 Agendar Consulta
               </Button>
             </div>
@@ -296,9 +292,9 @@ export default function DevelopmentUnified() {
       </section>
 
       {/* Stack Consolidado */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Stack Tecnológico Unificado
           </h2>
 
@@ -385,7 +381,7 @@ export default function DevelopmentUnified() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -398,32 +394,23 @@ export default function DevelopmentUnified() {
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">
             Pronto para Elevar Sua Tecnologia?
           </h2>
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Com duas formações de ponta e uma abordagem que une teoria e
             prática, entrego soluções que transformam negócios e geram
             resultados reais.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8">
-              Solicitar Consultoria Técnica
-            </Button>
-            <a
-              href="https://wa.me/5511978768690"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
-              <Button
-                variant="outline"
-                className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full"
-              >
-                WhatsApp: +55 11 97876-8690
-              </Button>
-            </a>
+              Solicitar Consultoria <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
           </div>
         </div>
       </section>

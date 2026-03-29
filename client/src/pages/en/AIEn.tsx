@@ -31,38 +31,41 @@ export default function AIEn() {
             opacity: 0.2,
           }}
         />
-        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/50 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="mb-6 flex justify-center inline-block max-w-full">
-            <div className="glass-card px-4 py-2 text-sm font-semibold text-indigo-400 inline-block leading-relaxed">
-              🧠 AI & Google Cloud • 25 Official Skill Badges
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+              <Brain className="w-4 h-4" /> AI & Google Cloud • 25 Skill Badges
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
             I Build <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">Intelligence</span>, I Don't Just Use It
           </h1>
 
-          <p className="text-lg md:text-xl text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
             50 hours of training in Generative AI, Vertex AI, Gemini, and MLOps. 25 official Google Cloud certifications proving expertise in AI architecture.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6" onClick={() => {
-              const element = document.getElementById('expertise');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              Explore AI Expertise <ArrowRight className="ml-2" />
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => {
+                const element = document.getElementById('expertise');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              Explore AI Expertise <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
       {/* Formation Section */}
-      <section id="expertise" className="py-24 px-4 sm:px-6 lg:px-8">
+      <section id="expertise" className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">50 Hours in Generative AI and Cloud</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">50 Hours in Generative AI and Cloud</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card p-8">
@@ -93,12 +96,12 @@ export default function AIEn() {
       </section>
 
       {/* AI Services Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard">
         <div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/services-grid-bg-37RfWbP5XKmep3Fcdnw4qM.webp')",
+              "url('https://d2xsxph8kpxj0.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/services-grid-bg-37RfWbP5XKmep3Fcdnw4qM.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.1,
@@ -107,7 +110,7 @@ export default function AIEn() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="text-4xl font-bold mb-4 text-center">AI Services</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">AI Services</h2>
           <p className="text-center text-[#94A3B8] mb-16">Intelligent solutions that transform businesses</p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -175,10 +178,10 @@ export default function AIEn() {
       </section>
 
       {/* Certificate of Completion Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">Certificate of Completion</h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <h2 className="title-standard text-center text-4xl font-bold">Certificate of Completion</h2>
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Official certificate of completion for the Generative AI and Google Cloud course
           </p>
           
@@ -189,10 +192,10 @@ export default function AIEn() {
       </section>
 
       {/* Skill Badges Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-4 text-center">25 Google Cloud Skill Badges</h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+          <h2 className="title-standard text-center text-4xl font-bold">25 Google Cloud Skill Badges</h2>
+          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
             Official certifications proving expertise in Generative AI, Vertex AI, Gemini, and MLOps
           </p>
           
@@ -278,9 +281,9 @@ export default function AIEn() {
       </section>
 
       {/* Stack Section */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8">
+      <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Mastered AI Stack</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Mastered AI Stack</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass-card p-6">
@@ -320,7 +323,7 @@ export default function AIEn() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -333,31 +336,24 @@ export default function AIEn() {
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">Ready to Add Intelligence to Your Business?</h2>
-          <p className="text-lg text-[#94A3B8] mb-8 max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">Ready to Add Intelligence to Your Business?</h2>
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Let's talk about how AI can transform your processes and generate measurable results.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-              Schedule Consulting
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Schedule Consulting <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
-            <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp
-              </Button>
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-cyan-500/20 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto text-center text-sm text-[#94A3B8]">
-          <p>© 2026 Pedro Luiz Uva Junior. AI and Google Cloud Specialist.</p>
-        </div>
-      </footer>
+      <Footer lang="en" />
     </div>
   );
 }

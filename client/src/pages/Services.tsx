@@ -79,40 +79,40 @@ export default function Services() {
               opacity: 0.15,
             }}
           />
-          <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/90 to-[#0F172A]" />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
-          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-6 flex justify-center animate-fade-in">
-              <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30">
-                <Target className="w-4 h-4" /> Soluções de Alta Performance
-              </div>
-            </div>
-
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in animation-delay-100 tracking-tight">
-              Estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI</span>            
-            </h1>
-
-            <p className="text-xl md:text-2xl text-[#94A3B8] mb-10 max-w-3xl mx-auto animate-fade-in animation-delay-200 leading-relaxed">
-              Mais que serviços, projeto a evolução do seu negócio. Com mais de 25 anos no campo de batalha da tecnologia e dos negócios, uno <strong className="text-white">Código de Elite</strong>, <strong className="text-white">Marketing de Dados</strong> e <strong className="text-white">Inteligência Artificial</strong> para escalar sua operação.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in animation-delay-300">
-              <Button 
-                className="btn-gradient text-lg py-7 px-10 shadow-[0_0_30px_rgba(34,211,238,0.3)] hover:shadow-[0_0_50px_rgba(34,211,238,0.5)] transition-all duration-300"
-                onClick={() => window.open(whatsappLink, '_blank')}
-              >
-                Solicitar Diagnóstico Estratégico <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+              <Target className="w-4 h-4" /> Soluções de Alta Performance
             </div>
           </div>
-        </section>
 
-        {/* Serviços Detalhados */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 relative bg-[#0B1120]">
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
+            Estratégia e tecnologia para <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">escalar vendas com previsibilidade e ROI</span>
+          </h1>
+
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            Mais que serviços, projeto a evolução do seu negócio. Com mais de 25 anos no campo de batalha da tecnologia e dos negócios, uno <strong className="text-white">Código de Elite</strong>, <strong className="text-white">Marketing de Dados</strong> e <strong className="text-white">Inteligência Artificial</strong> para escalar sua operação.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open(whatsappLink, '_blank')}
+            >
+              Solicitar Diagnóstico Estratégico <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços Detalhados */}
+      <section className="section-standard bg-[#0B1120]">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center mb-20 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Como posso <span className="text-cyan-400">alavancar seu negócio?</span></h2>
-              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto">
+              <h2 className="title-standard text-center text-4xl md:text-5xl font-bold">Como posso <span className="text-cyan-400">alavancar seu negócio?</span></h2>
+              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
                 Cada projeto que assumo é tratado com rigor técnico e visão de dono. Escolha o pilar que sua empresa precisa fortalecer hoje:
               </p>
             </div>
@@ -159,11 +159,11 @@ export default function Services() {
         </section>
 
         {/* Diferenciais / Por que eu? */}
-        <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section className="section-standard relative overflow-hidden">
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="animate-fade-in">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8">Por que confiar o seu projeto <span className="text-indigo-400">nas minhas mãos?</span></h2>
+                <h2 className="title-standard text-4xl md:text-5xl font-bold">Por que confiar o seu projeto <span className="text-indigo-400">nas minhas mãos?</span></h2>
                 <div className="space-y-8">
                   <div className="flex gap-6">
                     <div className="bg-indigo-500/10 p-4 rounded-full h-fit border border-indigo-500/20">
@@ -198,25 +198,25 @@ export default function Services() {
         </section>
 
         {/* CTA Final */}
-        <section className="py-32 px-4 sm:px-6 lg:px-8 relative">
+        <section className="section-standard relative">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/20 to-[#0F172A]" />
           <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-20 border border-cyan-500/20 shadow-[0_0_100px_rgba(34,211,238,0.1)]">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+            <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
               Vamos tirar sua ideia <br className="hidden md:block"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">do papel agora?</span>
             </h2>
-            <p className="text-xl text-[#94A3B8] mb-12 max-w-2xl mx-auto">
+            <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
               Estou pronto para aplicar minha experiência e as melhores tecnologias do mercado no seu próximo grande desafio.
             </p>
 
-            <button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              className="group relative inline-flex items-center justify-center gap-4 px-12 py-6 text-2xl font-bold text-white transition-all duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full hover:scale-105 shadow-[0_0_40px_rgba(34,211,238,0.4)]"
-            >
-              <MessageCircle className="w-7 h-7" />
-              Falar diretamente comigo
-              <ArrowRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
-            </button>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button 
+                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+                onClick={() => window.open(whatsappLink, '_blank')}
+              >
+                Falar diretamente comigo <ArrowRight className="ml-2 w-6 h-6" />
+              </Button>
+            </div>
           </div>
         </section>
 
