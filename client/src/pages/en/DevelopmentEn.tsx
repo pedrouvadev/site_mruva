@@ -16,6 +16,11 @@ import {
 export default function DevelopmentEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Full-Stack Developer Portfolio | React, Node & Cloud | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Scalable and robust web applications. Full-Stack developer expert in React, Node.js, and Cloud architectures for high-performance projects.");
+    }
   }, []);
 
   return (

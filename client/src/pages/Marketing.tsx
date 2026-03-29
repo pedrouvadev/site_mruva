@@ -7,6 +7,11 @@ import { ArrowRight, CheckCircle2, TrendingUp, BarChart3, Target } from "lucide-
 export default function Marketing() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Consultoria de Growth Marketing em São Paulo | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Estratégias de Growth Marketing focadas em ROI. Gestão de Google Ads, Meta Ads e SEO avançado em São Paulo para escalar seu negócio.");
+    }
   }, []);
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">

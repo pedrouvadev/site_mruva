@@ -7,6 +7,11 @@ import { ArrowRight, Brain, Zap, Database, Shield } from "lucide-react";
 export default function AIEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Generative AI & LLM Automation Services | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Strategic implementation of Generative AI, Vertex AI, and LLMs. Automate your processes and gain productivity with custom AI solutions.");
+    }
   }, []);
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">

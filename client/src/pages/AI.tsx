@@ -7,6 +7,11 @@ import { ArrowRight, Brain, Zap, Database, Shield } from "lucide-react";
 export default function AI() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "IA Generativa e Automação para Negócios em São Paulo | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Implementação estratégica de IA Generativa, Vertex AI e LLMs. Automatize seus processos e ganhe produtividade com IA em São Paulo.");
+    }
   }, []);
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">

@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 export default function En() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Pedro Uva | Full-Stack Engineer & AI Strategist Portfolio";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Elite Full-Stack Code, Scalable AI & Growth Marketing. 25+ years expertise in digital transformation for global enterprises.");
+    }
   }, []);
 
   const whatsappLink = "https://wa.me/5511978768690?text=Hi%20Pedro!%20I'm%20ready%20to%20scale%20my%20business.%20Let's%20talk!";

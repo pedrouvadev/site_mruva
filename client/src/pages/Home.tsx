@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Pedro Uva | Full-Stack Engineer & Estrategista Digital em São Paulo";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Especialista em Desenvolvimento Full-Stack, IA e Growth Marketing em São Paulo. 25+ anos gerando resultados reais para negócios globais.");
+    }
   }, []);
 
   const whatsappLink = "https://wa.me/5511978768690?text=Olá%20Pedro!%20Estou%20pronto%20para%20escalar%20meu%20negócio.%20Vamos%20conversar!";

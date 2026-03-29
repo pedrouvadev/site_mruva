@@ -7,6 +7,11 @@ import { ArrowRight, CheckCircle2, Layers, TrendingUp, Shield, Rocket, MessageCi
 export default function ProjectManagementEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Agile Project Management & Scrum Services | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Ensure predictable delivery and project health with Scrum methodologies. Tech-focused project management for complex digital products.");
+    }
   }, []);
   
   const whatsappLink = "https://wa.me/5511978768690?text=Hi%20Pedro!%20I%20want%20my%20project%20with%20this%20management.";

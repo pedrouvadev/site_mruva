@@ -10,6 +10,11 @@ export default function ServicesEn() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Expert Digital Strategy & Tech Services | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Explore elite Full-Stack Development, AI, and Digital Marketing services by Pedro Uva. Professional solutions for global business growth.");
+    }
   }, []);
 
   const whatsappLink = "https://wa.me/5511978768690?text=Hi%20Pedro!%20I%20saw%20your%20services%20and%20want%20to%20elevate%20my%20project.";
@@ -221,6 +226,40 @@ export default function ServicesEn() {
         </section>
 
       <Footer lang="en" />
+
+      {/* FAQ Schema for SEO */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Which technologies does Pedro Uva use for development?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use the most modern and robust technologies available, including React 19, Node.js, TypeScript, and cloud-native architectures (Google Cloud/AWS), ensuring high performance and massive scalability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does project management work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All projects are managed under the Agile Scrum methodology, with weekly sprints, total transparency on progress, and incremental high-value deliveries."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you handle projects outside of Brazil?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. I serve clients globally, with professional English fluency and a complete infrastructure for seamless remote collaboration and delivery."
+              }
+            }
+          ]
+        }`}
+      </script>
     </div>
   );
 }

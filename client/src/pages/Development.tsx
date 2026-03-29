@@ -16,6 +16,11 @@ import {
 export default function DevelopmentUnified() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Desenvolvedor Full-Stack em São Paulo | React, Node & Cloud | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Desenvolvimento de aplicações web escaláveis e robustas. Especialista Full-Stack em São Paulo usando React, Node.js e Google Cloud.");
+    }
   }, []);
 
   return (

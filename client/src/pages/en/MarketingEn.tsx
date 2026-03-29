@@ -7,6 +7,11 @@ import { ArrowRight, CheckCircle2, TrendingUp, BarChart3, Target } from "lucide-
 export default function MarketingEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Growth Marketing Consulting & ROI Strategy | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Data-driven Growth Marketing strategies focused on ROI. Expert Google Ads, Meta Ads, and SEO for global scalability.");
+    }
   }, []);
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">

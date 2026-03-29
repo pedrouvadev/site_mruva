@@ -10,6 +10,11 @@ export default function Services() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Serviços Profissionais de Tecnologia e Marketing | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Conheça os serviços de Desenvolvimento Full-Stack, IA e Marketing Digital do Pedro Uva. Soluções de elite para transformar seu negócio.");
+    }
   }, []);
 
   const whatsappLink = "https://wa.me/5511978768690?text=Olá%20Pedro!%20Vi%20seus%20serviços%20e%20quero%20elevar%20o%20nível%20do%20meu%20projeto.";
@@ -221,6 +226,40 @@ export default function Services() {
         </section>
 
       <Footer />
+
+      {/* FAQ Schema for SEO */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Quais tecnologias Pedro Uva utiliza no desenvolvimento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Utilizo as tecnologias mais modernas e robustas do mercado, incluindo React 19, Node.js, TypeScript e arquiteturas em nuvem (Google Cloud/AWS), garantindo performance e escalabilidade."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a gestão de projetos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Todos os projetos são gerenciados sob a metodologia ágil Scrum, com sprints semanais, transparência total no progresso e entregas incrementais de alto valor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Você atende empresas de fora de São Paulo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, embora resida em São Paulo, atendo clientes globalmente, com fluência profissional em inglês e infraestrutura completa para colaboração remota."
+              }
+            }
+          ]
+        }`}
+      </script>
     </div>
   );
 }

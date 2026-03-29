@@ -7,6 +7,11 @@ import { ArrowRight, CheckCircle2, Layers, TrendingUp, Shield, Rocket, MessageCi
 export default function ProjectManagement() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Gestão de Projetos Ágeis e Scrum em São Paulo | Pedro Uva";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Garanta o fluxo e a entrega do seu projeto com metodologia Scrum. Gestão de projetos técnicos com foco em transparência e resultados.");
+    }
   }, []);
   
   const whatsappLink = "https://wa.me/5511978768690?text=Olá%20Pedro!%20Quero%20meu%20projeto%20com%20essa%20gestão.";
