@@ -27,7 +27,7 @@ export default function Header({
       schedule: "Agendar uma Call",
       home: "Home",
       homeHref: "/",
-      switchLabel: "English version",
+      switchLabel: "English Version",
       switchLabelMobile: "Switch to English",
       switchHref: "/en",
       switchIcon: "🇺🇸",
