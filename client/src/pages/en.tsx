@@ -76,7 +76,7 @@ export default function En() {
             </div>
 
             <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
-              Full-Stack Code, Scalable AI &{" "}
+              Fullstack Code, Scalable AI &{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
                 Growth Marketing
               </span>
@@ -623,7 +623,7 @@ export default function En() {
                       Returned to Lavanderia Umarizal (family business) and
                       implemented a complete digital transformation: new
                       website, Google Ads campaigns (220% ROI), process
-                      automation, AI for customer service. Manages 18 employees
+                      automation, AI for customer service. Manages team of employees
                       and own VPS infrastructure.
                     </p>
                     <p className="text-sm text-cyan-400">

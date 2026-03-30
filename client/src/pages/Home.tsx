@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
-              Código Full-Stack, IA Escalonável &{" "}
+              Código Fullstack, IA Escalonável &{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
                 Growth Marketing
               </span>
@@ -625,7 +625,7 @@ export default function Home() {
                       Retornou à Lavanderia Umarizal (negócio familiar) e
                       implementou transformação digital completa: novo site,
                       campanhas Google Ads (ROI 220%), automação de processos,
-                      IA para atendimento. Gerencia 18 colaboradores e
+                      IA para atendimento. Gerencia time de colaboradores e
                       infraestrutura VPS própria.
                     </p>
                     <p className="text-sm text-cyan-400">
