@@ -9,9 +9,13 @@ import Marketing from "./pages/Marketing";
 import Development from "./pages/Development";
 import ProjectManagement from "./pages/ProjectManagement";
 import AI from "./pages/AI";
-import Fullstack from "./pages/Fullstack";
-import { useEffect } from "react";
-
+import Services from "./pages/Services";
+import En from "./pages/en";
+import MarketingEn from "./pages/en/MarketingEn";
+import DevelopmentEn from "./pages/en/DevelopmentEn";
+import ProjectManagementEn from "./pages/en/ProjectManagementEn";
+import AIEn from "./pages/en/AIEn";
+import ServicesEn from "./pages/en/ServicesEn";
 
 function Router() {
   return (
@@ -21,8 +25,14 @@ function Router() {
       <Route path="/desenvolvimento" component={Development} />
       <Route path="/gestao" component={ProjectManagement} />
       <Route path="/ia" component={AI} />
-      <Route path="/fullstack" component={Fullstack} />
-      <Route path={"/404"} component={NotFound} />
+      <Route path="/servicos" component={Services} />
+      <Route path="/en" component={En} />
+      <Route path="/en/marketing" component={MarketingEn} />
+      <Route path="/en/development" component={DevelopmentEn} />
+      <Route path="/en/management" component={ProjectManagementEn} />
+      <Route path="/en/ai" component={AIEn} />
+      <Route path="/en/services" component={ServicesEn} />
+      <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>

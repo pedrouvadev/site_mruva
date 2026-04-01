@@ -13,21 +13,20 @@ import {
   Award,
 } from "lucide-react";
 
-export default function DevelopmentUnified() {
+export default function DevelopmentEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Desenvolvedor Full-Stack em São Paulo | React, Node & Cloud | Pedro Uva";
+    document.title = "Full-Stack Developer Portfolio | React, Node & Cloud | Pedro Uva";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Desenvolvimento de aplicações web escaláveis e robustas. Especialista Full-Stack em São Paulo usando React, Node.js e Google Cloud.");
+      metaDesc.setAttribute("content", "Scalable and robust web applications. Full-Stack developer expert in React, Node.js, and Cloud architectures for high-performance projects.");
     }
   }, []);
 
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
-      {/* Navigation */}
       <div className="relative z-10">
-        <Header showStatus={true} />
+        <Header lang="en" showStatus={true} />
         
         {/* Background Glows */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
@@ -51,60 +50,60 @@ export default function DevelopmentUnified() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
             <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
-              <Code2 className="w-4 h-4" /> Full-Stack & Arquitetura de Software
+              <Code2 className="w-4 h-4" /> Full-Stack & Software Architecture
             </div>
           </div>
 
           <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
-            Engenharia de <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Software</span> com Propósito
+            Software <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">Engineering</span> with Purpose
           </h1>
 
-          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium text-lg">
-            Formação híbrida que une a tradição acadêmica da Fundação FAT (Fatec-SP) com a inovação digital. 1.200h de conhecimento técnico para construir soluções que transformam negócios.
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            Hybrid training merging academic tradition from Fundação FAT (Fatec-SP) with digital innovation. 1,200h of technical knowledge to build business-transforming solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
               className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
-              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+              onClick={() => {
+                const element = document.getElementById('certifications');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
-              Solicitar Diagnóstico Técnico <ArrowRight className="ml-2 w-6 h-6" />
+              Explore Programs <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Certificações em andamento */}
-      <section className="section-standard">
+      {/* Certifications in progress */}
+      <section id="certifications" className="section-standard">
         <div className="max-w-6xl mx-auto">
           <h2 className="title-standard text-center text-4xl font-bold">
-            Certificações em Desenvolvimento
+            Certifications in Development
           </h2>
           <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
-            Duas jornadas de excelência técnica, ambas com conclusão prevista
-            para os próximos meses.
+            Two journeys of technical excellence, both scheduled for completion in the coming months.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* FAT Card */}
             <div className="glass-card p-8 border-cyan-500/30 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-cyan-500/20 px-4 py-1 rounded-bl-lg text-sm font-semibold text-cyan-300">
-                Conclusão: Dez/2026
+                Completion: Dec/2026
               </div>
               <div className="mb-4 p-3 bg-gradient-to-br from-indigo-500/20 to-cyan-400/20 rounded-lg w-fit">
                 <GraduationCap className="w-6 h-6 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Fundação FAT (Fatec-SP)</h3>
+              <h3 className="text-2xl font-bold mb-2">FAT Foundation (Fatec-SP)</h3>
               <p className="text-[#94A3B8] text-sm mb-4">
-                Tecnólogo em Desenvolvimento de Sistemas • 1.200 horas
+                Systems Development Technologist • 1,200 hours
               </p>
               <p className="text-[#94A3B8] mb-6">
-                Currículo completo com ênfase em engenharia de software, banco
-                de dados, segurança da informação e cloud computing. Formação
-                criada por professores da Fatec-SP, referência em tecnologia.
+                Complete curriculum emphasizing software engineering, databases, information security, and cloud computing. A program created by Fatec-SP professors, a benchmark in technology.
               </p>
               <div className="flex flex-wrap gap-2 text-xs text-cyan-400">
-                <span className="px-2 py-1 bg-cyan-500/10 rounded">LGPD</span>
+                <span className="px-2 py-1 bg-cyan-500/10 rounded">GDPR/LGPD</span>
                 <span className="px-2 py-1 bg-cyan-500/10 rounded">AWS</span>
                 <span className="px-2 py-1 bg-cyan-500/10 rounded">Power BI</span>
               </div>
@@ -113,19 +112,17 @@ export default function DevelopmentUnified() {
             {/* Vai na Web Card */}
             <div className="glass-card p-8 border-orange-500/30 relative overflow-hidden">
               <div className="absolute top-0 right-0 bg-orange-500/20 px-4 py-1 rounded-bl-lg text-sm font-semibold text-orange-300">
-                Conclusão: Jun/2026
+                Completion: Jun/2026
               </div>
               <div className="mb-4 p-3 bg-gradient-to-br from-cyan-400/20 to-orange-500/20 rounded-lg w-fit">
                 <Award className="w-6 h-6 text-cyan-400" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Vai na Web</h3>
               <p className="text-[#94A3B8] text-sm mb-4">
-                Fullstack Empower 5.0 • 6 meses intensivos
+                Fullstack Empower 5.0 • 6 intensive months
               </p>
               <p className="text-[#94A3B8] mb-6">
-                Programa de alta performance focado em React, Node.js,
-                TypeScript e boas práticas de mercado. Metodologia prática que
-                prepara para desafios reais da indústria.
+                High-performance program focused on React, Node.js, TypeScript, and market best practices. A practical methodology that prepares for real industry challenges.
               </p>
               <div className="flex flex-wrap gap-2 text-xs text-orange-400">
                 <span className="px-2 py-1 bg-orange-500/10 rounded">
@@ -143,42 +140,42 @@ export default function DevelopmentUnified() {
         </div>
       </section>
 
-      {/* Formações Integradas */}
+      {/* Integrated Formations */}
       <section className="section-standard bg-gradient-to-b from-transparent to-[#0F172A]">
         <div className="max-w-6xl mx-auto">
           <h2 className="title-standard text-center text-4xl font-bold">
-            O Melhor dos Dois Mundos
+            The Best of Both Worlds
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-                Estrutura Acadêmica FAT
+                FAT Academic Structure
               </h3>
               <ul className="space-y-2 text-[#94A3B8]">
-                <li>✓ 1.200 horas de formação técnica completa</li>
-                <li>✓ Projetos integradores com metodologias ágeis</li>
-                <li>✓ Fundamentos de redes, sistemas operacionais e segurança</li>
-                <li>✓ Análise de dados e business intelligence</li>
-                <li>✓ Empreendedorismo e inovação</li>
+                <li>✓ 1,200 hours of complete technical training</li>
+                <li>✓ Integrative projects with agile methodologies</li>
+                <li>✓ Fundamentals of networks, operating systems, and security</li>
+                <li>✓ Data analysis and business intelligence</li>
+                <li>✓ Entrepreneurship and innovation</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-orange-400 mb-4">
-                Prática Fullstack Vai na Web
+                Vai na Web Fullstack Practice
               </h3>
               <ul className="space-y-2 text-[#94A3B8]">
-                <li>✓ React 19, TypeScript e Tailwind CSS avançado</li>
-                <li>✓ APIs REST e GraphQL com Node.js</li>
-                <li>✓ Docker, CI/CD e deploy automatizado</li>
-                <li>✓ Otimização de performance (Core Web Vitals)</li>
-                <li>✓ Desenvolvimento orientado a resultados de negócio</li>
+                <li>✓ React 19, TypeScript, and advanced Tailwind CSS</li>
+                <li>✓ REST and GraphQL APIs with Node.js</li>
+                <li>✓ Docker, CI/CD, and automated deployment</li>
+                <li>✓ Performance optimization (Core Web Vitals)</li>
+                <li>✓ Business-result oriented development</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Serviços Técnicos */}
+      {/* Technical Services */}
       <section className="section-standard relative">
         <div
           className="absolute inset-0 z-0"
@@ -194,113 +191,109 @@ export default function DevelopmentUnified() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <h2 className="title-standard text-center text-4xl font-bold">
-            Soluções Técnicas de Alta Performance
+            High-Performance Technical Solutions
           </h2>
           <p className="text-center text-[#94A3B8] mb-16 text-lg">
-            Combine a profundidade acadêmica com a agilidade do mercado para
-            resultados extraordinários.
+            Combine academic depth with market agility for extraordinary results.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Serviço 1 */}
+            {/* Service 1 */}
             <div className="glass-card p-8">
               <div className="mb-4 p-3 bg-gradient-to-br from-indigo-500/20 to-cyan-400/20 rounded-lg w-fit">
                 <Shield className="w-6 h-6 text-indigo-400" />
               </div>
               <h3 className="text-2xl font-bold mb-4">
-                Auditoria e Blindagem de Dados
+                Data Audit and Shielding
               </h3>
               <p className="text-[#94A3B8] mb-6">
-                Análise profunda de 360º em infraestrutura digital com
-                conformidade LGPD.
+                Deep 360º analysis of digital infrastructure with GDPR/LGPD compliance.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8] mb-6">
-                <li>✓ Mapeamento de brechas em bancos de dados</li>
-                <li>✓ Implementação de protocolos de segurança</li>
-                <li>✓ Proteção contra ransomware</li>
-                <li>✓ Relatório de conformidade técnica</li>
+                <li>✓ Database vulnerability mapping</li>
+                <li>✓ Security protocol implementation</li>
+                <li>✓ Ransomware protection</li>
+                <li>✓ Technical compliance report</li>
               </ul>
               <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Solicitar Auditoria
+                Request Audit
               </Button>
             </div>
 
-            {/* Serviço 2 */}
+            {/* Service 2 */}
             <div className="glass-card p-8">
               <div className="mb-4 p-3 bg-gradient-to-br from-cyan-400/20 to-orange-500/20 rounded-lg w-fit">
                 <Zap className="w-6 h-6 text-cyan-400" />
               </div>
               <h3 className="text-2xl font-bold mb-4">
-                Ecossistema de Vendas Full-Stack
+                Full-Stack Sales Ecosystem
               </h3>
               <p className="text-[#94A3B8] mb-6">
-                Máquina de vendas integrada com front-end rápido e back-end
-                robusto.
+                Integrated sales machine with fast front-end and robust back-end.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8] mb-6">
-                <li>✓ Site ultraveloz (LCP &lt; 2s)</li>
-                <li>✓ SEO técnico enraizado</li>
-                <li>✓ Integração com Google Ads</li>
-                <li>✓ Banco de dados escalável</li>
+                <li>✓ Ultra-fast site (LCP &lt; 2s)</li>
+                <li>✓ Embedded technical SEO</li>
+                <li>✓ Google Ads integration</li>
+                <li>✓ Scalable database</li>
               </ul>
               <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Conhecer Solução
+                Explore Solution
               </Button>
             </div>
 
-            {/* Serviço 3 */}
+            {/* Service 3 */}
             <div className="glass-card p-8">
               <div className="mb-4 p-3 bg-gradient-to-br from-orange-500/20 to-indigo-500/20 rounded-lg w-fit">
                 <Database className="w-6 h-6 text-orange-400" />
               </div>
               <h3 className="text-2xl font-bold mb-4">
-                Inteligência de Dados e Automação
+                Data Intelligence and Automation
               </h3>
               <p className="text-[#94A3B8] mb-6">
-                Organização de dados caóticos em dashboards inteligentes.
+                Chaos-to-clarity data organization in intelligent dashboards.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8] mb-6">
-                <li>✓ Estruturação de bancos de dados</li>
-                <li>✓ Automações que eliminam trabalho manual</li>
-                <li>✓ Dashboards Power BI</li>
-                <li>✓ Redução de custos operacionais</li>
+                <li>✓ Database structuring</li>
+                <li>✓ Automations that eliminate manual work</li>
+                <li>✓ Power BI dashboards</li>
+                <li>✓ Reduction in operational costs</li>
               </ul>
               <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Transformar Dados
+                Transform Data
               </Button>
             </div>
 
-            {/* Serviço 4 */}
+            {/* Service 4 */}
             <div className="glass-card p-8">
               <div className="mb-4 p-3 bg-gradient-to-br from-indigo-500/20 to-cyan-400/20 rounded-lg w-fit">
                 <Cloud className="w-6 h-6 text-indigo-400" />
               </div>
               <h3 className="text-2xl font-bold mb-4">
-                Consultoria Técnica & Mentoria
+                Technical Consulting & Mentoring
               </h3>
               <p className="text-[#94A3B8] mb-6">
-                Orientação especializada em arquitetura de sistemas e
-                transformação digital.
+                Expert guidance on system architecture and digital transformation.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8] mb-6">
-                <li>✓ Análise de tecnologia atual</li>
-                <li>✓ Roadmap de transformação</li>
-                <li>✓ Mentoria técnica contínua</li>
-                <li>✓ Implementação de metodologias ágeis</li>
+                <li>✓ Current technology assessment</li>
+                <li>✓ Transformation roadmap</li>
+                <li>✓ Continuous technical mentoring</li>
+                <li>✓ Agile methodology implementation</li>
               </ul>
               <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Agendar Consulta
+                Schedule Consultation
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stack Consolidado */}
+      {/* Consolidated Stack */}
       <section className="section-standard">
         <div className="max-w-6xl mx-auto">
           <h2 className="title-standard text-center text-4xl font-bold">
-            Stack Tecnológico Unificado
+            Unified Tech Stack
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -324,22 +317,22 @@ export default function DevelopmentUnified() {
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• Node.js / Express / NestJS</li>
                 <li>• PHP / Laravel</li>
-                <li>• APIs REST / GraphQL</li>
-                <li>• Autenticação JWT</li>
-                <li>• Testes automatizados</li>
+                <li>• REST / GraphQL APIs</li>
+                <li>• JWT Authentication</li>
+                <li>• Automated Testing</li>
               </ul>
             </div>
 
             <div className="glass-card p-6">
               <h3 className="text-lg font-bold mb-4 text-orange-400">
-                Banco de Dados
+                Database
               </h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• PostgreSQL / MySQL</li>
                 <li>• MongoDB / Redis</li>
                 <li>• Prisma ORM / SQL</li>
-                <li>• Modelagem e otimização</li>
-                <li>• Backup e segurança</li>
+                <li>• Modeling and optimization</li>
+                <li>• Backup and security</li>
               </ul>
             </div>
 
@@ -351,34 +344,34 @@ export default function DevelopmentUnified() {
                 <li>• Docker / CI/CD</li>
                 <li>• AWS / Vercel</li>
                 <li>• Linux (Debian/Ubuntu)</li>
-                <li>• Monitoramento</li>
+                <li>• Monitoring</li>
                 <li>• Git / GitHub Actions</li>
               </ul>
             </div>
 
             <div className="glass-card p-6">
               <h3 className="text-lg font-bold mb-4 text-indigo-400">
-                Segurança
+                Security
               </h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
-                <li>• LGPD Compliance</li>
-                <li>• Criptografia</li>
-                <li>• Análise de vulnerabilidades</li>
-                <li>• Proteção de dados</li>
-                <li>• Boas práticas OWASP</li>
+                <li>• GDPR/LGPD Compliance</li>
+                <li>• Encryption</li>
+                <li>• Vulnerability Analysis</li>
+                <li>• Data Protection</li>
+                <li>• OWASP Best Practices</li>
               </ul>
             </div>
 
             <div className="glass-card p-6">
               <h3 className="text-lg font-bold mb-4 text-orange-400">
-                Metodologias
+                Methodologies
               </h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• Scrum / Kanban</li>
-                <li>• Desenvolvimento Ágil</li>
+                <li>• Agile Development</li>
                 <li>• User Stories</li>
-                <li>• Integração contínua</li>
-                <li>• Design thinking</li>
+                <li>• Continuous Integration</li>
+                <li>• Design Thinking</li>
               </ul>
             </div>
           </div>
@@ -387,6 +380,7 @@ export default function DevelopmentUnified() {
 
       {/* Final CTA */}
       <section className="section-standard relative">
+        {/* ... (background divs omitted for brevity but I'll include them in the real call) */}
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -401,12 +395,10 @@ export default function DevelopmentUnified() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
           <h2 className="title-standard text-center text-4xl font-bold">
-            Pronto para Elevar Sua Tecnologia?
+            Ready to Elevate Your Technology?
           </h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-            Com duas formações de ponta e uma abordagem que une teoria e
-            prática, entrego soluções que transformam negócios e geram
-            resultados reais.
+            With two cutting-edge education programs and an approach that merges theory and practice, I deliver solutions that transform businesses and generate real results.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -414,13 +406,13 @@ export default function DevelopmentUnified() {
               className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
-              Solicitar Consultoria <ArrowRight className="ml-2 w-6 h-6" />
+              Request Technical Consulting <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer lang="en" />
     </div>
   );
 }

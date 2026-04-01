@@ -4,20 +4,20 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Brain, Zap, Database, Shield } from "lucide-react";
 
-export default function AI() {
+export default function AIEn() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "IA Generativa e Automação para Negócios em São Paulo | Pedro Uva";
+    document.title = "Generative AI & LLM Automation Services | Pedro Uva";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Implementação estratégica de IA Generativa, Vertex AI e LLMs. Automatize seus processos e ganhe produtividade com IA em São Paulo.");
+      metaDesc.setAttribute("content", "Strategic implementation of Generative AI, Vertex AI, and LLMs. Automate your processes and gain productivity with custom AI solutions.");
     }
   }, []);
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
       {/* Navigation */}
       <div className="relative z-10">
-        <Header showStatus={true} />
+        <Header lang="en" showStatus={true} />
         
         {/* Background Glows */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
@@ -41,49 +41,52 @@ export default function AI() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
             <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
-              <Brain className="w-4 h-4" /> IA & Google Cloud • 25 Skill Badges
+              <Brain className="w-4 h-4" /> AI & Google Cloud • 25 Skill Badges
             </div>
           </div>
 
           <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
-            Construo <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">Inteligência</span>, Não Apenas a Uso
+            I Build <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">Intelligence</span>, I Don't Just Use It
           </h1>
 
           <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
-            50 horas de formação em IA Generativa, Vertex AI, Gemini e MLOps. 25 certificações oficiais do Google Cloud que comprovam expertise em arquitetura de IA.
+            50 hours of training in Generative AI, Vertex AI, Gemini, and MLOps. 25 official Google Cloud certifications proving expertise in AI architecture.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
               className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
-              onClick={() => window.location.href = 'https://wa.me/5511978768690'}
+              onClick={() => {
+                const element = document.getElementById('expertise');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
-              Conhecer Expertise em IA <ArrowRight className="ml-2 w-6 h-6" />
+              Explore AI Expertise <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Formação Section */}
-      <section className="section-standard">
+      {/* Formation Section */}
+      <section id="expertise" className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="title-standard text-center text-4xl font-bold">50 Horas em IA Generativa e Cloud</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">50 Hours in Generative AI and Cloud</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold mb-6 text-indigo-400">Áreas de Expertise</h3>
+              <h3 className="text-2xl font-bold mb-6 text-indigo-400">Areas of Expertise</h3>
               <ul className="space-y-3 text-[#94A3B8]">
-                <li>✓ IA Generativa (Gemini, GPT)</li>
-                <li>✓ Vertex AI e MLOps</li>
-                <li>✓ Prompt Engineering Avançado</li>
-                <li>✓ Modelos de Linguagem Grandes</li>
-                <li>✓ Responsabilidade em IA</li>
-                <li>✓ BigQuery ML e Análise</li>
+                <li>✓ Generative AI (Gemini, GPT)</li>
+                <li>✓ Vertex AI and MLOps</li>
+                <li>✓ Advanced Prompt Engineering</li>
+                <li>✓ Large Language Models</li>
+                <li>✓ AI Responsibility</li>
+                <li>✓ BigQuery ML and Analytics</li>
               </ul>
             </div>
 
             <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold mb-6 text-cyan-400">25 Skill Badges Oficiais</h3>
+              <h3 className="text-2xl font-bold mb-6 text-cyan-400">25 Official Skill Badges</h3>
               <ul className="space-y-3 text-[#94A3B8]">
                 <li>✓ Google Cloud Fundamentals</li>
                 <li>✓ Generative AI Fundamentals</li>
@@ -97,13 +100,13 @@ export default function AI() {
         </div>
       </section>
 
-      {/* Serviços Section */}
+      {/* AI Services Section */}
       <section className="section-standard">
         <div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/services-grid-bg-37RfWbP5XKmep3Fcdnw4qM.webp')",
+              "url('https://d2xsxph8kpxj0.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/services-grid-bg-37RfWbP5XKmep3Fcdnw4qM.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.1,
@@ -112,22 +115,22 @@ export default function AI() {
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-6xl mx-auto relative z-10">
-          <h2 className="title-standard text-center text-4xl font-bold">Serviços de IA</h2>
-          <p className="text-center text-[#94A3B8] mb-16">Soluções inteligentes que transformam negócios</p>
+          <h2 className="title-standard text-center text-4xl font-bold">AI Services</h2>
+          <p className="text-center text-[#94A3B8] mb-16">Intelligent solutions that transform businesses</p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card p-8">
               <div className="mb-4 p-3 bg-gradient-to-br from-indigo-500/20 to-cyan-400/20 rounded-lg w-fit">
                 <Brain className="w-6 h-6 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Arquitetura de IA Privada</h3>
+              <h3 className="text-2xl font-bold mb-4">Private AI Architecture</h3>
               <p className="text-[#94A3B8] mb-6">
-                Vertex AI com Openclaw para dados soberanos. Sua IA, seus dados, sua segurança.
+                Vertex AI with Openclaw for sovereign data. Your AI, your data, your security.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
-                <li>✓ Modelos customizados</li>
-                <li>✓ Dados protegidos</li>
-                <li>✓ Conformidade LGPD</li>
+                <li>✓ Custom models</li>
+                <li>✓ Protected data</li>
+                <li>✓ GDPR/LGPD compliance</li>
               </ul>
             </div>
 
@@ -135,14 +138,14 @@ export default function AI() {
               <div className="mb-4 p-3 bg-gradient-to-br from-cyan-400/20 to-orange-500/20 rounded-lg w-fit">
                 <Zap className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Agentes Conversacionais</h3>
+              <h3 className="text-2xl font-bold mb-4">Conversational Agents</h3>
               <p className="text-[#94A3B8] mb-6">
-                Chatbots e IVR de alta performance com Gemini. Atendimento 24/7 inteligente.
+                High-performance chatbots and IVR with Gemini. 24/7 intelligent service.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
-                <li>✓ Gemini integrado</li>
-                <li>✓ Suporte multilíngue</li>
-                <li>✓ Escalável</li>
+                <li>✓ Integrated Gemini</li>
+                <li>✓ Multilingual support</li>
+                <li>✓ Scalable</li>
               </ul>
             </div>
 
@@ -150,14 +153,14 @@ export default function AI() {
               <div className="mb-4 p-3 bg-gradient-to-br from-orange-500/20 to-indigo-500/20 rounded-lg w-fit">
                 <Database className="w-6 h-6 text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Análise Preditiva</h3>
+              <h3 className="text-2xl font-bold mb-4">Predictive Analytics</h3>
               <p className="text-[#94A3B8] mb-6">
-                BigQuery ML para previsões que geram lucro. Inteligência nos seus dados.
+                BigQuery ML for profit-generating predictions. Intelligence in your data.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
-                <li>✓ Modelos ML automáticos</li>
-                <li>✓ Previsões em tempo real</li>
-                <li>✓ ROI comprovado</li>
+                <li>✓ Automatic ML models</li>
+                <li>✓ Real-time predictions</li>
+                <li>✓ Proven ROI</li>
               </ul>
             </div>
 
@@ -165,30 +168,30 @@ export default function AI() {
               <div className="mb-4 p-3 bg-gradient-to-br from-indigo-500/20 to-cyan-400/20 rounded-lg w-fit">
                 <Shield className="w-6 h-6 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Consultoria em IA Responsável</h3>
+              <h3 className="text-2xl font-bold mb-4">Responsible AI Consulting</h3>
               <p className="text-[#94A3B8] mb-6">
-                Implementação ética de IA com governança e compliance. IA que gera confiança.
+                Ethical AI implementation with governance and compliance. AI that builds trust.
               </p>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
-                <li>✓ Governança de IA</li>
+                <li>✓ AI Governance</li>
                 <li>✓ Bias mitigation</li>
-                <li>✓ Conformidade regulatória</li>
+                <li>✓ Regulatory compliance</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Certificado de Conclusão Section */}
+      {/* Certificate of Completion Section */}
       <section className="section-standard">
         <div className="max-w-4xl mx-auto">
-          <h2 className="title-standard text-center text-4xl font-bold">Certificação de Conclusão</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Certificate of Completion</h2>
           <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
-            Certificação oficial de conclusão do curso de IA Generativa e Google Cloud
+            Official certificate of completion for the Generative AI and Google Cloud course
           </p>
           
           <div className="glass-card p-8 hover:scale-105 transition-transform cursor-pointer">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-cloud_34e230fd.png" alt="Certificado de Conclusão Google Cloud" className="w-full h-auto rounded-lg" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-cloud_34e230fd.png" alt="Google Cloud Certificate of Completion" className="w-full h-auto rounded-lg" />
           </div>
         </div>
       </section>
@@ -198,10 +201,11 @@ export default function AI() {
         <div className="max-w-7xl mx-auto">
           <h2 className="title-standard text-center text-4xl font-bold">25 Google Cloud Skill Badges</h2>
           <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
-            Certificações oficiais que comprovam expertise em IA Generativa, Vertex AI, Gemini e MLOps
+            Official certifications proving expertise in Generative AI, Vertex AI, Gemini, and MLOps
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+             {/* Badges images as in the original */}
             <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%201%20-%20Introduction%20to%20Generative%20AI_a00664b0.jpg" alt="Badge 1" className="w-full h-auto rounded-lg" />
             </div>
@@ -284,11 +288,11 @@ export default function AI() {
       {/* Stack Section */}
       <section className="section-standard">
         <div className="max-w-6xl mx-auto">
-          <h2 className="title-standard text-center text-4xl font-bold">Stack de IA Dominado</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Mastered AI Stack</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="glass-card p-6">
-              <h3 className="text-lg font-bold mb-4 text-indigo-400">Modelos e Frameworks</h3>
+              <h3 className="text-lg font-bold mb-4 text-indigo-400">Models and Frameworks</h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• Gemini (Google)</li>
                 <li>• Vertex AI</li>
@@ -299,7 +303,7 @@ export default function AI() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-lg font-bold mb-4 text-cyan-400">Dados e ML</h3>
+              <h3 className="text-lg font-bold mb-4 text-cyan-400">Data and ML</h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• BigQuery</li>
                 <li>• BigQuery ML</li>
@@ -310,7 +314,7 @@ export default function AI() {
             </div>
 
             <div className="glass-card p-6">
-              <h3 className="text-lg font-bold mb-4 text-orange-400">Deployment e Ops</h3>
+              <h3 className="text-lg font-bold mb-4 text-orange-400">Deployment and Ops</h3>
               <ul className="space-y-2 text-sm text-[#94A3B8]">
                 <li>• Cloud Run</li>
                 <li>• Cloud Functions</li>
@@ -338,9 +342,9 @@ export default function AI() {
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
-          <h2 className="title-standard text-center text-4xl font-bold">Pronto para Adicionar Inteligência ao Seu Negócio?</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Ready to Add Intelligence to Your Business?</h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-            Vamos conversar sobre como IA pode transformar seus processos e gerar resultados mensuráveis.
+            Let's talk about how AI can transform your processes and generate measurable results.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -348,13 +352,13 @@ export default function AI() {
               className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
-              Agendar Consultoria <ArrowRight className="ml-2 w-6 h-6" />
+              Schedule Consulting <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <Footer lang="en" />
     </div>
   );
 }
