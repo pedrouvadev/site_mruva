@@ -48,8 +48,9 @@ export default function En() {
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
+      <Header lang="en" showStatus={true} />
+
       <div className="relative z-10">
-        <Header lang="en" showStatus={true} />
 
         {/* 1. Hero Section - The Hook */}
         <section

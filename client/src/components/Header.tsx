@@ -76,7 +76,7 @@ export default function Header({
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/5 border-b border-cyan-500/20">
+    <nav className="fixed top-0 left-0 right-0 z-[9999] backdrop-blur-xl bg-white/5 border-b border-cyan-500/20 pointer-events-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Link
@@ -114,7 +114,7 @@ export default function Header({
                 className={`w-4 h-4 transition-transform ${tabletMenuOpen ? "rotate-180" : ""}`}
               />
             </button>
-            <div className="absolute left-0 top-full mt-1 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+            <div className="absolute left-0 top-full mt-1 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-[9999]">
               {formacoes.map(formacao => (
                 <Link
                   key={formacao.href}
