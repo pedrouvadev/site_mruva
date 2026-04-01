@@ -50,7 +50,7 @@ export default function Marketing() {
           </h1>
 
           <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
-            Enquanto você lê esta página, o Google e Meta estão engolindo 40% da sua margem de lucro. Eu sou Pedro Uva, o Engenheiro de Lucro que une rigor técnico com inteligência bélica de aquisição.
+            Enquanto você lê esta página, o Google e Meta estão engolindo 40% da sua margem de lucro. Eu sou Uva, o Engenheiro de Lucro que une rigor técnico com inteligência bélica de aquisição.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">

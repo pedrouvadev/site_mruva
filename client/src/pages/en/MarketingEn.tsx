@@ -50,7 +50,7 @@ export default function MarketingEn() {
           </h1>
 
           <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
-            While you read this page, Google and Meta are swallowing 40% of your profit margin. I am Pedro Uva, the Profit Engineer who combines technical rigor with military-grade acquisition intelligence.
+            While you read this page, Google and Meta are swallowing 40% of your profit margin. I am Uva, the Profit Engineer who combines technical rigor with military-grade acquisition intelligence.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">

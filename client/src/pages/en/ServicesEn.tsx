@@ -279,7 +279,7 @@ export default function ServicesEn() {
               <div className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-10" />
               <img
                 src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
-                alt="Pedro Uva - Digital Strategist"
+                alt="Uva - Digital Strategist"
                 className="relative w-1/2 h-auto rounded-xl mx-auto"
               />
             </div>
@@ -321,7 +321,7 @@ export default function ServicesEn() {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Which technologies does Pedro Uva use for development?",
+              "name": "Which technologies does Uva use for development?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "I use the most modern and robust technologies available, including React 19, Node.js, TypeScript, and cloud-native architectures (Google Cloud/AWS), ensuring high performance and massive scalability."

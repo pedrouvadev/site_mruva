@@ -82,12 +82,12 @@ export default function En() {
               </span>
             </h1>
 
-            <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-12 animate-fade-in animation-delay-200">
               <span className="text-white">
                 One Single Mind. Global Delivery.
               </span>{" "}
-              Engineering high-performance digital solutions for companies ready
-              to revolutionize the market.
+              I develop high-performance digital solutions for companies ready to
+              revolutionize the market.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
@@ -135,19 +135,19 @@ export default function En() {
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-20" />
-                <div className="relative flex flex-col items-center">
+                <div className="relative">
                   <div className="relative overflow-hidden rounded-xl max-w-sm mx-auto -mt-8">
                     <img
                       src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
-                      alt="Pedro Uva - Full-Stack Developer & Digital Strategist in São Paulo"
+                      alt="Uva - Full-Stack Developer & Digital Strategist in São Paulo"
                       className="w-full h-auto"
                       width="384"
                       height="512"
                       loading="eager"
                     />
                   </div>
-                  <div className="mt-4 w-[90%] max-w-sm glass-card p-4 border-l-4 border-cyan-400">
-                    <h4 className="text-xl font-bold text-white">Pedro Uva</h4>
+                  <div className="w-[90%] mx-auto mt-4 glass-card p-4 border-l-4 border-cyan-400 shadow-2xl">
+                    <h4 className="text-xl font-bold text-white">Uva, Pedro</h4>
                     <p className="text-cyan-400 text-sm font-semibold mb-3">
                       FullStack & Digital Strategist
                     </p>
@@ -156,7 +156,7 @@ export default function En() {
                         href={githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Pedro Uva's GitHub profile"
+                        aria-label="Uva's GitHub profile"
                         className="text-[#94A3B8] hover:text-white transition-colors"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -201,7 +201,7 @@ export default function En() {
                         href="https://www.linkedin.com/in/mruva/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Pedro Uva's LinkedIn profile"
+                        aria-label="Uva's LinkedIn profile"
                         className="text-[#94A3B8] hover:text-[#0077B5] transition-colors"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -215,7 +215,7 @@ export default function En() {
 
               <div>
                 <h2 className="title-standard">
-                  Engineering Excellence since{" "}
+                  Excellence since{" "}
                   <span className="text-indigo-400">1997</span>
                 </h2>
                 <p className="mb-8">
@@ -235,11 +235,8 @@ export default function En() {
                       <CheckCircle2 className="w-6 h-6 text-cyan-400" />
                     </div>
                     <p className="text-lg text-[#CBD5E1]">
-                      <strong className="text-white">
-                        Technical Foundation:
-                      </strong>{" "}
-                      Over 25 years evolving from technical support to
-                      Full-Stack and AI Engineering.
+                      <strong className="text-white">Technical Foundation:</strong>{" "}
+                      Over 25 years evolving from technical support to Full-Stack and AI.
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
@@ -289,9 +286,9 @@ export default function En() {
               <h2 className="text-4xl md:text-7xl font-bold mb-6">
                 The <span className="text-cyan-400">Arsenal</span>
               </h2>
-              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto">
+              <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
                 Elite capabilities systematically combined to build, launch, and
-                scale world-class digital products globally.
+                scale world-class digital products.
               </p>
             </div>
 
@@ -366,7 +363,7 @@ export default function En() {
                   Open Source &{" "}
                   <span className="text-cyan-400">Clean Code</span>
                 </h2>
-                <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
+                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-8 leading-relaxed">
                   I believe in transparency and continuous contribution to the
                   developer community. My GitHub reflects my commitment to code
                   quality and the constant exploration of new technologies.
@@ -378,7 +375,7 @@ export default function En() {
                   <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
-                  View Github Profile
+                  View GitHub Profile
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -406,11 +403,9 @@ export default function En() {
                     Guarantee
                   </span>
                 </h2>
-                <p className="text-xl text-[#94A3B8] mb-10 leading-relaxed">
-                  Your project is managed using{" "}
-                  <strong className="text-white">
-                    standardized Scrum frameworks
-                  </strong>{" "}
+                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-10 leading-relaxed">
+                  I manage your project using the{" "}
+                  <strong className="text-white">Scrum framework</strong>{" "}
                   to ensure predictability, transparency, and high-quality
                   deliverables. I don't just develop; I manage the complexity so
                   you don't have to.
@@ -529,7 +524,7 @@ export default function En() {
             <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">
               Professional Trajectory
             </h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               From technical support to digital strategist: a journey of
               continuous learning and transformation
             </p>
@@ -541,16 +536,33 @@ export default function En() {
                   <Code2 className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      1997-2001: First Steps in Tech
+                      1998-2001: First Steps in Tech
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Started as a support technician in telecommunications
-                      companies (Prest Service, System Informática, UOL, AT&T
-                      Latin America). Learned to work under pressure, solve
+                      I started as a support technician in telecommunications
+                      companies (UOL, AT&T Latin America). I learned to work under pressure, solve
                       complex problems, and handle large-scale clients.
                     </p>
                     <p className="text-sm text-cyan-400">
                       Technologies: Hardware, Networks, Technical Support
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 1.5 */}
+              <div className="glass-card p-6 border-l-4 border-orange-500">
+                <div className="flex items-start gap-4">
+                  <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">
+                      2001-2008: Management and Innovation in Family Business
+                    </h3>
+                    <p className="text-[#94A3B8] mb-2">
+                      I worked in the operational management of Lavanderia Umarizal, a company specialized in industrial carpet cleaning. During this period, I immersed myself in end-to-end administration: from chemical supplies control and logistics to team management and customer service. It was during this phase that I began my transition to the digital environment, implementing an ERP with CRM, developing the company's first websites, and implementing electronic controls and initial SEO and Google Ads strategies to modernize the traditional business model.
+                    </p>
+                    <p className="text-sm text-cyan-400">
+                      Technologies: Process Management, HTML/CSS, Strategic Planning, Primitive Digital Marketing
                     </p>
                   </div>
                 </div>
@@ -567,10 +579,10 @@ export default function En() {
                           2008-2013: Financial Market
                         </h3>
                         <p className="text-[#94A3B8] mb-2">
-                          Worked as a trader and commercial specialist at Um
-                          Investimentos. Led the "Retomada ao Topo" campaign
+                          I worked as a trader and commercial specialist at Um
+                          Investimentos. I led the "Retomada ao Topo" campaign
                           with Google Ads, capturing 340 new investors with
-                          proven ROI. Consolidated knowledge in finance,
+                          proven ROI. I consolidated knowledge in finance,
                           marketing, and resilience.
                         </p>
                         <p className="text-sm text-cyan-400">
@@ -582,7 +594,7 @@ export default function En() {
                   <div className="md:w-48 flex-shrink-0">
                     <img
                       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
-                      alt="Pedro Uva - Professional Financial Market Trader"
+                      alt="Uva - Professional Financial Market Trader"
                       className="w-full h-auto rounded-lg shadow-lg"
                     />
                   </div>
@@ -595,13 +607,13 @@ export default function En() {
                   <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      2014-2020: Entrepreneurship
+                      2013-2020: Entrepreneurship
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Founded Respiro Aventura (adventure tourism) and
-                      Engenharia de Conteúdo (digital agency). Developed skills
+                      I founded Respiro Aventura (adventure tourism) and
+                      Engenharia de Conteúdo (digital agency). I developed skills
                       in management, content creation, SEO, and digital
-                      marketing. Operated as an independent trader with
+                      marketing. I operated as an independent trader with
                       discipline and risk management.
                     </p>
                     <p className="text-sm text-cyan-400">
@@ -620,11 +632,11 @@ export default function En() {
                       2020-2025: Digital Transformation
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Returned to Lavanderia Umarizal (family business) and
+                      I returned to Lavanderia Umarizal (family business) and
                       implemented a complete digital transformation: new
                       website, Google Ads campaigns (220% ROI), process
-                      automation, AI for customer service. Manages team of employees
-                      and own VPS infrastructure.
+                      automation, AI for customer service. I manage a team of employees
+                      and my own VPS infrastructure.
                     </p>
                     <p className="text-sm text-cyan-400">
                       Technologies: React, Node.js, IA, Google Cloud, DevOps
@@ -642,10 +654,10 @@ export default function En() {
                       2025-2026: Education & Specialization
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Pursuing a degree in Systems Development (FAT/Fatec),
+                      I'm pursuing a degree in Systems Development (FAT/Fatec),
                       participating in Oracle ONE, studying advanced English at
-                      Cambly. Accumulates 25 Google Cloud Skill Badges in AI/ML.
-                      Preparing to operate at an international level.
+                      Cambly. I've accumulated 25 Google Cloud Skill Badges in AI/ML.
+                      I'm preparing to operate at an international level.
                     </p>
                     <p className="text-sm text-cyan-400">
                       Technologies: Full Stack, IA, Google Cloud, Advanced
@@ -784,7 +796,7 @@ export default function En() {
         <section id="gallery" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
             <h2 className="title-standard text-center">Personal Gallery</h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               Moments that reflect the professional journey and a passion for
               technology
             </p>
@@ -793,7 +805,7 @@ export default function En() {
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/no-meu-quarto_998b2075.jpg"
-                  alt="Pedro Uva"
+                  alt="Uva"
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm font-medium">
@@ -804,7 +816,7 @@ export default function En() {
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
-                  alt="Pedro Uva - Professional Trader"
+                  alt="Uva - Professional Trader"
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm">
@@ -853,8 +865,7 @@ export default function En() {
                   💪 Resilience as a Competency
                 </h3>
                 <p className="text-[#94A3B8]">
-                  The crises I faced — bankruptcies, layoffs, family problems,
-                  business failures — did not paralyze me. From each one, I
+                  The crises I faced did not paralyze me. From each one, I
                   extracted learning and started again stronger.
                 </p>
               </div>
@@ -890,7 +901,7 @@ export default function En() {
             <h2 className="title-standard text-center">
               Certifications & Recognition
             </h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               Continuous education and recognition of expertise
             </p>
 

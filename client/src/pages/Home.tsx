@@ -82,12 +82,11 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-12 animate-fade-in animation-delay-200">
               <span className="text-white">
                 Uma Única Mente. Entrega Global.
               </span>{" "}
-              Engenharia de soluções digitais de alto desempenho para empresas
-              prontas para revolucionar o mercado.
+              Desenvolvo soluções digitais de alto desempenho para empresas prontas para revolucionar o mercado.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
@@ -139,7 +138,7 @@ export default function Home() {
                   <div className="relative overflow-hidden rounded-xl max-w-sm mx-auto -mt-8">
                     <img
                       src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
-                      alt="Pedro Uva - Desenvolvedor Full-Stack e Estrategista Digital em São Paulo"
+                      alt="Uva - Desenvolvedor Full-Stack e Estrategista Digital em São Paulo"
                       className="w-full h-auto"
                       width="384"
                       height="512"
@@ -147,7 +146,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-[90%] mx-auto mt-4 glass-card p-4 border-l-4 border-cyan-400 shadow-2xl">
-                    <h4 className="text-xl font-bold text-white">Pedro Uva</h4>
+                    <h4 className="text-xl font-bold text-white">Uva, Pedro</h4>
                     <p className="text-cyan-400 text-sm font-semibold mb-3">
                       FullStack e Estrategista Digital
                     </p>
@@ -156,7 +155,7 @@ export default function Home() {
                         href="https://github.com/pedrouvadev"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Perfil do Pedro Uva no GitHub"
+                        aria-label="Perfil do Uva no GitHub"
                         className="text-[#94A3B8] hover:text-white transition-colors"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -176,7 +175,7 @@ export default function Home() {
                         href="https://www.linkedin.com/in/mruva/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Perfil do Pedro Uva no LinkedIn"
+                        aria-label="Perfil do Uva no LinkedIn"
                         className="text-[#94A3B8] hover:text-[#0077B5] transition-colors"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -215,7 +214,7 @@ export default function Home() {
 
               <div>
                 <h2 className="title-standard">
-                  Engenharia de Excelência desde{" "}
+                  Excelência desde{" "}
                   <span className="text-indigo-400">1997</span>
                 </h2>
                 <p className="mb-8">
@@ -237,8 +236,7 @@ export default function Home() {
                     </div>
                     <p className="text-lg text-[#CBD5E1]">
                       <strong className="text-white">Fundação Técnica:</strong>{" "}
-                      Mais de 25 anos evoluindo de suporte técnico para
-                      Engenharia Full-Stack e IA.
+                      Mais de 25 anos evoluindo de suporte técnico para Full-Stack e IA.
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
@@ -247,9 +245,7 @@ export default function Home() {
                     </div>
                     <p className="text-lg text-[#CBD5E1]">
                       <strong className="text-white">Visão de Negócio:</strong>{" "}
-                      Empreendedor, trader, com profunda compreensão de ROI,
-                      mercados financeiros na B3, Cryptos e Forex, e estratégias de
-                      marketing digital de crescimento.
+                      Empreendedor com profunda compreensão de ROI, trader profissional de ativos da B3, Forex e Criptomoedas, e estratégias de marketing digital.
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
@@ -291,10 +287,9 @@ export default function Home() {
               <h2 className="text-4xl md:text-7xl font-bold mb-6">
                 O <span className="text-cyan-400">Arsenal</span>
               </h2>
-              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto">
+              <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
                 Capacidades de elite combinadas sistematicamente para construir,
-                lançar e escalar produtos digitais de classe mundial
-                globalmente.
+                lançar e escalar produtos digitais de classe mundial.
               </p>
             </div>
 
@@ -302,7 +297,7 @@ export default function Home() {
               {[
                 {
                   icon: <Code className="w-10 h-10 text-cyan-400" />,
-                  title: "Desenvolvimento",
+                  title: "Programação",
                   desc: "Aplicações web escaláveis de ponta a ponta usando React 19, Node.js e TypeScript. Arquitetura projetada para alto desempenho e fricção zero.",
                   tags: ["Full-Stack", "Arquitetura", "Performance"],
                   link: "/desenvolvimento",
@@ -369,7 +364,7 @@ export default function Home() {
                   Open Source &{" "}
                   <span className="text-cyan-400">Código Limpo</span>
                 </h2>
-                <p className="text-xl text-[#94A3B8] mb-8 leading-relaxed">
+                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-8 leading-relaxed">
                   Acredito na transparência e na contribuição contínua para a
                   comunidade de desenvolvedores. Meu GitHub reflete meu
                   compromisso com a qualidade do código e a exploração constante
@@ -410,9 +405,9 @@ export default function Home() {
                     Fluxo de Trabalho
                   </span>
                 </h2>
-                <p className="text-xl text-[#94A3B8] mb-10 leading-relaxed">
-                  Seu projeto é gerenciado usando frameworks{" "}
-                  <strong className="text-white">Scrum padronizados</strong>{" "}
+                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-10 leading-relaxed">
+                  Gerencio seu projeto usando o framework{" "}
+                  <strong className="text-white">Scrum</strong>{" "}
                   para garantir previsibilidade, transparência e entregas de
                   alta qualidade. Não apenas desenvolvo; eu gerencio a
                   complexidade para que você não precise.
@@ -530,7 +525,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">
               Trajetória Profissional
             </h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               De suporte técnico a estrategista digital: uma jornada de
               aprendizado contínuo e transformação
             </p>
@@ -542,17 +537,34 @@ export default function Home() {
                   <Code2 className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      1997-2001: Primeiros Passos em Tech
+                      1998-2001: Primeiros Passos em Tech
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Começou como técnico de suporte em empresas de
-                      telecomunicações (Prest Service, System Informática, UOL,
-                      AT&T Latin America). Aprendeu a trabalhar sob pressão,
+                      Comecei como técnico de suporte em empresas de
+                      telecomunicações (UOL, AT&T Latin America). Aprendi a trabalhar sob pressão,
                       resolver problemas complexos e lidar com clientes em larga
                       escala.
                     </p>
                     <p className="text-sm text-cyan-400">
                       Tecnologias: Hardware, Redes, Suporte Técnico
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Timeline Item 1.5 */}
+              <div className="glass-card p-6 border-l-4 border-orange-500">
+                <div className="flex items-start gap-4">
+                  <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">
+                      2001-2008: Gestão e Inovação no Negócio Familiar
+                    </h3>
+                    <p className="text-[#94A3B8] mb-2">
+                      Atuei na gestão operacional da Lavanderia Umarizal, empresa especializada em lavagem industrial de tapetes. Durante esse período, mergulhei na administração de ponta a ponta: do controle de insumos químicos e logística à gestão de equipes e atendimento ao cliente. Foi nesta fase que iniciei minha transição para o ambiente digital, implantando um ERP com CRM, desenvolvendo os primeiros sites da empresa e implementando controles eletrônicos e estratégias iniciais de SEO e Google Ads para modernizar o modelo de negócio tradicional.
+                    </p>
+                    <p className="text-sm text-cyan-400">
+                      Tecnologias: Gestão de Processos, HTML/CSS, Planejamento Estratégico, Marketing Digital Primitivo
                     </p>
                   </div>
                 </div>
@@ -569,10 +581,10 @@ export default function Home() {
                           2008-2013: Mercado Financeiro
                         </h3>
                         <p className="text-[#94A3B8] mb-2">
-                          Trabalhou como trader e especialista comercial na Um
-                          Investimentos. Liderou a campanha "Retomada ao Topo"
+                          Trabalhei como trader e especialista comercial na Um
+                          Investimentos. Liderei a campanha "Retomada ao Topo"
                           com Google Ads, captando 340 novos investidores com
-                          ROI comprovado. Consolidou conhecimento em finanças,
+                          ROI comprovado. Consolidei conhecimento em finanças,
                           marketing e resiliência.
                         </p>
                         <p className="text-sm text-cyan-400">
@@ -584,7 +596,7 @@ export default function Home() {
                   <div className="md:w-48 flex-shrink-0">
                     <img
                       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
-                      alt="Pedro Uva - Trader Profissional do Mercado Financeiro"
+                      alt="Uva - Trader Profissional do Mercado Financeiro"
                       className="w-full h-auto rounded-lg shadow-lg"
                     />
                   </div>
@@ -597,13 +609,13 @@ export default function Home() {
                   <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-2">
-                      2014-2020: Empreendedorismo
+                      2013-2020: Empreendedorismo
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Fundou Respiro Aventura (turismo de aventura) e Engenharia
-                      de Conteúdo (agência digital). Desenvolveu habilidades em
+                      Fundei Respiro Aventura (turismo de aventura) e Engenharia
+                      de Conteúdo (agência digital). Desenvolvi habilidades em
                       gestão, criação de conteúdo, SEO e marketing digital.
-                      Operou como trader autônomo com disciplina e gestão de
+                      Operei como trader autônomo com disciplina e gestão de
                       risco.
                     </p>
                     <p className="text-sm text-cyan-400">
@@ -622,10 +634,10 @@ export default function Home() {
                       2020-2025: Transformação Digital
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Retornou à Lavanderia Umarizal (negócio familiar) e
-                      implementou transformação digital completa: novo site,
+                      Retornei à Lavanderia Umarizal (negócio familiar) e
+                      implementei transformação digital completa: novo site,
                       campanhas Google Ads (ROI 220%), automação de processos,
-                      IA para atendimento. Gerencia time de colaboradores e
+                      IA para atendimento. Gerencio time de colaboradores e
                       infraestrutura VPS própria.
                     </p>
                     <p className="text-sm text-cyan-400">
@@ -644,10 +656,10 @@ export default function Home() {
                       2025-2026: Formação & Especialização
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
-                      Cursa Tecnólogo em Desenvolvimento de Sistemas
-                      (FAT/Fatec), participa do Oracle ONE, estuda inglês
-                      avançado no Cambly. Acumula 25 Google Cloud Skill Badges
-                      em IA/ML. Prepara-se para atuar em nível internacional.
+                      Curso Tecnólogo em Desenvolvimento de Sistemas
+                      (FAT/Fatec), participo do Oracle ONE, estudo inglês
+                      avançado no Cambly. Acumulei 25 Google Cloud Skill Badges
+                      em IA/ML. Preparo-me para atuar em nível internacional.
                     </p>
                     <p className="text-sm text-cyan-400">
                       Tecnologias: Full Stack, IA, Google Cloud, Inglês Avançado
@@ -669,7 +681,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center">
               Habilidades Técnicas
             </h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               Stack completo para desenvolvimento, marketing e automação
             </p>
 
@@ -785,7 +797,7 @@ export default function Home() {
         <section id="galeria" className="section-standard text-left">
           <div className="max-w-6xl mx-auto">
             <h2 className="title-standard text-center">Galeria Pessoal</h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               Momentos que refletem a jornada profissional e a paixão por
               tecnologia
             </p>
@@ -794,7 +806,7 @@ export default function Home() {
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/no-meu-quarto_998b2075.jpg"
-                  alt="Pedro Uva"
+                  alt="Uva"
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm font-medium">
@@ -805,7 +817,7 @@ export default function Home() {
               <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
-                  alt="Pedro Uva - Trader Profissional"
+                  alt="Uva - Trader Profissional"
                   className="w-full h-auto rounded-lg"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm">
@@ -852,9 +864,8 @@ export default function Home() {
                   💪 Resiliência como Competência
                 </h3>
                 <p className="text-[#94A3B8]">
-                  As crises enfrentadas — falências, demissões, problemas
-                  familiares, fracassos de negócios — não me paralisaram. Em
-                  cada uma, extraí aprendizado e recomeçei mais forte.
+                  As crises enfrentadas não me paralisaram. Em cada uma, extraí
+                  aprendizado e recomeçei mais forte.
                 </p>
               </div>
 
@@ -889,7 +900,7 @@ export default function Home() {
             <h2 className="title-standard text-center">
               Certificações & Reconhecimento
             </h2>
-            <p className="text-center text-[#94A3B8] mb-16 max-w-2xl mx-auto">
+            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
               Formação contínua e reconhecimento de expertise
             </p>
 
