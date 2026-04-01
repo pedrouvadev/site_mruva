@@ -123,7 +123,7 @@ export default function ServicesEn() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/hero-3d-neon-ETM4gefM3NZLJ3bB38yXCc.webp')",
+              "url('https://res.cloudinary.com/dc94qjkfa/image/upload/v1775072957/pedrouva-programando_qkdijx.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.15,
