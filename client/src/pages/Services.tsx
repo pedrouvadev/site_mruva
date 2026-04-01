@@ -280,7 +280,7 @@ export default function Services() {
             <div className="glass-card p-4 relative animate-fade-in animation-delay-200">
               <div className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-10" />
               <img
-                src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
+                src="https://res.cloudinary.com/dc94qjkfa/image/upload/v1775072957/pedrouva-programando_qkdijx.webp"
                 alt="Uva - Estrategista Digital"
                 className="relative w-1/2 h-auto rounded-xl mx-auto"
                 width="384"
