@@ -39,6 +39,10 @@ jobs:
         run: |
           echo "Checking dist/public directory..."
           ls -la dist/public/
+          if [ ! -f dist/public/index.html ]; then
+            echo "ERROR: index.html not found in dist/public!"
+            exit 1
+          fi
           echo "---"
           ls -la dist/public/assets/ | head -10
 
