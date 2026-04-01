@@ -171,7 +171,7 @@
   }, 500);
 
   // ============================================================================
-  // 8. Desabilitar Drag and Drop (opcional)
+  // 8. Desabilitar Drag and Drop
   // ============================================================================
   document.addEventListener('dragstart', function(event) {
     event.preventDefault();
@@ -191,28 +191,14 @@
     if (event.keyCode === 44) {
       event.preventDefault();
       console.warn('Screenshot detectado. Conteúdo protegido.');
-      // Opcional: adicionar overlay ou blur
       return false;
     }
   }, false);
-
-  // Detectar tentativas de screenshot via APIs
-  let screenshotAttempts = 0;
-  const originalToDataURL = HTMLCanvasElement.prototype.toDataURL;
-  HTMLCanvasElement.prototype.toDataURL = function() {
-    screenshotAttempts++;
-    if (screenshotAttempts > 3) {
-      console.warn('Múltiplas tentativas de captura detectadas');
-      return '';
-    }
-    return originalToDataURL.apply(this, arguments);
-  };
 
   // ============================================================================
   // 10. Proteção contra Iframe Embedding
   // ============================================================================
   if (window.self !== window.top) {
-    // Site está sendo carregado em um iframe
     console.warn('Conteúdo não pode ser incorporado em iframes');
     document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;"><h1>Conteúdo Protegido</h1><p>Este conteúdo não pode ser incorporado em outros sites.</p></div>';
   }
@@ -230,13 +216,11 @@
 
   if (isSuspiciousBot && !userAgent.includes('googlebot') && !userAgent.includes('bingbot')) {
     console.warn('Bot suspeito detectado');
-    // Não bloquear completamente para não afetar SEO, apenas logar
   }
 
   // ============================================================================
   // 12. Proteção contra Debug e Desenvolvimento
   // ============================================================================
-  // Prevenir abertura de console em produção
   Object.defineProperty(window, 'console', {
     get: function() {
       if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
@@ -284,3 +268,4 @@
       document.head.appendChild(meta);
     });
   });
+})();

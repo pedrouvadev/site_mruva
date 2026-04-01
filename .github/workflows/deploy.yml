@@ -42,8 +42,7 @@ jobs:
           echo "---"
           ls -la dist/public/assets/ | head -10
 
-      - name: Copy index.html to 404.html
-        run: cp dist/public/index.html dist/public/404.html
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
