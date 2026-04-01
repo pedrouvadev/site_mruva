@@ -1,21 +1,23 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
-import Marketing from "./pages/Marketing";
-import Development from "./pages/Development";
-import ProjectManagement from "./pages/ProjectManagement";
-import AI from "./pages/AI";
-import Services from "./pages/Services";
-import En from "./pages/en";
-import MarketingEn from "./pages/en/MarketingEn";
-import DevelopmentEn from "./pages/en/DevelopmentEn";
-import ProjectManagementEn from "./pages/en/ProjectManagementEn";
-import AIEn from "./pages/en/AIEn";
-import ServicesEn from "./pages/en/ServicesEn";
+
+const Home = lazy(() => import("./pages/Home"));
+const Marketing = lazy(() => import("./pages/Marketing"));
+const Development = lazy(() => import("./pages/Development"));
+const ProjectManagement = lazy(() => import("./pages/ProjectManagement"));
+const AI = lazy(() => import("./pages/AI"));
+const Services = lazy(() => import("./pages/Services"));
+const En = lazy(() => import("./pages/en"));
+const MarketingEn = lazy(() => import("./pages/en/MarketingEn"));
+const DevelopmentEn = lazy(() => import("./pages/en/DevelopmentEn"));
+const ProjectManagementEn = lazy(() => import("./pages/en/ProjectManagementEn"));
+const AIEn = lazy(() => import("./pages/en/AIEn"));
+const ServicesEn = lazy(() => import("./pages/en/ServicesEn"));
 
 function Router() {
   return (
@@ -53,7 +55,9 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Router />
+          </Suspense>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

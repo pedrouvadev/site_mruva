@@ -146,7 +146,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-[90%] mx-auto mt-4 glass-card p-4 border-l-4 border-cyan-400 shadow-2xl">
-                    <h4 className="text-xl font-bold text-white">Uva, Pedro</h4>
+                    <h3 className="text-xl font-bold text-white">Uva, Pedro</h3>
                     <p className="text-cyan-400 text-sm font-semibold mb-3">
                       FullStack e Estrategista Digital
                     </p>
@@ -433,9 +433,9 @@ export default function Home() {
                         <CheckCircle className="w-6 h-6 text-orange-400" />
                       </div>
                       <div>
-                        <h4 className="text-xl font-bold text-white mb-1">
+                        <h3 className="text-xl font-bold text-white mb-1">
                           {item.title}
-                        </h4>
+                        </h3>
                         <p className="text-[#94A3B8] text-lg">{item.desc}</p>
                       </div>
                     </li>
@@ -451,6 +451,7 @@ export default function Home() {
                   className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
                   width="1080"
                   height="764"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -486,15 +487,16 @@ export default function Home() {
                     className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity"
                     width="1123"
                     height="793"
+                    loading="lazy"
                   />
                 </div>
               </div>
 
               <div className="space-y-10 text-left">
                 <div className="glass-card p-10 border-l-4 border-l-blue-500 bg-white/5">
-                  <h4 className="text-3xl font-bold text-white mb-4">
+                  <h3 className="text-3xl font-bold text-white mb-4">
                     Comunicação Fluida
-                  </h4>
+                  </h3>
                   <p className="text-[#94A3B8] text-xl leading-relaxed">
                     Mais de <strong>69 horas verificadas</strong> de inglês
                     conversacional com falantes nativos. Pronto para negociações
@@ -604,6 +606,7 @@ export default function Home() {
                       className="w-full h-auto rounded-lg shadow-lg"
                       width="1123"
                       height="793"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -816,6 +819,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg"
                   width="1123"
                   height="793"
+                  loading="lazy"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm font-medium">
                   Home Office: Estratégia e Planejamento
@@ -829,6 +833,7 @@ export default function Home() {
                   className="w-full h-auto rounded-lg"
                   width="1123"
                   height="793"
+                  loading="lazy"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm">
                   Trader Profissional do Mercado Financeiro
