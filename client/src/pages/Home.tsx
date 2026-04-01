@@ -334,7 +334,7 @@ export default function Home() {
                     {service.tags.map(tag => (
                       <span
                         key={tag}
-                        className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-white/5 rounded-full text-white/50"
+                        className="text-[10px] uppercase tracking-widest font-bold px-3 py-1 bg-cyan-500/20 rounded-full text-cyan-300"
                       >
                         {tag}
                       </span>
@@ -344,7 +344,7 @@ export default function Home() {
                     href={service.link}
                     className="mt-auto inline-flex items-center gap-2 text-cyan-400 font-bold hover:text-cyan-300 transition-colors"
                   >
-                    Saber Mais <ArrowRight className="w-4 h-4" />
+                    Saiba mais sobre {service.title} <ArrowRight className="w-4 h-4" />
                   </a>
                 </article>
               ))}
@@ -449,6 +449,8 @@ export default function Home() {
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png"
                   alt="Certificação Scrum - Mr. Uva"
                   className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
+                  width="1080"
+                  height="764"
                 />
               </div>
             </div>
@@ -482,6 +484,8 @@ export default function Home() {
                     src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Pedro-Uva-Cambly-Certificate_6135a3a1.png"
                     alt="Certificado de Inglês Cambly - Mr. Uva"
                     className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity"
+                    width="1123"
+                    height="793"
                   />
                 </div>
               </div>
@@ -598,6 +602,8 @@ export default function Home() {
                       src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
                       alt="Uva - Trader Profissional do Mercado Financeiro"
                       className="w-full h-auto rounded-lg shadow-lg"
+                      width="1123"
+                      height="793"
                     />
                   </div>
                 </div>
@@ -808,6 +814,8 @@ export default function Home() {
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/no-meu-quarto_998b2075.jpg"
                   alt="Uva"
                   className="w-full h-auto rounded-lg"
+                  width="1123"
+                  height="793"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm font-medium">
                   Home Office: Estratégia e Planejamento
@@ -819,6 +827,8 @@ export default function Home() {
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
                   alt="Uva - Trader Profissional"
                   className="w-full h-auto rounded-lg"
+                  width="1123"
+                  height="793"
                 />
                 <p className="text-[#94A3B8] mt-4 text-sm">
                   Trader Profissional do Mercado Financeiro

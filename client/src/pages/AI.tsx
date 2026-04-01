@@ -188,7 +188,7 @@ export default function AI() {
           </p>
           
           <div className="glass-card p-8 hover:scale-105 transition-transform cursor-pointer">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-cloud_34e230fd.png" alt="Certificado de Conclusão Google Cloud" className="w-full h-auto rounded-lg" />
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-cloud_34e230fd.png" alt="Certificado de Conclusão Google Cloud" className="w-full h-auto rounded-lg" width="1080" height="764" />
           </div>
         </div>
       </section>

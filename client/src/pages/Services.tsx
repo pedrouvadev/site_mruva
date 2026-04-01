@@ -283,6 +283,8 @@ export default function Services() {
                 src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
                 alt="Uva - Estrategista Digital"
                 className="relative w-1/2 h-auto rounded-xl mx-auto"
+                width="384"
+                height="512"
               />
             </div>
           </div>

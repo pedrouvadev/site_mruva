@@ -106,6 +106,8 @@ export default function ProjectManagement() {
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png" 
                   alt="Certificado Gestão de Projetos - Qualifica SP & Fundação FAT" 
                   className="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity"
+                  width="1080"
+                  height="764"
                 />
               </div>
             </div>

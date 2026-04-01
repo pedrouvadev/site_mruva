@@ -195,16 +195,16 @@ export default function Marketing() {
           {/* Imagens dos Certificados */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <div className="glass-card p-4 hover:scale-105 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-marketing-digital_4c3373a5.png" alt="Certificado Marketing Digital" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-marketing-digital_4c3373a5.png" alt="Certificado Marketing Digital" className="w-full h-auto rounded-lg" width="1080" height="764" />
             </div>
             <div className="glass-card p-4 hover:scale-105 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-ads_1f217a44.png" alt="Certificado Google Ads" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-google-ads_1f217a44.png" alt="Certificado Google Ads" className="w-full h-auto rounded-lg" width="1080" height="764" />
             </div>
             <div className="glass-card p-4 hover:scale-105 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-ga4_421ff0fb.png" alt="Certificado GA4" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-ga4_421ff0fb.png" alt="Certificado GA4" className="w-full h-auto rounded-lg" width="1080" height="764" />
             </div>
             <div className="glass-card p-4 hover:scale-105 transition-transform cursor-pointer">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-meta-ads_1f6a6081.png" alt="Certificado Meta Ads" className="w-full h-auto rounded-lg" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-meta-ads_1f6a6081.png" alt="Certificado Meta Ads" className="w-full h-auto rounded-lg" width="1080" height="764" />
             </div>
           </div>
 
