@@ -5,6 +5,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import CreativeLoader from "./components/CreativeLoader";
 
 const Home = lazy(() => import("./pages/Home"));
 const Marketing = lazy(() => import("./pages/Marketing"));
@@ -55,7 +56,7 @@ function App() {
       >
         <TooltipProvider>
           <Toaster />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<CreativeLoader />}>
             <Router />
           </Suspense>
         </TooltipProvider>
