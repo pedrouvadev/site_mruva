@@ -465,11 +465,12 @@ export default function En() {
                 <Globe className="w-4 h-4" /> Ready for Global Business
               </div>
               <h2 className="text-4xl md:text-7xl font-bold mb-8">
-                Professional Proficiency
+                English in steady development
               </h2>
               <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
-                Verified proficiency for high-level communication, daily
-                meetings, and management of international stakeholders.
+                A realistic intermediate foundation, with ongoing practice with
+                native speakers and continuous growth toward international
+                professional contexts.
               </p>
             </div>
 
@@ -488,13 +489,14 @@ export default function En() {
               <div className="space-y-10 text-left">
                 <div className="glass-card p-10 border-l-4 border-l-blue-500 bg-white/5">
                   <h4 className="text-3xl font-bold text-white mb-4">
-                    Fluid Communication
+                    Realistic and evolving foundation
                   </h4>
                   <p className="text-[#94A3B8] text-xl leading-relaxed">
                     Over <strong>69 verified hours</strong> of conversational
-                    English with native speakers. Ready for high-level
-                    negotiations and collaboration in global teams without
-                    friction.
+                    English practice with native speakers. My current level is
+                    <strong> B1 (intermediate)</strong>, with continuous focus
+                    on improving for meetings, remote collaboration, and
+                    international professional contexts.
                   </p>
                 </div>
 
@@ -656,13 +658,14 @@ export default function En() {
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
                       I'm pursuing a degree in Systems Development (FAT/Fatec),
-                      participating in Oracle ONE, studying advanced English at
-                      Cambly. I've accumulated 25 Google Cloud Skill Badges in AI/ML.
-                      I'm preparing to operate at an international level.
+                      participating in Oracle ONE, and maintaining continuous
+                      English practice on Cambly, currently at a B1
+                      (intermediate) level. I've accumulated 25 Google Cloud
+                      Skill Badges in AI/ML. I'm preparing to operate
+                      internationally with transparency about my current stage.
                     </p>
                     <p className="text-sm text-cyan-400">
-                      Technologies: Full Stack, IA, Google Cloud, Advanced
-                      English
+                      Technologies: Full Stack, IA, Google Cloud, English B1
                     </p>
                   </div>
                 </div>
@@ -783,10 +786,10 @@ export default function En() {
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
                   <li>✓ Portuguese (Native)</li>
-                  <li>✓ English (Advanced)</li>
-                  <li>✓ Global Communication</li>
-                  <li>✓ 1.5 years Cambly</li>
-                  <li>✓ Ready for Int'l Market</li>
+                  <li>✓ English (B1 - Intermediate)</li>
+                  <li>✓ Conversation practice with natives</li>
+                  <li>✓ 69+ hours on Cambly</li>
+                  <li>✓ Continuous growth for international work</li>
                 </ul>
               </div>
             </div>
@@ -920,8 +923,8 @@ export default function En() {
                   ✓ <strong>IT Project Management</strong> - Qualifica SP
                 </li>
                 <li>
-                  ✓ <strong>Advanced English</strong> - Cambly (1.5 years with
-                  native speakers)
+                  ✓ <strong>English B1 (Intermediate)</strong> - Cambly (69+
+                  hours with native speakers)
                 </li>
               </ul>
             </div>

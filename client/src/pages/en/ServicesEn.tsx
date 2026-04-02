@@ -339,7 +339,7 @@ export default function ServicesEn() {
               "name": "Do you handle projects outside of Brazil?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely. I serve clients globally, with professional English fluency and a complete infrastructure for seamless remote collaboration and delivery."
+                "text": "Absolutely. I serve clients globally with complete remote infrastructure, ongoing English development, and regular practice with native speakers."
               }
             }
           ]

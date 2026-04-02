@@ -471,11 +471,11 @@ export default function Home() {
                 <Globe className="w-4 h-4" /> Pronto para Negócios Globais
               </div>
               <h2 className="text-4xl md:text-7xl font-bold mb-8">
-                Proficiência Profissional
+                Inglês em desenvolvimento consistente
               </h2>
               <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
-                Proficiência verificada para comunicação de alto nível, reuniões
-                diárias e gestão de stakeholders internacionais.
+                Base intermediária real, com prática contínua com nativos e
+                evolução constante para contexto profissional internacional.
               </p>
             </div>
 
@@ -497,12 +497,14 @@ export default function Home() {
               <div className="space-y-10 text-left">
                 <div className="glass-card p-10 border-l-4 border-l-blue-500 bg-white/5">
                   <h3 className="text-3xl font-bold text-white mb-4">
-                    Comunicação Fluida
+                    Base realista e em evolução
                   </h3>
                   <p className="text-[#94A3B8] text-xl leading-relaxed">
-                    Mais de <strong>69 horas verificadas</strong> de inglês
-                    conversacional com falantes nativos. Pronto para negociações
-                    de alto nível e colaboração em equipes globais sem atritos.
+                    Mais de <strong>69 horas verificadas</strong> de prática de
+                    inglês conversacional com falantes nativos. Meu nível atual
+                    é <strong>B1 (intermediário)</strong>, com foco em evolução
+                    contínua para reuniões, colaboração remota e contexto
+                    profissional internacional.
                   </p>
                 </div>
 
@@ -668,12 +670,14 @@ export default function Home() {
                     </h3>
                     <p className="text-[#94A3B8] mb-2">
                       Curso Tecnólogo em Desenvolvimento de Sistemas
-                      (FAT/Fatec), participo do Oracle ONE, estudo inglês
-                      avançado no Cambly. Acumulei 25 Google Cloud Skill Badges
-                      em IA/ML. Preparo-me para atuar em nível internacional.
+                      (FAT/Fatec), participo do Oracle ONE e mantenho prática
+                      contínua de inglês no Cambly, atualmente em nível B1
+                      (intermediário). Acumulei 25 Google Cloud Skill Badges em
+                      IA/ML. Preparo-me para atuar em nível internacional com
+                      transparência sobre minha evolução.
                     </p>
                     <p className="text-sm text-cyan-400">
-                      Tecnologias: Full Stack, IA, Google Cloud, Inglês Avançado
+                      Tecnologias: Full Stack, IA, Google Cloud, Inglês B1
                     </p>
                   </div>
                 </div>
@@ -794,10 +798,10 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
                   <li>✓ Português (Nativo)</li>
-                  <li>✓ Inglês (Avançado)</li>
-                  <li>✓ Comunicação Global</li>
-                  <li>✓ 1.5 anos Cambly</li>
-                  <li>✓ Pronto para Mercado Int'l</li>
+                  <li>✓ Inglês (B1 - Intermediário)</li>
+                  <li>✓ Conversação com nativos</li>
+                  <li>✓ 69+ horas no Cambly</li>
+                  <li>✓ Evolução contínua para mercado internacional</li>
                 </ul>
               </div>
             </div>
@@ -929,8 +933,8 @@ export default function Home() {
                   ✓ <strong>Gestão de Projetos de TI</strong> - Qualifica SP
                 </li>
                 <li>
-                  ✓ <strong>Inglês Avançado</strong> - Cambly (1.5 anos com
-                  nativos)
+                  ✓ <strong>Inglês B1 (Intermediário)</strong> - Cambly (69+
+                  horas com nativos)
                 </li>
               </ul>
             </div>

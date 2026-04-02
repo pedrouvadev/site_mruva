@@ -341,7 +341,7 @@ export default function Services() {
               "name": "Você atende empresas de fora de São Paulo?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Sim, embora resida em São Paulo, atendo clientes globalmente, com fluência profissional em inglês e infraestrutura completa para colaboração remota."
+                "text": "Sim. Atendo clientes globalmente a partir de São Paulo, com inglês em desenvolvimento contínuo, prática com nativos e infraestrutura completa para colaboração remota."
               }
             }
           ]
