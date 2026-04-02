@@ -125,7 +125,7 @@ export default function ServicesEn() {
             backgroundImage:
               "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/ZZZKXReRwjeupOyh.webp')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "center top",
             opacity: 0.4,
           }}
         />
@@ -278,9 +278,9 @@ export default function ServicesEn() {
             <div className="glass-card p-4 relative animate-fade-in animation-delay-200">
               <div className="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-2xl blur opacity-10" />
               <img
-                src="https://res.cloudinary.com/dc94qjkfa/image/upload/v1775072957/pedrouva-programando_qkdijx.webp"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/ZZZKXReRwjeupOyh.webp"
                 alt="Uva - Digital Strategist"
-                className="relative w-1/2 h-auto rounded-xl mx-auto"
+                className="relative w-full h-auto rounded-xl"
               />
             </div>
           </div>

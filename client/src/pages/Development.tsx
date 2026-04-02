@@ -11,6 +11,7 @@ import {
   Zap,
   GraduationCap,
   Award,
+  CheckCircle2,
 } from "lucide-react";
 
 export default function DevelopmentUnified() {
@@ -138,6 +139,44 @@ export default function DevelopmentUnified() {
                   TypeScript
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Imagem de Contexto */}
+      <section className="section-standard">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h2 className="title-standard text-4xl md:text-5xl font-bold mb-8">
+                Expertise em <span className="text-cyan-400">Desenvolvimento</span>
+              </h2>
+              <p className="text-lg text-[#94A3B8] mb-6 leading-relaxed">
+                Com formação técnica sólida e experiência prática em projetos reais, combino a profundidade acadêmica com a agilidade do mercado para entregar soluções que transformam negócios.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-[#CBD5E1]">
+                  <CheckCircle2 className="w-5 h-5 text-cyan-400 mt-1 shrink-0" />
+                  <span className="text-lg">Arquitetura de software escalável</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#CBD5E1]">
+                  <CheckCircle2 className="w-5 h-5 text-cyan-400 mt-1 shrink-0" />
+                  <span className="text-lg">Performance e Core Web Vitals</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#CBD5E1]">
+                  <CheckCircle2 className="w-5 h-5 text-cyan-400 mt-1 shrink-0" />
+                  <span className="text-lg">Segurança e conformidade LGPD</span>
+                </li>
+              </ul>
+            </div>
+            <div className="relative animate-fade-in animation-delay-200">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/lZfHSdastwxWFrGL.webp"
+                alt="Pedro Uva - Especialista em Desenvolvimento"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-cyan-500/30"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

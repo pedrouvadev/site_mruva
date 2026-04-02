@@ -56,10 +56,10 @@ export default function AI() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/hero-3d-neon-ETM4gefM3NZLJ3bB38yXCc.webp')",
+              "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/aItSKvaWrnTjqmaU.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.2,
+            opacity: 0.4,
           }}
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
@@ -119,12 +119,12 @@ export default function AI() {
               </ul>
             </div>
             <div className="relative animate-fade-in animation-delay-200">
-              <div className="bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 rounded-2xl p-8 border border-cyan-500/30">
-                <Brain className="w-32 h-32 text-cyan-400 mx-auto mb-6" />
-                <p className="text-center text-[#94A3B8] text-lg">
-                  Agentes de IA que trabalham 24/7 para o seu negócio crescer com previsibilidade e ROI.
-                </p>
-              </div>
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/aItSKvaWrnTjqmaU.webp"
+                alt="Pedro Uva - Especialista em IA"
+                className="w-full h-auto rounded-2xl shadow-2xl border border-cyan-500/30"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
