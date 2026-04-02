@@ -3,16 +3,38 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, CheckCircle2, TrendingUp, BarChart3, Target } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Marketing() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = "Consultoria de Growth Marketing em São Paulo | Pedro Uva";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Estratégias de Growth Marketing focadas em ROI. Gestão de Google Ads, Meta Ads e SEO avançado em São Paulo para escalar seu negócio.");
+  // SEO Configuration para página de Growth Marketing
+  useSEO({
+    title: "Consultoria de Growth Marketing | Estratégias de Growth Hacking São Paulo",
+    description: "Aumente vendas com consultoria de growth marketing baseada em dados. Estratégias de growth hacking, SEO técnico e otimização de conversão em São Paulo.",
+    keywords: "Growth Marketing, Consultoria de Growth, Growth Hacking, Marketing de Performance, SEO técnico, Otimização de Conversão, São Paulo",
+    ogTitle: "Consultoria de Growth Marketing | Mr. Uva",
+    ogDescription: "Transforme cliques em faturamento real. Estratégias de growth marketing com ROI comprovado para sua empresa.",
+    canonicalUrl: "https://mruva.com.br/marketing",
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Consultoria de Growth Marketing",
+      "description": "Serviço de consultoria em growth marketing, estratégias de growth hacking e otimização de conversão para empresas.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Mr. Uva",
+        "url": "https://mruva.com.br",
+        "telephone": "+55-11-97876-8690",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "areaServed": "BR",
+      "serviceType": "Consultoria de Marketing Digital"
     }
-  }, []);
+  })
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
       {/* Navigation */}
