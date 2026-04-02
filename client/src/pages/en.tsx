@@ -793,42 +793,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 9. Personal Gallery */}
-        <section id="gallery" className="section-standard text-left">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="title-standard text-center">Personal Gallery</h2>
-            <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium text-center mb-16">
-              Moments that reflect the professional journey and a passion for
-              technology
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/no-meu-quarto_998b2075.jpg"
-                  alt="Uva"
-                  className="w-full h-auto rounded-lg"
-                />
-                <p className="text-[#94A3B8] mt-4 text-sm font-medium">
-                  Home Office: Strategy & Planning
-                </p>
-              </div>
-
-              <div className="glass-card p-4 hover:scale-105 transition-transform text-center">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
-                  alt="Uva - Professional Trader"
-                  className="w-full h-auto rounded-lg"
-                />
-                <p className="text-[#94A3B8] mt-4 text-sm">
-                  Professional Financial Market Trader
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 10. Professional Philosophy */}
+        {/* 9. Professional Philosophy */}
         <section id="philosophy" className="section-standard text-left">
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-indigo-500/5" />
           <div className="max-w-4xl mx-auto relative z-10">

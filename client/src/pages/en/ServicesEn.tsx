@@ -57,7 +57,7 @@ export default function ServicesEn() {
       headline:
         "I transform clicks into real revenue with data-driven strategy.",
       description:
-        'I don\'t believe in "vanity metrics." My approach focuses on ROI. I use Google Ads, Meta Ads, and advanced SEO to put your brand in front of those who actually want to buy from you.',
+        'I don\'t believe in <strong>vanity metrics</strong>. My approach focuses on ROI. I use Google Ads, Meta Ads, and advanced SEO to put your brand in front of those who actually want to buy from you.',
       features: [
         "Paid Traffic Management (Google/Meta)",
         "Technical SEO for Real Ranking",
@@ -123,10 +123,10 @@ export default function ServicesEn() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://res.cloudinary.com/dc94qjkfa/image/upload/v1775072957/pedrouva-programando_qkdijx.webp')",
+              "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/ZZZKXReRwjeupOyh.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.15,
+            opacity: 0.4,
           }}
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />

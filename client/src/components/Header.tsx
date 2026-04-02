@@ -170,7 +170,7 @@ export default function Header({
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-64 bg-[#1E293B] border-l border-cyan-500/30"
+              className="w-64 bg-[#1E293B] border-l border-cyan-500/30 z-[10000]"
             >
               <div className="flex flex-col gap-4 mt-8">
                 <Link

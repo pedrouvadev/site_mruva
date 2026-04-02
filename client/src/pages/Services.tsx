@@ -58,7 +58,7 @@ export default function Services() {
       headline:
         "Transformo cliques em faturamento real com estratégia baseada em dados.",
       description:
-        "Não acredito em &quot;métricas de vaidade&quot; Minha abordagem foca no ROI. Utilizo Google Ads, Meta Ads e SEO avançado para colocar sua marca na frente de quem realmente quer comprar de você.",
+        "Não acredito em <strong>métricas de vaidade</strong>. Minha abordagem foca no ROI. Utilizo Google Ads, Meta Ads e SEO avançado para colocar sua marca na frente de quem realmente quer comprar de você.",
       features: [
         "Gestão de Tráfego Pago (Google/Meta)",
         "SEO Técnico para Rankeamento Real",
@@ -125,10 +125,10 @@ export default function Services() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://res.cloudinary.com/dc94qjkfa/image/upload/v1775072957/pedrouva-programando_qkdijx.webp')",
+              "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/ZZZKXReRwjeupOyh.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            opacity: 0.15,
+            opacity: 0.4,
           }}
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
