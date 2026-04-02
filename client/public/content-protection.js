@@ -156,19 +156,19 @@
   let devtools = { open: false };
   const threshold = 160;
 
+  // Otimizado: Aumentado intervalo para reduzir processamento na main thread
   setInterval(function() {
     if (window.outerHeight - window.innerHeight > threshold ||
         window.outerWidth - window.innerWidth > threshold) {
       if (!devtools.open) {
         devtools.open = true;
-        console.warn('DevTools detectado. Acesso restrito.');
       }
     } else {
       if (devtools.open) {
         devtools.open = false;
       }
     }
-  }, 500);
+  }, 2000);
 
   // ============================================================================
   // 8. Desabilitar Drag and Drop

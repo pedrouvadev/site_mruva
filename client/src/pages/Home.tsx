@@ -144,6 +144,7 @@ export default function Home() {
                       width="384"
                       height="512"
                       loading="eager"
+                      fetchpriority="high"
                     />
                   </div>
                   <div className="w-[90%] mx-auto mt-4 glass-card p-4 border-l-4 border-cyan-400 shadow-2xl">
