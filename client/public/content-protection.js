@@ -221,20 +221,25 @@
   // ============================================================================
   // 12. Proteção contra Debug e Desenvolvimento
   // ============================================================================
-  Object.defineProperty(window, 'console', {
-    get: function() {
-      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+  const originalConsole = window.console;
+  if (
+    window.location.hostname !== "localhost" &&
+    window.location.hostname !== "127.0.0.1"
+  ) {
+    Object.defineProperty(window, "console", {
+      get: function() {
         return {
           log: function() { /* silenced */ },
           warn: function() { /* silenced */ },
           error: function() { /* silenced */ },
           info: function() { /* silenced */ }
         };
-      }
-      return console;
-    },
-    set: function() { /* ignore */ }
-  });
+      },
+      set: function() { /* ignore */ }
+    });
+  } else {
+    window.console = originalConsole;
+  }
 
   // ============================================================================
   // 13. Proteção contra Manipulação do DOM

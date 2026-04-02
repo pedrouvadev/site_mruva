@@ -106,18 +106,17 @@ export default function Services() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] relative font-sans selection:bg-cyan-500/30">
+      <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
         {/* Background Gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10" />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
+
+        <Header lang="pt" showStatus={true} />
 
         <div className="relative z-10">
           {/* Background Glows */}
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
-        </div>
-
-        <Header lang="pt" showStatus={true} />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
@@ -349,8 +348,9 @@ export default function Services() {
         }`}
       </script>
       <div className="h-20"></div>
-    </div>
-    <Footer lang="pt" />
+        </div>
+      </div>
+      <Footer lang="pt" />
     </>
   );
 }
