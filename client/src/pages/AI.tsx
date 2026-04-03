@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Brain, Zap, Database, Shield } from "lucide-react";
+import { ArrowRight, Brain, Zap, Database, Shield, Award } from "lucide-react";
 
 export default function AI() {
   useEffect(() => {
@@ -196,91 +196,101 @@ export default function AI() {
         </div>
       </section>
 
-      {/* Skill Badges Section */}
+      {/* Certifications Section */}
       <section className="section-standard">
         <div className="max-w-7xl mx-auto">
           <h2 className="title-standard text-center text-4xl font-bold">25 Certificações Google Cloud</h2>
-          <p className="text-center text-[#94A3B8] mb-12 max-w-2xl mx-auto text-lg">
+          <p className="text-center text-[#94A3B8] mb-6 max-w-2xl mx-auto text-lg">
             Certificações oficiais comprovando expertise em IA Generativa, Vertex AI, Gemini e MLOps
           </p>
           
+          <div className="flex justify-center mb-12">
+            <Button
+              variant="outline"
+              className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 px-6 py-3"
+              onClick={() => window.open('https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e', '_blank')}
+            >
+              <Award className="w-4 h-4 mr-2" /> Ver Perfil Público Google Skills
+            </Button>
+          </div>
+          
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
              {/* Badges images as in the original */}
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%201%20-%20Introduction%20to%20Generative%20AI_a00664b0.jpg" alt="Badge 1" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%202%20-%20Introduction%20to%20Large%20Language%20Models_e1bf773d.jpg" alt="Badge 2" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%203%20-%20Introduction%20to%20Responsible%20AI_36d29a43.jpg" alt="Badge 3" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%204%20-%20Responsible%20AI%20Applying%20AI%20Principles%20with%20Google%20Cloud_8a89a2c5.jpg" alt="Badge 4" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%205%20-%20Responsible%20AI%20for%20Developers%20Fairness%20%26%20Bias_464b24fe.jpg" alt="Badge 5" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%206%20-%20Gemini%20for%20Application%20Developers_6224451e.jpg" alt="Badge 6" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%207%20-%20Gemini%20for%20Cloud%20Architects_3ad398c4.jpg" alt="Badge 7" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%208%20-%20Develop%20Gen%20AI%20Apps%20with%20Gemini%20and%20Streamlit_5dcc4ad2.jpg" alt="Badge 8" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%209%20-%20Gemini%20for%20Data%20Scientists%20and%20Analysts_39093c25.jpg" alt="Badge 9" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2010%20-%20Gemini%20for%20Network%20Engineers_a29460da.jpg" alt="Badge 10" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2011%20-%20Gemini%20for%20Security%20Engineers_907297b2.jpg" alt="Badge 11" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2012%20-%20Gemini%20for%20DevOps%20Engineers_9a30e240.jpg" alt="Badge 12" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2013%20-%20Gemini%20for%20end-to-end%20SDLC_a49044c9.jpg" alt="Badge 13" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2014%20-%20%20Introduction%20to%20Image%20Generation_a11febf6.jpg" alt="Badge 14" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2015%20-%20Attention%20Mechanism_29c3f36a.jpg" alt="Badge 15" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2016%20-%20Encoder-Decoder%20Architecture_a1b076e6.jpg" alt="Badge 16" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2017%20-%20Transformer%20Models%20and%20BERT%20Model_9fc955d5.jpg" alt="Badge 17" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2018%20-%20Create%20Image%20Captioning%20Models_ba74ee34.jpg" alt="Badge 18" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2019%20-%20Machine%20Learning%20Operations%20(MLOps)%20for%20Generative%20AI_042cea80.jpg" alt="Badge 19" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2020%20-%20Introduction%20to%20Vertex%20AI%20Studio_ed418d46.jpg" alt="Badge 20" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2021%20-%20Vector%20Search%20and%20Embeddings_0410623a.jpg" alt="Badge 21" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2022%20-%20Prompt%20Design%20in%20Vertex%20AI_79546e72.jpg" alt="Badge 22" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2023%20-%20Responsible%20AI%20for%20Developers%20Interpretability%20%26%20Transparency_735ea51f.jpg" alt="Badge 23" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2024%20-%20Responsible%20AI%20for%20Developers%20Privacy%20%26%20Safety_a3572dbf.jpg" alt="Badge 24" className="w-full h-auto rounded-lg" />
-            </div>
-            <div className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer">
+            </a>
+            <a href="https://www.skills.google/public_profiles/ad582681-abf1-40f4-8bdd-a7d805bc955e" target="_blank" rel="noopener noreferrer" className="glass-card p-3 hover:scale-110 transition-transform cursor-pointer block">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/Badge%2025%20-%20Inspect%20Rich%20Documents%20with%20Gemini%20Multimodality%20and%20Multimodal%20RAG_5ede7e92.jpg" alt="Badge 25" className="w-full h-auto rounded-lg" />
-            </div>
+            </a>
           </div>
         </div>
       </section>
