@@ -155,9 +155,9 @@ export default function ProjectManagementEn() {
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
-          <h2 className="title-standard text-center text-4xl font-bold">Inaction Costs More Than Intervention</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Let's develop your project without chaos and with results?</h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-            Every day your project runs without proper management and lack of predictability, your competitor delivers better results with agile methodology. The choice is yours: have controlled flow or chaos in the project.
+            Stop suffering from delays and lack of transparency. Let's combine cutting-edge technology with professional management focused on your delivery with Scrum Framework.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

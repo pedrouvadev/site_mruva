@@ -158,9 +158,9 @@ export default function ProjectManagement() {
         <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
-          <h2 className="title-standard text-center text-4xl font-bold">A Inação Custa Mais Caro Que a Intervenção</h2>
+          <h2 className="title-standard text-center text-4xl font-bold">Vamos desenvolver o seu projeto sem caos e com resultados?</h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-            A cada dia que seu projeto roda sem gestão adequada e com falta de previsibilidade, seu concorrente entrega resultados melhores com metodologia ágil. A escolha é sua: ter o fluxo controlado ou o caos no projeto.
+            Pare de sofrer com atrasos e falta de transparência. Vamos juntos unir tecnologia de ponta com uma gestão profissional focada na sua entrega com Framework Scrum.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
