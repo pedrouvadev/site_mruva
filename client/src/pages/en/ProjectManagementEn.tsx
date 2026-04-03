@@ -30,7 +30,7 @@ export default function ProjectManagementEn() {
       <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/LnGGjmblNnmwbkoY.webp')" }}
+          style={{ backgroundImage: "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775249506/pedrouva-reuniao-gestao-de-projetos_zlvyfi.webp')" }}
         />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
