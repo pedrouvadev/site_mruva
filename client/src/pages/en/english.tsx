@@ -210,7 +210,7 @@ export default function EnglishStudiesEn() {
                     width="1123"
                     height="793"
                     loading="eager"
-                    fetchpriority="high"
+                    fetchPriority="high"
                   />
                 </div>
               </div>
@@ -218,38 +218,37 @@ export default function EnglishStudiesEn() {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section className="section-standard relative">
-          <div
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage:
-                "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              opacity: 0.15,
-            }}
-          />
-          <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
+      {/* Final CTA */}
+      <section className="section-standard relative">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.15,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
 
-          <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-orange-500/20">
-            <h2 className="title-standard text-center text-4xl font-bold">Continuous Evolution is the Differential</h2>
-            <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-              I don't promise instant fluency, but commitment to real evolution. 
-              Each lesson is a step towards effective global communication.
-            </p>
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-orange-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">Continuous Evolution is the Differential</h2>
+          <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
+            I don't promise instant fluency, but commitment to real evolution. 
+            Each lesson is a step towards effective global communication.
+          </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
-                onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
-              >
-                Connect on LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Connect on LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       <Footer lang="en" />
     </div>

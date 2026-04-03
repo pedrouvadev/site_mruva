@@ -153,7 +153,7 @@ export default function EnglishStudies() {
                     width="1123"
                     height="793"
                     loading="eager"
-                    fetchpriority="high"
+                    fetchPriority="high"
                   />
                 </div>
               </div>
@@ -227,7 +227,7 @@ export default function EnglishStudies() {
                     width="1123"
                     height="793"
                     loading="eager"
-                    fetchpriority="high"
+                    fetchPriority="high"
                   />
                 </div>
               </div>
