@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { ChevronDown, Menu, X, Globe } from "lucide-react";
 import { useLocation, Link } from "wouter";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Flag from "@/components/ui/flag";
 
 interface HeaderProps {
   showScheduleButton?: boolean;
@@ -30,7 +31,7 @@ export default function Header({
       switchLabel: "English Version",
       switchLabelMobile: "Switch to English",
       switchHref: "/en",
-      switchIcon: "🇺🇸",
+      switchIcon: <Flag country="us" size="sm" />,
       available: "Disponível para projetos",
     },
     en: {
@@ -43,7 +44,7 @@ export default function Header({
       switchLabel: "Versão Português",
       switchLabelMobile: "Mudar para Português",
       switchHref: "/",
-      switchIcon: "🇧🇷",
+      switchIcon: <Flag country="br" size="sm" />,
       available: "Available for projects",
     },
   };
