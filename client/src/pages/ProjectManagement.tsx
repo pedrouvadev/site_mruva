@@ -145,12 +145,12 @@ export default function ProjectManagement() {
 
       {/* Final CTA */}
       <section className="section-standard relative">
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-orange-900/10 to-[#0F172A]" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/20 to-[#0F172A]" />
         
-        <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-20 border border-orange-500/20 shadow-[0_0_100px_rgba(249,115,22,0.1)]">
+        <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-20 border border-cyan-500/20 shadow-[0_0_100px_rgba(34,211,238,0.1)]">
           <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
             Vamos desenvolver o seu projeto <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">sem caos e com resultados?</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">sem caos e com resultados?</span>
           </h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Pare de sofrer com atrasos e falta de transparência. Vamos juntos unir tecnologia de ponta com uma gestão profissional focada na sua entrega.
