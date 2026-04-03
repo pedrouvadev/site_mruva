@@ -142,20 +142,27 @@ export default function ProjectManagementEn() {
 
       {/* Final CTA */}
       <section className="section-standard relative">
-        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-indigo-900/20 to-[#0F172A]" />
-        
-        <div className="max-w-4xl mx-auto relative z-10 text-center glass-card p-12 md:p-20 border border-cyan-500/20 shadow-[0_0_100px_rgba(34,211,238,0.1)]">
-          <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
-            Let's develop your project <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">without chaos and with results?</span>
-          </h2>
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.15,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
+
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl font-bold">Inaction Costs More Than Intervention</h2>
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
-            Stop suffering from delays and lack of transparency. Let's combine cutting-edge technology with professional management focused on your delivery.
+            Every day your project runs without proper management and lack of predictability, your competitor delivers better results with agile methodology. The choice is yours: have controlled flow or chaos in the project.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, '_blank')}
             >
               I want this management <ArrowRight className="ml-2 w-6 h-6" />
