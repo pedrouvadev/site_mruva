@@ -93,7 +93,7 @@ export default function En() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
               <Button
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
                 onClick={() => window.open(whatsappLink, "_blank")}
               >
                 Book a Strategic Call <ArrowRight className="ml-2 w-6 h-6" />
@@ -886,14 +886,12 @@ export default function En() {
               that disrupts your market and scales your operations globally.
             </p>
 
-            <button
-              onClick={() => window.open(whatsappLink, "_blank")}
-              className="group relative inline-flex items-center justify-center gap-4 px-16 py-8 text-3xl font-black text-white transition-all duration-300 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full hover:from-cyan-400 hover:to-indigo-500 hover:scale-105 shadow-[0_0_60px_rgba(34,211,238,0.5)]"
-            >
-              <MessageCircle className="w-8 h-8" />
-              Book a Strategic Call
-              <ArrowRight className="w-8 h-8 group-hover:translate-x-2 transition-transform" />
-            </button>
+            <Button
+                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+                onClick={() => window.open(whatsappLink, "_blank")}
+              >
+                Book a Strategic Call <ArrowRight className="ml-2 w-6 h-6" />
+              </Button>
 
             <p className="mt-12 text-[#94A3B8] font-semibold uppercase tracking-widest text-sm">
               Available for Global Projects & Remote Roles

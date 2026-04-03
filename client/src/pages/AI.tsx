@@ -55,7 +55,7 @@ export default function AI() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => {
                 const element = document.getElementById('expertise');
                 element?.scrollIntoView({ behavior: 'smooth' });
@@ -349,7 +349,7 @@ export default function AI() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
               Agende Consultoria <ArrowRight className="ml-2 w-6 h-6" />

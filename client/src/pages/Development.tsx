@@ -66,7 +66,7 @@ export default function DevelopmentUnified() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
               Solicitar Diagnóstico Técnico <ArrowRight className="ml-2 w-6 h-6" />
@@ -259,8 +259,8 @@ export default function DevelopmentUnified() {
                 <li>✓ Proteção contra ransomware</li>
                 <li>✓ Relatório de conformidade técnica</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Solicitar Auditoria
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Solicitar Auditoria <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -282,8 +282,8 @@ export default function DevelopmentUnified() {
                 <li>✓ Integração com Google Ads</li>
                 <li>✓ Banco de dados escalável</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Conhecer Solução
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Conhecer Solução <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -304,8 +304,8 @@ export default function DevelopmentUnified() {
                 <li>✓ Dashboards Power BI</li>
                 <li>✓ Redução de custos operacionais</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Transformar Dados
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Transformar Dados <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -327,8 +327,8 @@ export default function DevelopmentUnified() {
                 <li>✓ Mentoria técnica contínua</li>
                 <li>✓ Implementação de metodologias ágeis</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Agendar Consulta
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Agendar Consulta <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
           </div>
@@ -450,7 +450,7 @@ export default function DevelopmentUnified() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
               Solicitar Consultoria <ArrowRight className="ml-2 w-6 h-6" />

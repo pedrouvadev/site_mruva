@@ -155,7 +155,7 @@ export default function ServicesEn() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, "_blank")}
             >
               Request Strategic Diagnosis{" "}
@@ -219,13 +219,13 @@ export default function ServicesEn() {
                     </ul>
                   </div>
 
-                  <button
+                  <Button
                     onClick={() => window.open(whatsappLink, "_blank")}
-                    className="w-full btn-gradient py-5 text-xl font-bold flex items-center justify-center gap-3 group-hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
+                    className="w-full btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
                   >
                     {service.cta}{" "}
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                    <ArrowRight className="ml-2 w-6 h-6" />
+                  </Button>
                 </div>
               );
             })}
@@ -303,7 +303,7 @@ export default function ServicesEn() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, "_blank")}
             >
               Talk directly with me <ArrowRight className="ml-2 w-6 h-6" />

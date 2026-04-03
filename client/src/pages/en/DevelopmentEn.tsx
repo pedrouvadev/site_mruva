@@ -64,7 +64,7 @@ export default function DevelopmentEn() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => {
                 const element = document.getElementById('certifications');
                 element?.scrollIntoView({ behavior: 'smooth' });
@@ -215,8 +215,8 @@ export default function DevelopmentEn() {
                 <li>✓ Ransomware protection</li>
                 <li>✓ Technical compliance report</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Request Audit
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Request Audit <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -237,8 +237,8 @@ export default function DevelopmentEn() {
                 <li>✓ Google Ads integration</li>
                 <li>✓ Scalable database</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Explore Solution
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Explore Solution <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -259,8 +259,8 @@ export default function DevelopmentEn() {
                 <li>✓ Power BI dashboards</li>
                 <li>✓ Reduction in operational costs</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Transform Data
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Transform Data <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
 
@@ -281,8 +281,8 @@ export default function DevelopmentEn() {
                 <li>✓ Continuous technical mentoring</li>
                 <li>✓ Agile methodology implementation</li>
               </ul>
-              <Button className="btn-gradient w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
-                Schedule Consultation
+              <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold w-full" onClick={() => window.open('https://wa.me/5511978768690', '_blank')}>
+                Schedule Consultation <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </div>
           </div>
@@ -403,7 +403,7 @@ export default function DevelopmentEn() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
             >
               Request Technical Consulting <ArrowRight className="ml-2 w-6 h-6" />

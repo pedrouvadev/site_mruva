@@ -46,8 +46,8 @@ export default function Fullstack() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="btn-gradient text-lg py-6">
-              Conhecer Stack Fullstack <ArrowRight className="ml-2" />
+            <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold">
+              Conhecer Stack Fullstack <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
           </div>
         </div>
@@ -281,12 +281,12 @@ export default function Fullstack() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-gradient text-lg py-6 px-8">
-              Agendar Consultoria
+            <Button className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold">
+              Agendar Consultoria <ArrowRight className="ml-2 w-6 h-6" />
             </Button>
             <a href="https://wa.me/5511978768690" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-lg py-6 px-8 border-cyan-500/50 hover:bg-cyan-500/10 w-full">
-                WhatsApp
+              <Button variant="outline" className="text-xl py-8 px-12 border-cyan-500/50 hover:bg-cyan-500/10 w-full rounded-full font-bold">
+                WhatsApp <ArrowRight className="ml-2 w-6 h-6" />
               </Button>
             </a>
           </div>
