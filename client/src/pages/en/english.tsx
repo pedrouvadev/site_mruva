@@ -48,42 +48,63 @@ export default function EnglishStudiesEn() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0F172A] to-[#1E293B]">
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
+      {/* Navigation */}
       <Header showStatus={true} lang="en" />
 
-      <main>
-        {/* Hero Section */}
-        <section className="section-standard">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="mb-8 animate-fade-in">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-sm font-bold uppercase tracking-widest">
-                <Globe className="w-4 h-4" />
-                International Training
-              </div>
-            </div>
-            
-            <h1 className="title-standard animate-fade-in animation-delay-100">
-              Global Communication in{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">
-                Progress
-              </span>
-            </h1>
-            
-            <p className="text-2xl text-[#94A3B8] max-w-4xl mx-auto font-medium mb-16 animate-fade-in animation-delay-200">
-              Real Business English with <strong className="text-white">native teachers</strong> at{" "}
-              <strong className="text-white">Cambly International School</strong>
-            </p>
+      <div className="relative z-10">
+        {/* Background Glows */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+      </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
-              <Button 
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
-                onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
-              >
-                Connect on LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
-              </Button>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775241145/pedrouva-sala-de-aula-ingles_rq7upf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.4,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
+              <Globe className="w-4 h-4" /> International Training
             </div>
           </div>
-        </section>
+
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
+            Global Communication in{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">
+              Progress
+            </span>
+          </h1>
+
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            Real Business English with <strong className="text-white">native teachers</strong> at{" "}
+            <strong className="text-white">Cambly International School</strong>. Over 69 hours of verified practice with constant evolution for international professional context.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Connect on LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
+          </div>
+
+          <p className="text-sm text-[#94A3B8] italic animate-fade-in animation-delay-400">
+            ⚠️ Notice: Focus on realistic evolution, without instant fluency promises.
+          </p>
+        </div>
+      </section>
 
         {/* Progress Section */}
         <section className="section-standard bg-black/20">

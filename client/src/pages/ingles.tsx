@@ -48,42 +48,63 @@ export default function EnglishStudies() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0F172A] to-[#1E293B]">
+    <div className="min-h-screen bg-[#0F172A] text-[#E2E8F0] overflow-hidden relative font-sans selection:bg-cyan-500/30">
+      {/* Navigation */}
       <Header showStatus={true} lang="pt" />
 
-      <main>
-        {/* Hero Section */}
-        <section className="section-standard">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="mb-8 animate-fade-in">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-sm font-bold uppercase tracking-widest">
-                <Globe className="w-4 h-4" />
-                Formação Internacional
-              </div>
-            </div>
-            
-            <h1 className="title-standard animate-fade-in animation-delay-100">
-              Comunicação Global em{" "}
-              <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">
-                Construção
-              </span>
-            </h1>
-            
-            <p className="text-2xl text-[#94A3B8] max-w-4xl mx-auto font-medium mb-16 animate-fade-in animation-delay-200">
-              Inglês para Negócios Reais com <strong className="text-white">professores nativos</strong> na{" "}
-              <strong className="text-white">Escola Internacional Cambly</strong>
-            </p>
+      <div className="relative z-10">
+        {/* Background Glows */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+      </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
-              <Button 
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
-                onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
-              >
-                Conectar no LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
-              </Button>
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775241145/pedrouva-sala-de-aula-ingles_rq7upf.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.4,
+          }}
+        />
+        <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6 flex justify-center animate-fade-in">
+            <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
+              <Globe className="w-4 h-4" /> Formação Internacional
             </div>
           </div>
-        </section>
+
+          <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
+            Comunicação Global em{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-indigo-500 bg-clip-text text-transparent">
+              Construção
+            </span>
+          </h1>
+
+          <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
+            Inglês para Negócios Reais com <strong className="text-white">professores nativos</strong> na{" "}
+            <strong className="text-white">Escola Internacional Cambly</strong>. Mais de 69 horas de prática verificada com evolução constante para contexto profissional internacional.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
+            <Button 
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            >
+              Conectar no LinkedIn <ArrowRight className="ml-2 w-6 h-6" />
+            </Button>
+          </div>
+
+          <p className="text-sm text-[#94A3B8] italic animate-fade-in animation-delay-400">
+            ⚠️ Aviso: Foco em evolução realista, sem promessas de fluência instantânea.
+          </p>
+        </div>
+      </section>
 
         {/* Progress Section */}
         <section className="section-standard bg-black/20">
@@ -92,32 +113,49 @@ export default function EnglishStudies() {
               Status de <span className="text-orange-400">Evolução</span>
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="glass-card p-8 text-center border-l-4 border-l-orange-500 hover:scale-[1.02] transition-transform">
-                <div className="mb-4 bg-gradient-to-br from-orange-400/20 to-indigo-500/20 p-3 rounded-lg w-fit mx-auto">
-                  <TrendingUp className="w-8 h-8 text-orange-400" />
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+              <div className="space-y-8">
+                <div className="glass-card p-8 text-center border-l-4 border-l-orange-500 hover:scale-[1.02] transition-transform">
+                  <div className="mb-4 bg-gradient-to-br from-orange-400/20 to-indigo-500/20 p-3 rounded-lg w-fit mx-auto">
+                    <TrendingUp className="w-8 h-8 text-orange-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">Nível Atual</h3>
+                  <p className="text-4xl font-black text-orange-400 mb-2">B1</p>
+                  <p className="text-[#94A3B8] text-lg">Intermediário</p>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Nível Atual</h3>
-                <p className="text-4xl font-black text-orange-400 mb-2">B1</p>
-                <p className="text-[#94A3B8] text-lg">Intermediário</p>
+
+                <div className="glass-card p-8 text-center border-l-4 border-l-cyan-500 hover:scale-[1.02] transition-transform">
+                  <div className="mb-4 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-3 rounded-lg w-fit mx-auto">
+                    <Clock className="w-8 h-8 text-cyan-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">Carga Horária</h3>
+                  <p className="text-4xl font-black text-cyan-400 mb-2">69h</p>
+                  <p className="text-[#94A3B8] text-lg">Prática Verificada</p>
+                </div>
+
+                <div className="glass-card p-8 text-center border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
+                  <div className="mb-4 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 p-3 rounded-lg w-fit mx-auto">
+                    <Award className="w-8 h-8 text-indigo-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-white">Tempo de Estudo</h3>
+                  <p className="text-4xl font-black text-indigo-400 mb-2">1.5 anos</p>
+                  <p className="text-[#94A3B8] text-lg">Consistência</p>
+                </div>
               </div>
 
-              <div className="glass-card p-8 text-center border-l-4 border-l-cyan-500 hover:scale-[1.02] transition-transform">
-                <div className="mb-4 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-3 rounded-lg w-fit mx-auto">
-                  <Clock className="w-8 h-8 text-cyan-400" />
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-orange-500 to-indigo-500 rounded-2xl blur opacity-20" />
+                <div className="relative glass-card p-4">
+                  <img
+                    src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775241145/pedrouva-sala-de-aula-ingles_rq7upf.webp"
+                    alt="Sala de aula de inglês com professor nativo - Pedro Uva"
+                    className="w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
+                    width="1123"
+                    height="793"
+                    loading="eager"
+                    fetchpriority="high"
+                  />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Carga Horária</h3>
-                <p className="text-4xl font-black text-cyan-400 mb-2">69h</p>
-                <p className="text-[#94A3B8] text-lg">Prática Verificada</p>
-              </div>
-
-              <div className="glass-card p-8 text-center border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
-                <div className="mb-4 bg-gradient-to-br from-indigo-400/20 to-purple-500/20 p-3 rounded-lg w-fit mx-auto">
-                  <Award className="w-8 h-8 text-indigo-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">Tempo de Estudo</h3>
-                <p className="text-4xl font-black text-indigo-400 mb-2">1.5 anos</p>
-                <p className="text-[#94A3B8] text-lg">Consistência</p>
               </div>
             </div>
 
@@ -197,7 +235,7 @@ export default function EnglishStudies() {
           </div>
         </section>
 
-        {/* CTA Final */}
+        {/* Final CTA */}
         <section className="section-standard relative">
           <div
             className="absolute inset-0 z-0"
@@ -228,7 +266,6 @@ export default function EnglishStudies() {
             </div>
           </div>
         </section>
-      </main>
 
       <Footer />
     </div>
