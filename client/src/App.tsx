@@ -13,12 +13,14 @@ const Development = lazy(() => import("./pages/Development"));
 const ProjectManagement = lazy(() => import("./pages/ProjectManagement"));
 const AI = lazy(() => import("./pages/AI"));
 const Services = lazy(() => import("./pages/Services"));
+const Ingles = lazy(() => import("./pages/ingles"));
 const En = lazy(() => import("./pages/en"));
 const MarketingEn = lazy(() => import("./pages/en/MarketingEn"));
 const DevelopmentEn = lazy(() => import("./pages/en/DevelopmentEn"));
 const ProjectManagementEn = lazy(() => import("./pages/en/ProjectManagementEn"));
 const AIEn = lazy(() => import("./pages/en/AIEn"));
 const ServicesEn = lazy(() => import("./pages/en/ServicesEn"));
+const English = lazy(() => import("./pages/en/english"));
 
 function Router() {
   return (
@@ -29,12 +31,14 @@ function Router() {
       <Route path="/gestao" component={ProjectManagement} />
       <Route path="/ia" component={AI} />
       <Route path="/servicos" component={Services} />
+      <Route path="/ingles" component={Ingles} />
       <Route path="/en" component={En} />
       <Route path="/en/marketing" component={MarketingEn} />
       <Route path="/en/development" component={DevelopmentEn} />
       <Route path="/en/management" component={ProjectManagementEn} />
       <Route path="/en/ai" component={AIEn} />
       <Route path="/en/services" component={ServicesEn} />
+      <Route path="/en/english" component={English} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
