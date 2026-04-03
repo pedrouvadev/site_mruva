@@ -392,68 +392,7 @@ export default function En() {
           </div>
         </section>
 
-        {/* 5. The Workflow Guarantee - Predictability */}
-        <section id="workflow" className="py-32 px-4 sm:px-6 lg:px-8 relative">
-          <div className="absolute inset-0 z-0 bg-gradient-to-tr from-indigo-900/20 via-[#0F172A] to-cyan-900/10" />
-          <div className="max-w-6xl mx-auto relative z-10">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
-              <div className="order-2 lg:order-1 text-left">
-                <h2 className="text-4xl md:text-6xl font-bold mb-8">
-                  The Workflow{" "}
-                  <span className="bg-gradient-to-r from-orange-400 to-indigo-400 bg-clip-text text-transparent">
-                    Guarantee
-                  </span>
-                </h2>
-                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-10 leading-relaxed">
-                  I manage your project using the{" "}
-                  <strong className="text-white">Scrum framework</strong>{" "}
-                  to ensure predictability, transparency, and high-quality
-                  deliverables. I don't just develop; I manage the complexity so
-                  you don't have to.
-                </p>
-
-                <ul className="space-y-8">
-                  {[
-                    {
-                      title: "Predictable Delivery",
-                      desc: "Organized sprints with clear milestones and frequent updates.",
-                    },
-                    {
-                      title: "Transparency",
-                      desc: "Strict timeline tracking and constant alignment with stakeholders.",
-                    },
-                    {
-                      title: "Zero Chaos",
-                      desc: "Scrum-certified methodology to eliminate uncontrolled scope creep and delays.",
-                    },
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-5">
-                      <div className="mt-1 bg-orange-500/20 p-2 rounded-full border border-orange-500/30">
-                        <CheckCircle className="w-6 h-6 text-orange-400" />
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold text-white mb-1">
-                          {item.title}
-                        </h4>
-                        <p className="text-[#94A3B8] text-lg">{item.desc}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="order-1 lg:order-2 glass-card p-4 relative animate-fade-in">
-                <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-indigo-500 rounded-2xl blur opacity-20" />
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png"
-                  alt="Scrum Certification - Mr. Uva"
-                  className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* 6. Ready for the World - Communication */}
         <section
           id="communication"

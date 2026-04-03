@@ -395,71 +395,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 5. A Garantia do Fluxo de Trabalho - A Previsibilidade */}
-        <section id="workflow" className="py-32 px-4 sm:px-6 lg:px-8 relative">
-          <div className="absolute inset-0 z-0 bg-gradient-to-tr from-indigo-900/20 via-[#0F172A] to-cyan-900/10" />
-          <div className="max-w-6xl mx-auto relative z-10">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
-              <div className="order-2 lg:order-1 text-left">
-                <h2 className="text-4xl md:text-6xl font-bold mb-8">
-                  Garantia de{" "}
-                  <span className="bg-gradient-to-r from-orange-400 to-indigo-400 bg-clip-text text-transparent">
-                    Fluxo de Trabalho
-                  </span>
-                </h2>
-                <p className="text-2xl text-[#94A3B8] max-w-3xl mx-auto font-medium mb-10 leading-relaxed">
-                  Gerencio seu projeto usando o framework{" "}
-                  <strong className="text-white">Scrum</strong>{" "}
-                  para garantir previsibilidade, transparência e entregas de
-                  alta qualidade. Não apenas desenvolvo; eu gerencio a
-                  complexidade para que você não precise.
-                </p>
-
-                <ul className="space-y-8">
-                  {[
-                    {
-                      title: "Entrega Previsível",
-                      desc: "Sprints organizadas com marcos claros e atualizações frequentes.",
-                    },
-                    {
-                      title: "Transparência",
-                      desc: "Acompanhamento rigoroso de cronograma e alinhamento constante com os stakeholders.",
-                    },
-                    {
-                      title: "Zero Caos",
-                      desc: "Metodologia certificada Scrum para eliminar o aumento descontrolado de escopo e atrasos.",
-                    },
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-5">
-                      <div className="mt-1 bg-orange-500/20 p-2 rounded-full border border-orange-500/30">
-                        <CheckCircle className="w-6 h-6 text-orange-400" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-white mb-1">
-                          {item.title}
-                        </h3>
-                        <p className="text-[#94A3B8] text-lg">{item.desc}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="order-1 lg:order-2 glass-card p-4 relative animate-fade-in">
-                <div className="absolute -inset-2 bg-gradient-to-r from-orange-500 to-indigo-500 rounded-2xl blur opacity-20" />
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/certificado-gestao_edd771b2.png"
-                  alt="Certificação Scrum - Mr. Uva"
-                  className="relative w-full h-auto rounded-xl grayscale hover:grayscale-0 transition-all duration-700"
-                  width="1080"
-                  height="764"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
         {/* 6. Pronto para o Mundo - A Comunicação */}
         <section
           id="communication"

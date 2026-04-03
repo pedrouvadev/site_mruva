@@ -70,14 +70,14 @@ export default function ProjectManagementEn() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="glass-card p-8 border-l-4 border-l-orange-500 hover:scale-[1.02] transition-transform">
               <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-orange-400/20 p-3 rounded-lg w-fit">
                 <TrendingUp className="w-6 h-6 text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Predictability and Sprints</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Predictable Delivery</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                I use the Scrum framework to ensure development moves in clear cycles. No surprises, no delays. You track the real evolution of your product with every delivery.
+                Organized sprints with clear milestones and frequent updates. I use the Scrum framework to ensure development moves in clear cycles. No surprises, no delays.
               </p>
             </div>
 
@@ -85,9 +85,19 @@ export default function ProjectManagementEn() {
               <div className="mb-4 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-3 rounded-lg w-fit">
                 <Shield className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Transparency and On-time Delivery</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Full Transparency</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                My methodology focuses on eliminating bugs before they reach production. Crystal-clear communication and constant alignment ensure the final project is exactly what your business needs.
+                Strict timeline tracking and constant alignment with stakeholders. My methodology focuses on eliminating bugs before they reach production.
+              </p>
+            </div>
+
+            <div className="glass-card p-8 border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
+              <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-purple-400/20 p-3 rounded-lg w-fit">
+                <Rocket className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white">Zero Chaos</h3>
+              <p className="text-[#94A3B8] text-lg leading-relaxed">
+                Scrum-certified methodology to eliminate uncontrolled scope creep and delays. Crystal-clear communication and constant alignment ensure project success.
               </p>
             </div>
           </div>

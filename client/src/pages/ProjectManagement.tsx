@@ -71,14 +71,14 @@ export default function ProjectManagement() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="glass-card p-8 border-l-4 border-l-orange-500 hover:scale-[1.02] transition-transform">
               <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-orange-400/20 p-3 rounded-lg w-fit">
                 <TrendingUp className="w-6 h-6 text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Previsibilidade e Sprints</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Entrega Previsível</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Utilizo o framework Scrum para garantir que o desenvolvimento avance em ciclos claros. Sem surpresas, sem atrasos. Você acompanha a evolução real do seu produto a cada entrega.
+                Sprints organizadas com marcos claros e atualizações frequentes. Utilizo o framework Scrum para garantir que o desenvolvimento avance em ciclos claros. Sem surpresas, sem atrasos.
               </p>
             </div>
 
@@ -86,9 +86,19 @@ export default function ProjectManagement() {
               <div className="mb-4 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-3 rounded-lg w-fit">
                 <Shield className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Transparência e On-time Delivery</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Transparência Total</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Minha metodologia foca em eliminar bugs antes que eles cheguem à produção. Comunicação cristalina e alinhamento constante garantem que o projeto final seja exatamente o que seu negócio precisa.
+                Acompanhamento rigoroso de cronograma e alinhamento constante com os stakeholders. Minha metodologia foca em eliminar bugs antes que eles cheguem à produção.
+              </p>
+            </div>
+
+            <div className="glass-card p-8 border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
+              <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-purple-400/20 p-3 rounded-lg w-fit">
+                <Rocket className="w-6 h-6 text-indigo-400" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-white">Zero Caos</h3>
+              <p className="text-[#94A3B8] text-lg leading-relaxed">
+                Metodologia certificada Scrum para eliminar o aumento descontrolado de escopo e atrasos. Comunicação cristalina e alinhamento constante garantem o sucesso do projeto.
               </p>
             </div>
           </div>
