@@ -58,12 +58,14 @@ export default function Header({
           { name: "Desenvolvimento", href: "/desenvolvimento" },
           { name: "Gestão de Projetos", href: "/gestao" },
           { name: "IA & Google Cloud", href: "/ia" },
+          { name: "Estudo de Inglês", href: "/formacoes/ingles" },
         ]
       : [
           { name: "Digital Marketing", href: "/en/marketing" },
           { name: "Development", href: "/en/development" },
           { name: "Project Management", href: "/en/management" },
           { name: "AI & Google Cloud", href: "/en/ai" },
+          { name: "English Studies", href: "/en/formacoes/english" },
         ];
 
   const handleNavigation = (href: string) => {
