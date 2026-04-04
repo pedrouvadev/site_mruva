@@ -166,22 +166,6 @@ Acompanhamento rigoroso de cronograma, alinhamento constante com
 
       {/* Final CTA */}
       <section className="section-standard relative">
-<<<<<<< Updated upstream
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage:
-              "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/cta-gradient-neon-YtJRpgzzvfKyE97pDtJczf.webp')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: 0.15,
-          }}
-        />
-        <div className="absolute inset-0 z-1 bg-gradient-to-r from-[#0F172A] via-transparent to-[#0F172A]" />
-
-        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
-          <h2 className="title-standard text-center text-4xl font-bold">Vamos desenvolver o seu projeto sem caos e com resultados?</h2>
-=======
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-orange-900/10 to-[#0F172A]" />
         
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
@@ -189,7 +173,6 @@ Acompanhamento rigoroso de cronograma, alinhamento constante com
             Vamos desenvolver o seu projeto <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">sem caos e com resultados?</span>
           </h2>
->>>>>>> Stashed changes
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Pare de sofrer com atrasos e falta de transparência. Vamos juntos unir tecnologia de ponta com uma gestão profissional focada na sua entrega com Framework Scrum.
           </p>

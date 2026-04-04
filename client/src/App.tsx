@@ -22,6 +22,7 @@ const ProjectManagementEn = lazy(() => import("./pages/en/ProjectManagementEn"))
 const AIEn = lazy(() => import("./pages/en/AIEn"));
 const ServicesEn = lazy(() => import("./pages/en/ServicesEn"));
 const English = lazy(() => import("./pages/en/english"));
+const PromptSpecialistEn = lazy(() => import("./pages/en/PromptSpecialistEn"));
 
 function Router() {
   return (
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/en/management" component={ProjectManagementEn} />
       <Route path="/en/ai" component={AIEn} />
       <Route path="/en/services" component={ServicesEn} />
+      <Route path="/en/services/prompt-specialist" component={PromptSpecialistEn} />
       <Route path="/en/english" component={English} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
