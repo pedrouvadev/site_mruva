@@ -55,7 +55,7 @@ function SEOMetaTags() {
       let tag = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement;
       if (!tag) {
         tag = document.createElement('meta');
-        tag.setAttribute('property', property);
+        (tag as any).property = property;
         document.head.appendChild(tag);
       }
       tag.content = content;
@@ -158,38 +158,6 @@ function SEOMetaTags() {
                 text: 'Os prompts são entregues prontos para uso imediato. A maioria dos clientes reporta aumento de conversão já na primeira semana de uso.',
               },
             },
-            {
-              '@type': 'Question',
-              name: 'Funciona com qualquer IA?',
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: 'Sim! Nossos prompts são otimizados para GPT, Claude, Gemini, Grok, Llama e outros modelos de linguagem.',
-              },
-            },
-          ],
-        },
-        {
-          '@type': 'BreadcrumbList',
-          '@id': 'https://mruva.com.br/servicos/prompt-specialist#breadcrumb',
-          itemListElement: [
-            {
-              '@type': 'ListItem',
-              position: 1,
-              name: 'Home',
-              item: 'https://mruva.com.br',
-            },
-            {
-              '@type': 'ListItem',
-              position: 2,
-              name: 'Serviços',
-              item: 'https://mruva.com.br/servicos',
-            },
-            {
-              '@type': 'ListItem',
-              position: 3,
-              name: 'Prompt Specialist',
-              item: 'https://mruva.com.br/servicos/prompt-specialist',
-            },
           ],
         },
       ],
@@ -197,347 +165,78 @@ function SEOMetaTags() {
     document.head.appendChild(script);
 
     return () => {
+      // Cleanup
       const schema = document.getElementById('prompt-specialist-schema');
-      if (schema) schema.remove();
+      if (schema) {
+        schema.remove();
+      }
     };
   }, []);
 
   return null;
 }
 
-// Benefits Section Component
-function BenefitsSection() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        '.benefit-item',
-        { opacity: 0, x: -30 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.6,
-          stagger: 0.15,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top bottom-=100',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  const benefits = [
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: 'Persona Cognitiva de IA',
-      description: 'Mapeio o perfil comportamental ideal: se seu negócio precisa de um consultor consultivo, um vendedor agressivo ou um criativo ousado, codifico essa personalidade em instruções de system prompt, definindo tom, vocabulário e abordagem de argumentação.',
-    },
-    {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: 'Estrutura Multi-Contexto',
-      description: 'Cada prompt inclui camadas de contexto: briefings de produto, perfis de cliente-alvo, objeções comuns e respostas — tudo organizado em few-shot examples que treinam a IA a reagir como você reagiria nas melhores situações.',
-    },
-    {
-      icon: <BarChart3 className="w-6 h-6" />,
-      title: 'Calibração Técnica',
-      description: 'Ajusto parâmetros de inferência (temperature, top-p, frequency penalty) e aplico técnicas como chain-of-thought prompting e ReAct para maximizar a qualidade das respostas. Resultado mensurável em conversão e engajamento.',
-    },
-  ];
-
-  return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0F172A]">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-16">
-          O que entrego na sua sessão de {' '}
-          <span className="text-cyan-400">Prompt Specialist</span>:
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="benefit-item group p-8 rounded-2xl backdrop-blur-xl bg-slate-900/50 border border-cyan-400/20 hover:border-cyan-400/50 transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
-                {benefit.icon}
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
-              <p className="text-slate-300">{benefit.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Quote Block Component
-function QuoteBlock() {
-  const quoteRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!quoteRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        quoteRef.current,
-        { opacity: 0, scale: 0.95 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 0.8,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: quoteRef.current,
-            start: 'top bottom-=100',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    }, quoteRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0F172A]">
-      <div ref={quoteRef} className="max-w-4xl mx-auto">
-        <div className="relative p-8 sm:p-12 rounded-3xl backdrop-blur-xl bg-slate-900/70 border border-cyan-400/30 overflow-hidden">
-          {/* Animated border glow */}
-          <div className="absolute inset-0 rounded-3xl border-2 border-cyan-400/0 animate-pulse" />
-
-          {/* Decorative gradient */}
-          <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/20 rounded-full blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl" />
-
-          <div className="relative z-10">
-            <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 leading-tight">
-              Ao final do projeto, você não tem "um texto legal". Tem{' '}
-              <span className="text-cyan-400">uma máquina de conversão</span> que entende seu negócio melhor que muitos funcionários.
-            </blockquote>
-
-            <div className="text-center">
-              <p className="text-xl text-indigo-300 font-semibold italic mb-4">
-                "Não uso IA. Construo sistemas de linguagem que vendem."
-              </p>
-              <p className="text-slate-400 text-sm">
-                Metodologia aplicada: 5 camadas de contexto, raciocínio hierárquico, few-shots do seu nicho, e calibração técnica fina. Resultado? Conteúdo que converte 24/7.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Testimonial Section
-function TestimonialSection() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        '.testimonial-card',
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.7,
-          stagger: 0.2,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top bottom-=100',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0F172A]">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-4">
-          Por que esses prompts funcionam enquanto outros falham?
-        </h2>
-        <p className="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
-          A diferença está na arquitetura. Não copio templates — construo sistemas de linguagem baseados em engenharia de prompt avançada.
-        </p>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <NeonBentoCard
-            title="Arquitetura de Contexto em Camadas"
-            icon={<Target className="w-6 h-6 text-cyan-400" />}
-            delay={0}
-          >
-            Os prompts são projetados com 5 blocos hierárquicos seguindo a seguinte lógica: fundamentos de negócio, visão estratégica, execução tática, monitoramento e otimização contínua. Cada camada alimenta a próxima, criando uma cadeia de raciocínio que gera respostas coerentes e estratégicas, não genéricas.
-          </NeonBentoCard>
-
-          <NeonBentoCard
-            title="Raciocínio em Cadeia (Chain-of-Thought)"
-            icon={<Lightbulb className="w-6 h-6 text-cyan-400" />}
-            delay={0.1}
-          >
-            Em vez de pedir respostas diretas, instruo a IA a "pensar em voz alta" primeiro. Isso ativa o raciocínio de múltiplos passos, reduzindo alucinações e aumentando a precisão. O resultado é conteúdo que convence porque foi construído logicamente, não improvisado.
-          </NeonBentoCard>
-
-          <NeonBentoCard
-            title="Gatilhos Comportamentais Codificados"
-            icon={<Brain className="w-6 h-6 text-cyan-400" />}
-            delay={0.2}
-          >
-            Princípios de psicologia aplicada (reciprocidade, autoridade, escassez, prova social) são traduzidos em instruções explícitas para a IA. Não é sobre manipulação — é sobre alinhar a comunicação com como o cérebro humano naturalmente processa decisões de compra.
-          </NeonBentoCard>
-
-          <NeonBentoCard
-            title="Few-Shot Examples Contextualizados"
-            icon={<Rocket className="w-6 h-6 text-cyan-400" />}
-            delay={0.3}
-          >
-            Cada prompt inclui exemplos reais do seu nicho: como responder objeções específicas, como apresentar propostas, como fechar vendas. A IA aprende pelo padrão, não pela descrição — e isso muda completamente a qualidade do output.
-          </NeonBentoCard>
-
-          <NeonBentoCard
-            title="Validação do Teste do Uber Driver"
-            icon={<CheckCircle className="w-6 h-6 text-cyan-400" />}
-            delay={0.4}
-            className="sm:col-span-2 lg:col-span-2"
-          >
-            Todo prompt entregue passa pelo critério de clareza extrema: se um motorista de Uber entender o valor em 30 segundos de leitura, está aprovado. Técnico o suficiente para gerar resultados. Simples o suficiente para ser usado. Essa é a obsessão que move cada projeto.
-          </NeonBentoCard>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// FAQ Section for GEO
-function FAQSection() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!sectionRef.current) return;
-
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        '.faq-item',
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.5,
-          stagger: 0.1,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top bottom-=100',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    }, sectionRef);
-
-    return () => ctx.revert();
-  }, []);
-
-  const faqs = [
-    {
-      q: 'O que exatamente é entregue numa sessão de Prompt Specialist?',
-      a: 'A entrega é uma arquitetura de prompt completa: system prompt com persona cognitiva definida, chain-of-thought instructions, few-shot examples do seu nicho, parâmetros de inferência calibrados (temperature, top-p), e um guia de uso. É como ter um manual de instruções pro seu modelo de IA virar um especialista do seu negócio.',
-    },
-    {
-      q: 'Como garantir que os prompts vão funcionar pro meu negócio específico?',
-      a: 'Antes de escrever qualquer linha, faço uma análise de contexto: estudo seu produto, concorrência, público-alvo e objeções comuns. Os prompts incluem camadas de contexto específicas — não é tentativa de adivinhar, é codificação do seu conhecimento de negócio em instruções que a IA segue à risca.',
-    },
-    {
-      q: 'Funciona com qualquer IA? GPT, Claude, Gemini?',
-      a: 'Sim. Os prompts são projetados seguindo princípios universais de engenharia de linguagem: contexto hierárquico, raciocínio em cadeia, few-shot learning. Essas técnicas funcionam em qualquer LLM moderno — GPT-4, Claude 3, Gemini 1.5, Grok, Llama 3. Você escolhe a plataforma, adapto a calibração.',
-    },
-    {
-      q: 'Qual a garantia de resultado oferecida?',
-      a: 'Garantia técnica de 30 dias: se você não medir melhora nos KPIs de conversão (taxa de resposta, leads qualificados, fechamentos), devolvo 100% do investimento. O trabalho é baseado em metodologia testada — ciência aplicada à linguagem, não chute.',
-    },
-  ];
-
-  return (
-    <section ref={sectionRef} className="py-24 px-4 sm:px-6 lg:px-8 bg-[#0F172A]">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-4">
-          Dúvidas sobre como {' '}
-          <span className="text-cyan-400">projeto prompts</span>?
-        </h2>
-        <p className="text-center text-slate-400 mb-12">
-          Tire suas dúvidas sobre engenharia de linguagem e como LLMs são transformados em especialistas do seu negócio
-        </p>
-
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="faq-item p-6 rounded-xl backdrop-blur-xl bg-slate-900/50 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300"
-            >
-              <h3 className="text-lg font-semibold text-white mb-2 flex items-start gap-3">
-                <Zap className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                {faq.q}
-              </h3>
-              <p className="text-slate-300 pl-8">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Internal Links Section for SEO
-function InternalLinksSection() {
-  return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#0F172A] border-t border-cyan-500/10">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-slate-400 text-sm mb-4">Continue explorando meu trabalho:</p>
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="/ia"
-            className="px-4 py-2 rounded-full text-sm bg-slate-800/50 border border-cyan-400/20 text-cyan-400 hover:bg-cyan-500/10 transition-colors"
-          >
-            IA & Google Cloud
-          </a>
-          <a
-            href="/servicos"
-            className="px-4 py-2 rounded-full text-sm bg-slate-800/50 border border-cyan-400/20 text-cyan-400 hover:bg-cyan-500/10 transition-colors"
-          >
-            Todos os Serviços
-          </a>
-          <span className="px-4 py-2 rounded-full text-sm bg-slate-800/30 border border-slate-700/50 text-slate-500">
-            Em breve: Growth Marketing
-          </span>
-          <span className="px-4 py-2 rounded-full text-sm bg-slate-800/30 border border-slate-700/50 text-slate-500">
-            Em breve: Agentes de IA
-          </span>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Main Page Component
 export default function PromptSpecialist() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const whatsappLink = "https://wa.me/5511978768690?text=Olá%20Pedro!%20Quero%20transformar%20minha%20IA%20em%20uma%20máquina%20de%20vendas.";
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // GSAP Animations
+    const ctx = gsap.context(() => {
+      // Hero animations
+      gsap.from('.hero-title', {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: 'power3.out',
+      });
+
+      gsap.from('.hero-subtitle', {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.2,
+        ease: 'power3.out',
+      });
+
+      gsap.from('.hero-cta', {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        delay: 0.4,
+        ease: 'power3.out',
+      });
+
+      // Card animations
+      gsap.from('.bento-card', {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.bento-grid',
+          start: 'top 80%',
+        },
+      });
+
+      // Feature animations
+      gsap.from('.feature-item', {
+        opacity: 0,
+        x: -30,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.features-section',
+          start: 'top 80%',
+        },
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -545,114 +244,262 @@ export default function PromptSpecialist() {
       <SEOMetaTags />
       <Header lang="pt" showStatus={true} />
 
-      <div className="relative z-10">
+      <div className="relative z-10" ref={containerRef}>
         {/* Background Glows */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-[120px] -z-10" />
-      </div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
 
-      <main>
-        {/* Hero Section - Padrão Formações */}
+        {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
-          {/* Background Image */}
           <div
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920&q=80')",
+                "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775243673/pdrouva-trabalhando_hwty0u.webp')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              opacity: 0.4,
+              opacity: 0.15,
             }}
           />
           <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />
 
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            {/* Badge */}
-            <div className="mb-6 flex justify-center animate-fade-in">
-              <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
-                <Bot className="w-4 h-4" /> Engenharia de Prompts Avançada
+            <div className="mb-6 flex justify-center hero-title">
+              <div className="glass-card px-4 py-2 text-sm font-semibold text-cyan-400 inline-flex items-center gap-2 border border-cyan-500/30 uppercase tracking-widest">
+                <Sparkles className="w-4 h-4" /> Arquitetura de Linguagem IA
               </div>
             </div>
 
-            {/* H1 */}
-            <h1 className="title-standard animate-fade-in animation-delay-100 tracking-tighter">
-              Prompts que Fazem Qualquer{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
-                IA Trabalhar
-              </span>{' '}
-              por Você
+            <h1 className="hero-title text-4xl md:text-6xl lg:text-7xl font-black mb-6 tracking-tighter">
+              Eu Transformo{" "}
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                Qualquer IA
+              </span>{" "}
+              Em uma{" "}
+              <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                Máquina de Vendas
+              </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="mb-8 max-w-3xl mx-auto animate-fade-in animation-delay-200 text-xl text-slate-300">
-              Não se trata de escrever prompts genéricos. O foco é em <strong className="text-white">projetar arquiteturas de linguagem</strong> que transformam qualquer LLM em um especialista do seu negócio. Os prompts são sistemas estruturados em camadas, com raciocínio hierárquico, gatilhos comportamentais e instruções de contexto que fazem a IA entender não só o que dizer, mas como pensar.
+            <p className="hero-subtitle text-xl md:text-2xl text-[#94A3B8] max-w-4xl mx-auto mb-12 leading-relaxed">
+              Engenharia de prompts avançada com chain-of-thought, few-shot examples e calibração técnica. 
+              Eu faço GPT, Claude e Gemini obedecerem às regras do seu negócio e converterem visitantes em clientes.
             </p>
 
-            {/* Description */}
-            <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-300 font-medium text-slate-400">
-              Ao contratar este serviço, você investe em engenharia de prompt que inclui: análise semântica do seu mercado, definição de persona cognitiva da IA, estruturação de few-shot contextualizados, e calibração de temperature e top-p para otimizar criatividade vs precisão. O resultado? Uma IA que vende como você vende, sem fadiga e sem erro humano.
-            </p>
-
-            {/* CTA Button */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-400">
-              <Button 
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
-                onClick={() => window.open('https://wa.me/5511978768690', '_blank')}
+            <div className="hero-cta flex flex-col sm:flex-row gap-6 justify-center mb-16">
+              <Button
+                size="lg"
+                className="btn-gradient text-lg px-8 py-4 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
+                onClick={() => window.open(whatsappLink, "_blank")}
               >
-                Agendar Sessão Agora <ArrowRight className="ml-2 w-6 h-6" />
+                Transformar Minha IA Agora <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 text-lg px-8 py-4 rounded-full font-bold transition-all duration-300"
+                onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Ver Como Funciona
               </Button>
             </div>
 
-            {/* Warning */}
-            <p className="text-sm text-[#94A3B8] italic animate-fade-in animation-delay-500">
-              ⚡ Garantia técnica: se em 30 dias você não medir melhora nos KPIs de conversão, devolvo 100% do investimento. O trabalho é ciência, não sorte.
-            </p>
+            {/* Trust Indicators */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-60">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">30%</div>
+                <div className="text-sm text-cyan-400">Mais Conversão</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">24h</div>
+                <div className="text-sm text-purple-400">Entrega</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">5+</div>
+                <div className="text-sm text-pink-400">Plataformas IA</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">100%</div>
+                <div className="text-sm text-green-400">Satisfação</div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Testimonial / Why section */}
-        <TestimonialSection />
+        {/* How It Works */}
+        <section id="how-it-works" className="py-24 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Como Eu Crio{" "}
+                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                  IA Que Vende
+                </span>
+              </h2>
+              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto">
+                Minha metodologia combina psicologia cognitiva, copywriting e precisão técnica
+              </p>
+            </div>
 
-        {/* Quote Block */}
-        <QuoteBlock />
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              {[
+                {
+                  icon: <Target className="w-8 h-8 text-cyan-400" />,
+                  title: "1. Análise de Negócio",
+                  description: "Eu estudo seu mercado, público e objetivos de conversão para projetar a persona IA perfeita.",
+                },
+                {
+                  icon: <Brain className="w-8 h-8 text-purple-400" />,
+                  title: "2. Arquitetura de Prompt",
+                  description: "Eu crio estruturas chain-of-thought com gatilhos mentais e técnicas persuasivas.",
+                },
+                {
+                  icon: <Rocket className="w-8 h-8 text-pink-400" />,
+                  title: "3. Implantação Multiplataforma",
+                  description: "Eu adapto os prompts para GPT, Claude, Gemini e outras plataformas com otimizações específicas.",
+                },
+              ].map((step, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-2xl flex items-center justify-center">
+                    {step.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-white">{step.title}</h3>
+                  <p className="text-[#94A3B8] leading-relaxed">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-        {/* Benefits Section */}
-        <BenefitsSection />
+        {/* Services Grid */}
+        <section className="py-24 px-4 sm:px-6 lg:px-8 bg-black/20">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                O Que Eu{" "}
+                <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                  Crio Para Você
+                </span>
+              </h2>
+              <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto">
+                Personas IA especializadas para cada necessidade de negócio
+              </p>
+            </div>
+
+            <div className="bento-grid grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <NeonBentoCard title="Persona de Vendas" delay={0}>
+                <Users className="w-6 h-6 text-cyan-400" />
+                IA que vende naturalmente, supera objeções e fecha negócios
+              </NeonBentoCard>
+              <NeonBentoCard title="Especialista em Suporte" delay={0.1}>
+                <MessageSquare className="w-6 h-6 text-purple-400" />
+                Atendimento ao cliente que resolve problemas e aumenta satisfação
+              </NeonBentoCard>
+              <NeonBentoCard title="Consultor Técnico" delay={0.2}>
+                <Code className="w-6 h-6 text-pink-400" />
+                IA que explica conceitos complexos e guia implementação
+              </NeonBentoCard>
+              <NeonBentoCard title="Analista de Marketing" delay={0.3}>
+                <BarChart3 className="w-6 h-6 text-orange-400" />
+                IA que analisa dados e fornece insights estratégicos
+              </NeonBentoCard>
+              <NeonBentoCard title="Diretor Criativo" delay={0.4}>
+                <Lightbulb className="w-6 h-6 text-yellow-400" />
+                IA que gera ideias e cria conteúdo convincente
+              </NeonBentoCard>
+              <NeonBentoCard title="Solução Personalizada" delay={0.5}>
+                <Bot className="w-6 h-6 text-green-400" />
+                Persona IA personalizada para suas necessidades específicas de negócio
+              </NeonBentoCard>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="features-section py-24 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                  Excelência{" "}
+                  <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    Técnica
+                  </span>
+                </h2>
+                <div className="space-y-6">
+                  {[
+                    {
+                      icon: <CheckCircle className="w-5 h-5 text-cyan-400" />,
+                      title: "Chain-of-Thought",
+                      description: "Raciocínio estruturado que guia IA para conclusões lógicas",
+                    },
+                    {
+                      icon: <CheckCircle className="w-5 h-5 text-purple-400" />,
+                      title: "Exemplos Few-Shot",
+                      description: "Exemplos concretos que ensinam IA exatamente como responder",
+                    },
+                    {
+                      icon: <CheckCircle className="w-5 h-5 text-pink-400" />,
+                      title: "Calibração Técnica",
+                      description: "Ajuste preciso de parâmetros para desempenho otimizado",
+                    },
+                    {
+                      icon: <CheckCircle className="w-5 h-5 text-green-400" />,
+                      title: "Otimização Multiplataforma",
+                      description: "Ajustes específicos para cada plataforma IA",
+                    },
+                  ].map((feature, index) => (
+                    <div key={index} className="feature-item flex gap-4">
+                      <div className="flex-shrink-0 mt-1">{feature.icon}</div>
+                      <div>
+                        <h3 className="text-lg font-semibold mb-2 text-white">{feature.title}</h3>
+                        <p className="text-[#94A3B8]">{feature.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-2xl blur-xl" />
+                <div className="relative bg-[#1E293B] border border-cyan-500/30 rounded-2xl p-8">
+                  <div className="text-center mb-6">
+                    <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
+                    <h3 className="text-2xl font-bold mb-2 text-white">Resultados Rápidos</h3>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <span className="text-[#94A3B8]">Tempo de Entrega</span>
+                      <span className="text-cyan-400 font-bold">24 horas</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-[#94A3B8]">Integração</span>
+                      <span className="text-purple-400 font-bold">Imediata</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-[#94A3B8]">Resultados</span>
+                      <span className="text-pink-400 font-bold">Primeira semana</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-[#94A3B8]">Suporte</span>
+                      <span className="text-green-400 font-bold">30 dias</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA Section */}
         <ServiceCTA
-          title="Cansado de prompts genéricos que não convertem?"
-          subtitle="Vou projetar uma arquitetura de linguagem específica pro seu negócio."
-          buttonText="Quero minha Persona IA agora"
-          buttonHref="https://wa.me/5511978768690"
-        >
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <div className="flex items-center gap-2 text-slate-300">
-              <Sparkles className="w-5 h-5 text-cyan-400" />
-              <span>System prompt personalizado</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-slate-600" />
-            <div className="flex items-center gap-2 text-slate-300">
-              <TrendingUp className="w-5 h-5 text-cyan-400" />
-              <span>Chain-of-thought incluído</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-slate-600" />
-            <div className="flex items-center gap-2 text-slate-300">
-              <Code className="w-5 h-5 text-cyan-400" />
-              <span>Funciona em GPT, Claude, Gemini</span>
-            </div>
-          </div>
-        </ServiceCTA>
+          title="Pronto para Transformar Sua IA?"
+          subtitle="Vamos criar prompts inteligentes que convertem, engajam e vendem"
+          buttonText="Iniciar Minha Transformação IA"
+          buttonHref={whatsappLink}
+        />
 
-        {/* FAQ Section for GEO */}
-        <FAQSection />
-
-        {/* Internal Links */}
-        <InternalLinksSection />
-      </main>
-
-      <Footer lang="pt" />
+        <Footer />
+      </div>
     </div>
   );
 }
