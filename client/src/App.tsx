@@ -16,7 +16,7 @@ const Services = lazy(() => import("./pages/Services"));
 const Ingles = lazy(() => import("./pages/ingles"));
 const PromptSpecialist = lazy(() => import("./pages/PromptSpecialist"));
 const GrowthMarketing = lazy(() => import("./pages/GrowthMarketing"));
-const En = lazy(() => import("./pages/en"));
+const HomeEn = lazy(() => import("./pages/HomeEn"));
 const MarketingEn = lazy(() => import("./pages/en/MarketingEn"));
 const DevelopmentEn = lazy(() => import("./pages/en/DevelopmentEn"));
 const ProjectManagementEn = lazy(() => import("./pages/en/ProjectManagementEn"));
@@ -38,7 +38,7 @@ function Router() {
       <Route path="/servicos/prompt-specialist" component={PromptSpecialist} />
       <Route path="/servicos/growth-marketing" component={GrowthMarketing} />
       <Route path="/ingles" component={Ingles} />
-      <Route path="/en" component={En} />
+      <Route path="/en" component={HomeEn} />
       <Route path="/en/marketing" component={MarketingEn} />
       <Route path="/en/development" component={DevelopmentEn} />
       <Route path="/en/management" component={ProjectManagementEn} />

@@ -137,7 +137,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative overflow-hidden rounded-xl max-w-sm mx-auto -mt-8">
                     <img
-                      src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1774841184/pedrouva_ylzklx.webp"
+                      src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775319813/pedrouva-mesa_vgcdmm.webp"
                       alt="Uva - Desenvolvedor Full-Stack e Estrategista Digital em São Paulo"
                       className="w-full h-auto"
                       width="384"
@@ -473,7 +473,7 @@ export default function Home() {
                   </div>
                   <div className="md:w-48 flex-shrink-0">
                     <img
-                      src="https://d2xsxph8kpxj0f.cloudfront.net/310519663077556779/YTU8YzkRmKenKkuZ8w6esk/pedro_uva-trader-profissional-do-mercado-financeiro_9dabad75.jpg"
+                      src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775319813/pedrouva-mesa_vgcdmm.webp"
                       alt="Uva - Trader Profissional do Mercado Financeiro"
                       className="w-full h-auto rounded-lg shadow-lg"
                       width="1123"
