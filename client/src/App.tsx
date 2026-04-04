@@ -6,6 +6,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import CreativeLoader from "./components/CreativeLoader";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const Home = lazy(() => import("./pages/Home"));
 const Marketing = lazy(() => import("./pages/Marketing"));
@@ -71,6 +72,7 @@ function App() {
           <Suspense fallback={<CreativeLoader />}>
             <Router />
           </Suspense>
+          <WhatsAppButton />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
