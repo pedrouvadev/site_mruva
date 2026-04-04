@@ -81,15 +81,15 @@ export default function Footer({ lang = "pt" }: { lang?: "pt" | "en" }) {
               {lang === "en" ? "Home" : "Início"}
             </a>
             <span className="text-[#475569]">|</span>
-            <a href="/servicos/prompt-specialist" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+            <a href="/en/services/prompt-specialist" className="text-[#64748B] hover:text-cyan-400 transition-colors">
               Prompt Specialist
             </a>
             <span className="text-[#475569]">|</span>
-            <a href="/servicos/growth-marketing" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+            <a href="/en/services/growth-marketing" className="text-[#64748B] hover:text-cyan-400 transition-colors">
               Growth Marketing
             </a>
             <span className="text-[#475569]">|</span>
-            <a href="/servicos" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+            <a href="/en/services" className="text-[#64748B] hover:text-cyan-400 transition-colors">
               {lang === "en" ? "Services" : "Serviços"}
             </a>
             <span className="text-[#475569]">|</span>

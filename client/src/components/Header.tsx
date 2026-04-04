@@ -73,12 +73,12 @@ export default function Header({
     lang === "pt"
       ? [
           { name: "Prompt Specialist", href: "/servicos/prompt-specialist", icon: "sparkles" },
-          { name: "Growth Marketing", href: "#", icon: "trending", comingSoon: true },
+          { name: "Growth Marketing", href: "/servicos/growth-marketing", icon: "trending" },
           { name: "Agentes de IA", href: "#", icon: "bot", comingSoon: true },
         ]
       : [
           { name: "Prompt Specialist", href: "/en/services/prompt-specialist", icon: "sparkles" },
-          { name: "Growth Marketing", href: "#", icon: "trending", comingSoon: true },
+          { name: "Growth Marketing", href: "/en/services/growth-marketing", icon: "trending" },
           { name: "AI Agents", href: "#", icon: "bot", comingSoon: true },
         ];
 
