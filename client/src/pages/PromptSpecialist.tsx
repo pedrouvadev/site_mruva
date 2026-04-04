@@ -240,14 +240,14 @@ export default function PromptSpecialist() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0F172A]">
+    <div className="min-h-screen bg-[#0F172A] overflow-x-hidden-mobile">
       <SEOMetaTags />
       <Header lang="pt" showStatus={true} />
 
       <div className="relative z-10" ref={containerRef}>
         {/* Background Glows */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute top-0 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-cyan-500/10 rounded-full blur-[120px] -z-10" />
 
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">

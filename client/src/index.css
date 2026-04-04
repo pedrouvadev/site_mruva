@@ -355,3 +355,14 @@
 .animate-pulse-slow {
   animation: pulse-slow 3s ease-in-out infinite;
 }
+
+/* Prevenir overflow horizontal em mobile */
+.overflow-x-hidden-mobile {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .overflow-x-hidden-mobile {
+    overflow-x: hidden !important;
+  }
+}
