@@ -255,10 +255,10 @@ export default function PromptSpecialistEn() {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775243673/pdrouva-trabalhando_hwty0u.webp')",
+                "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775314243/pedrouva-prompt-specialist_wmn976.webp')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              opacity: 0.15,
+              opacity: 0.4,
             }}
           />
           <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />

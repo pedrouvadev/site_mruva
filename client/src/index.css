@@ -329,3 +329,13 @@
     }
   }
 }
+
+/* Variável global para opacidade de background */
+:root {
+  --bg-opacity: 0.4;
+}
+
+/* Classe padrão para background com opacidade controlada */
+.bg-hero-image {
+  opacity: var(--bg-opacity) !important;
+}

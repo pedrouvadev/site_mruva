@@ -58,13 +58,12 @@ export default function En() {
           className="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden"
         >
           <div
-            className="absolute inset-0 z-0"
+            className="absolute inset-0 z-0 bg-hero-image"
             style={{
               backgroundImage:
-                "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775243673/pdrouva-trabalhando_hwty0u.webp')",
+                "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775318416/pedrouva-home_eoxspv.webp')",
               backgroundSize: "cover",
               backgroundPosition: "center",
-              opacity: 0.15,
             }}
           />
           <div className="absolute inset-0 z-1 bg-gradient-to-b from-transparent via-[#0F172A]/80 to-[#0F172A]" />

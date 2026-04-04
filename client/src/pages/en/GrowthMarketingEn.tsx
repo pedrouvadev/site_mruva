@@ -200,7 +200,7 @@ export default function GrowthMarketingEn() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663505203277/onVzTcrnLavQFonV.webp')",
+              "url('https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775313628/growth-marketing_v9rdcz.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.4,
