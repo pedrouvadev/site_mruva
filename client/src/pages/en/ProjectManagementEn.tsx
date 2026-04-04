@@ -37,7 +37,7 @@ export default function ProjectManagementEn() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
             <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
-              <Shield className="w-4 h-4" /> Workflow Guarantee & Shielded Delivery
+              <Shield className="w-4 h-4" /> Agile Management for Predictable Delivery
             </div>
           </div>
 
@@ -46,12 +46,14 @@ export default function ProjectManagementEn() {
           </h1>
 
           <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
-            I don't just develop; I manage complexity. My management uses agile methodologies to guarantee the success of your <strong className="text-white">Development and Digital Marketing</strong> projects.
+            I don't just develop; I manage complexity. My management uses Scrum
+            and Kanban to ensure predictability, transparency, and consistent
+            delivery across <strong className="text-white">Development, AI, and Digital Marketing</strong> projects.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, '_blank')}
             >
               Guarantee My Project Success <ArrowRight className="ml-2 w-6 h-6" />
@@ -65,8 +67,11 @@ export default function ProjectManagementEn() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="title-standard text-center text-4xl md:text-5xl font-bold">Agile Management as a <span className="text-orange-400">Pillar of Success</span></h2>
-            <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto font-medium">
-              When you hire me for Full-Stack, Digital Marketing, or AI, you get a Certified Scrum Professional to set up your project, ensuring transparency and on-time delivery.
+            <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
+              When you hire me for Full-Stack, Digital Marketing, or AI, you
+              also get a layer of professional management to organize
+              priorities, reduce operational noise, and protect project
+              execution from kickoff to delivery.
             </p>
           </div>
 
@@ -77,7 +82,9 @@ export default function ProjectManagementEn() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Predictable Delivery</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Organized sprints with clear milestones and frequent updates. I use the Scrum framework to ensure development moves in clear cycles. No surprises, no delays.
+I structure sprints, milestones, and clear checkpoints so
+                development progresses with real visibility and without
+                surprises along the way.
               </p>
             </div>
 
@@ -85,19 +92,22 @@ export default function ProjectManagementEn() {
               <div className="mb-4 bg-gradient-to-br from-cyan-400/20 to-indigo-500/20 p-3 rounded-lg w-fit">
                 <Shield className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Full Transparency</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Total Transparency</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Strict timeline tracking and constant alignment with stakeholders. My methodology focuses on eliminating bugs before they reach production.
+                Rigorous timeline tracking, constant stakeholder alignment, and
+                objective communication keep expectations under control.
               </p>
             </div>
 
             <div className="glass-card p-8 border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
-              <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-purple-400/20 p-3 rounded-lg w-fit">
-                <Rocket className="w-6 h-6 text-indigo-400" />
+              <div className="mb-4 bg-gradient-to-br from-orange-400/20 to-indigo-500/20 p-3 rounded-lg w-fit">
+                <Layers className="w-6 h-6 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Zero Chaos</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Zero Operational Chaos</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Scrum-certified methodology to eliminate uncontrolled scope creep and delays. Crystal-clear communication and constant alignment ensure project success.
+                Practical Scrum and Kanban application reduces bottlenecks,
+                prevents uncontrolled scope creep, and keeps the team focused on
+                what creates business value.
               </p>
             </div>
           </div>
@@ -130,10 +140,19 @@ export default function ProjectManagementEn() {
                 </span>
               </h2>
               <p className="text-[#94A3B8] text-xl leading-relaxed mb-6 font-medium">
-                With 120 official hours in IT Project Management by Qualifica SP / FAT Foundation, I apply Scrum and Kanban rituals to shield your investment.
+                With 120 official hours in IT Project Management by Qualifica
+                SP / FAT Foundation, I apply Scrum and Kanban rituals to
+                protect your investment with process, cadence, and
+                predictability.
+              </p>
+              <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
+                This technical foundation allows me to manage complex flows,
+                remove blockers, and ensure execution stays focused on creating
+                concrete business value.
               </p>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                This theoretical foundation allows me to manage complex flows, removing blockers and ensuring the technical team (or myself during development) focuses 100% on generating value for your business.
+                In practice, that means less chaos, more clarity on priorities,
+                and deliveries you can follow throughout the entire project.
               </p>
             </div>
           </div>
@@ -142,6 +161,7 @@ export default function ProjectManagementEn() {
 
       {/* Final CTA */}
       <section className="section-standard relative">
+<<<<<<< Updated upstream
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -156,6 +176,15 @@ export default function ProjectManagementEn() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
           <h2 className="title-standard text-center text-4xl font-bold">Let's develop your project without chaos and with results?</h2>
+=======
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-orange-900/10 to-[#0F172A]" />
+        
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
+            Let's develop your project <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">without chaos and with results?</span>
+          </h2>
+>>>>>>> Stashed changes
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Stop suffering from delays and lack of transparency. Let's combine cutting-edge technology with professional management focused on your delivery with Scrum Framework.
           </p>

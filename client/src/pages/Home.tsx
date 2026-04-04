@@ -92,10 +92,10 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
               <Button
-                className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+                className="btn-gradient w-full sm:w-auto text-base sm:text-xl py-6 sm:py-8 px-8 sm:px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold text-center leading-tight"
                 onClick={() => window.open(whatsappLink, "_blank")}
               >
-                Agendar Call Estratégica <ArrowRight className="ml-2 w-6 h-6" />
+                Agendar Call Estratégica <ArrowRight className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
               </Button>
             </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
                       width="384"
                       height="512"
                       loading="eager"
-                      fetchpriority="high"
+                      fetchPriority="high"
                     />
                   </div>
                   <div className="w-[90%] mx-auto mt-4 glass-card p-4 border-l-4 border-cyan-400 shadow-2xl">
@@ -395,8 +395,7 @@ export default function Home() {
           </div>
         </section>
 
-        
-        {/* 7. Trajetória Profissional - Resgate de Conteúdo */}
+{/* 5. Trajetória Profissional - Resgate de Conteúdo */}
         <section
           id="trajetoria"
           className="py-24 px-4 sm:px-6 lg:px-8 text-left"

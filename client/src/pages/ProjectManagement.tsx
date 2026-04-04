@@ -38,7 +38,7 @@ export default function ProjectManagement() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6 flex justify-center animate-fade-in">
             <div className="glass-card px-4 py-2 text-sm md:text-base font-semibold text-orange-400 inline-flex items-center gap-2 border border-orange-500/30 uppercase tracking-widest">
-              <Shield className="w-4 h-4" /> Garantia de Fluxo & Entrega Blindada
+              <Shield className="w-4 h-4" /> Gestão Ágil para Entrega Previsível
             </div>
           </div>
 
@@ -47,12 +47,15 @@ export default function ProjectManagement() {
           </h1>
 
           <p className="mb-12 max-w-4xl mx-auto animate-fade-in animation-delay-200 font-medium">
-            Eu não apenas desenvolvo; eu gerencio a complexidade. Minha gestão usa metodologias ágeis para garantir o sucesso dos projetos de <strong className="text-white">Desenvolvimento e Marketing Digital</strong>.
+            Eu não apenas desenvolvo; eu gerencio a complexidade. Minha gestão
+            usa Scrum e Kanban para garantir previsibilidade, transparência e
+            entregas consistentes em projetos de{" "}
+            <strong className="text-white">Desenvolvimento, IA e Marketing Digital</strong>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in animation-delay-300">
             <Button 
-              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:shadow-[0_0_60px_rgba(249,115,22,0.6)] transition-all duration-300 rounded-full font-bold"
+              className="btn-gradient text-xl py-8 px-12 shadow-[0_0_40px_rgba(34,211,238,0.4)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)] transition-all duration-300 rounded-full font-bold"
               onClick={() => window.open(whatsappLink, '_blank')}
             >
               Garantir Sucesso do Meu Projeto <ArrowRight className="ml-2 w-6 h-6" />
@@ -66,8 +69,11 @@ export default function ProjectManagement() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="title-standard text-center text-4xl md:text-5xl font-bold">Gestão Ágil como <span className="text-orange-400">Pilar de Sucesso</span></h2>
-            <p className="text-xl text-[#94A3B8] max-w-2xl mx-auto font-medium">
-              Quando você me contrata para Full-Stack, Marketing Digital ou IA, você leva um Certified Scrum Professional para configurar seu projeto, garantindo transparência e entregas no prazo.
+            <p className="text-xl text-[#94A3B8] max-w-3xl mx-auto font-medium">
+              Quando você me contrata para Full-Stack, Marketing Digital ou IA,
+              leva também uma camada de gestão profissional para organizar
+              prioridades, reduzir ruído operacional e proteger o andamento do
+              projeto do início à entrega.
             </p>
           </div>
 
@@ -78,7 +84,9 @@ export default function ProjectManagement() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Entrega Previsível</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Sprints organizadas com marcos claros e atualizações frequentes. Utilizo o framework Scrum para garantir que o desenvolvimento avance em ciclos claros. Sem surpresas, sem atrasos.
+Estruturo sprints, marcos e checkpoints claros para que o
+                desenvolvimento avance com visibilidade real e sem surpresas no
+                percurso.
               </p>
             </div>
 
@@ -88,17 +96,21 @@ export default function ProjectManagement() {
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Transparência Total</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Acompanhamento rigoroso de cronograma e alinhamento constante com os stakeholders. Minha metodologia foca em eliminar bugs antes que eles cheguem à produção.
+Acompanhamento rigoroso de cronograma, alinhamento constante com
+                stakeholders e comunicação objetiva para manter expectativas sob
+                controle.
               </p>
             </div>
 
             <div className="glass-card p-8 border-l-4 border-l-indigo-500 hover:scale-[1.02] transition-transform">
-              <div className="mb-4 bg-gradient-to-br from-indigo-500/20 to-purple-400/20 p-3 rounded-lg w-fit">
-                <Rocket className="w-6 h-6 text-indigo-400" />
+              <div className="mb-4 bg-gradient-to-br from-orange-400/20 to-indigo-500/20 p-3 rounded-lg w-fit">
+                <Layers className="w-6 h-6 text-indigo-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Zero Caos</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Zero Caos Operacional</h3>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Metodologia certificada Scrum para eliminar o aumento descontrolado de escopo e atrasos. Comunicação cristalina e alinhamento constante garantem o sucesso do projeto.
+                Aplicação prática de Scrum e Kanban para reduzir gargalos,
+                evitar aumento descontrolado de escopo e manter foco no que gera
+                valor para o negócio.
               </p>
             </div>
           </div>
@@ -133,10 +145,19 @@ export default function ProjectManagement() {
                 </span>
               </h2>
               <p className="text-[#94A3B8] text-xl leading-relaxed mb-6 font-medium">
-                Com 120 horas oficiais em Gestão de Projetos de TI pela Qualifica SP / Fundação FAT, aplico ritos de Scrum e Kanban para blindar seu investimento.
+                Com 120 horas oficiais em Gestão de Projetos de TI pela
+                Qualifica SP / Fundação FAT, aplico ritos de Scrum e Kanban
+                para blindar seu investimento com processo, cadência e
+                previsibilidade.
+              </p>
+              <p className="text-[#94A3B8] text-lg leading-relaxed mb-4">
+                Essa base técnica me permite gerenciar fluxos complexos,
+                remover bloqueadores e garantir que a execução permaneça focada
+                em gerar valor concreto para o seu negócio.
               </p>
               <p className="text-[#94A3B8] text-lg leading-relaxed">
-                Essa base teórica me permite gerenciar fluxos complexos, removendo bloqueadores e garantindo que a equipe técnica (ou eu mesmo no desenvolvimento) foque 100% em gerar valor para o seu negócio.
+                Na prática, isso significa menos caos, mais clareza sobre
+                prioridades e entregas acompanháveis ao longo de todo o projeto.
               </p>
             </div>
           </div>
@@ -145,6 +166,7 @@ export default function ProjectManagement() {
 
       {/* Final CTA */}
       <section className="section-standard relative">
+<<<<<<< Updated upstream
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -159,6 +181,15 @@ export default function ProjectManagement() {
 
         <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
           <h2 className="title-standard text-center text-4xl font-bold">Vamos desenvolver o seu projeto sem caos e com resultados?</h2>
+=======
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F172A] via-orange-900/10 to-[#0F172A]" />
+        
+        <div className="max-w-4xl mx-auto text-center relative z-10 glass-card p-12 md:p-20 border border-cyan-500/20">
+          <h2 className="title-standard text-center text-4xl md:text-6xl font-bold tracking-tight">
+            Vamos desenvolver o seu projeto <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-indigo-500">sem caos e com resultados?</span>
+          </h2>
+>>>>>>> Stashed changes
           <p className="mb-12 max-w-2xl mx-auto text-lg font-medium text-[#E2E8F0]">
             Pare de sofrer com atrasos e falta de transparência. Vamos juntos unir tecnologia de ponta com uma gestão profissional focada na sua entrega com Framework Scrum.
           </p>
