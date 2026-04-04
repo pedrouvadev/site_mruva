@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { ChevronDown, Menu, X, Globe } from "lucide-react";
+import { ChevronDown, Menu, X, Globe, Sparkles, TrendingUp, Code, FolderKanban, Brain, Languages } from "lucide-react";
 import { useLocation, Link } from "wouter";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Flag from "@/components/ui/flag";
@@ -17,6 +17,7 @@ export default function Header({
 }: HeaderProps) {
   const [, setLocation] = useLocation();
   const [openSubmenu, setOpenSubmenu] = useState(false);
+  const [openServicesSubmenu, setOpenServicesSubmenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [tabletMenuOpen, setTabletMenuOpen] = useState(false);
 
@@ -54,18 +55,31 @@ export default function Header({
   const formacoes =
     lang === "pt"
       ? [
-          { name: "Marketing Digital", href: "/marketing" },
-          { name: "Desenvolvimento", href: "/desenvolvimento" },
-          { name: "Gestão de Projetos", href: "/gestao" },
-          { name: "IA & Google Cloud", href: "/ia" },
-          { name: "Estudo de Inglês", href: "/ingles" },
+          { name: "Marketing Digital", href: "/marketing", icon: "trending" },
+          { name: "Desenvolvimento", href: "/desenvolvimento", icon: "code" },
+          { name: "Gestão de Projetos", href: "/gestao", icon: "folder" },
+          { name: "IA & Google Cloud", href: "/ia", icon: "brain" },
+          { name: "Estudo de Inglês", href: "/ingles", icon: "globe" },
         ]
       : [
-          { name: "Digital Marketing", href: "/en/marketing" },
-          { name: "Development", href: "/en/development" },
-          { name: "Project Management", href: "/en/management" },
-          { name: "AI & Google Cloud", href: "/en/ai" },
-          { name: "English Studies", href: "/en/english" },
+          { name: "Digital Marketing", href: "/en/marketing", icon: "trending" },
+          { name: "Development", href: "/en/development", icon: "code" },
+          { name: "Project Management", href: "/en/management", icon: "folder" },
+          { name: "AI & Google Cloud", href: "/en/ai", icon: "brain" },
+          { name: "English Studies", href: "/en/english", icon: "globe" },
+        ];
+
+  const servicos =
+    lang === "pt"
+      ? [
+          { name: "Prompt Specialist", href: "/servicos/prompt-specialist", icon: "sparkles" },
+          { name: "Growth Marketing", href: "#", icon: "trending", comingSoon: true },
+          { name: "Agentes de IA", href: "#", icon: "bot", comingSoon: true },
+        ]
+      : [
+          { name: "Prompt Specialist", href: "/servicos/prompt-specialist", icon: "sparkles" },
+          { name: "Growth Marketing", href: "#", icon: "trending", comingSoon: true },
+          { name: "AI Agents", href: "#", icon: "bot", comingSoon: true },
         ];
 
   const handleNavigation = (href: string) => {
@@ -117,25 +131,66 @@ export default function Header({
                 className={`w-4 h-4 transition-transform ${tabletMenuOpen ? "rotate-180" : ""}`}
               />
             </button>
-            <div className="absolute left-0 top-full mt-1 w-56 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-[9999]">
-              {formacoes.map(formacao => (
+            <div className="absolute left-0 top-full mt-1 w-64 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-[9999]">
+              {formacoes.map((formacao) => (
                 <Link
                   key={formacao.href}
                   href={formacao.href}
-                  className="block px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] text-sm"
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] text-sm"
                 >
-                  {formacao.name}
+                  {formacao.icon === "trending" && <TrendingUp className="w-4 h-4 text-cyan-400" />}
+                  {formacao.icon === "code" && <Code className="w-4 h-4 text-cyan-400" />}
+                  {formacao.icon === "folder" && <FolderKanban className="w-4 h-4 text-cyan-400" />}
+                  {formacao.icon === "brain" && <Brain className="w-4 h-4 text-cyan-400" />}
+                  {formacao.icon === "globe" && <Languages className="w-4 h-4 text-cyan-400" />}
+                  <span>{formacao.name}</span>
                 </Link>
               ))}
             </div>
           </div>
 
-          <Link
-            href={t.servicesHref}
-            className="hover:text-cyan-400 transition-colors text-[#E2E8F0]"
-          >
-            {t.services}
-          </Link>
+          {/* Submenu Serviços - Dropdown */}
+          <div className="relative group">
+            <button
+              className="flex items-center gap-2 hover:text-cyan-400 transition-colors text-[#E2E8F0]"
+              aria-haspopup="true"
+            >
+              {t.services}
+              <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+            </button>
+            <div className="absolute left-0 top-full mt-1 w-64 bg-[#1E293B] border border-cyan-500/30 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-[9999]">
+              {servicos.map((servico) => (
+                <Link
+                  key={servico.name}
+                  href={servico.href}
+                  className={`flex items-center gap-3 px-4 py-3 transition-colors text-sm ${
+                    servico.comingSoon
+                      ? 'text-slate-500 cursor-not-allowed'
+                      : 'hover:bg-indigo-500/20 hover:text-cyan-400 text-[#E2E8F0]'
+                  }`}
+                  onClick={(e) => servico.comingSoon && e.preventDefault()}
+                >
+                  {servico.icon === "sparkles" && <Sparkles className="w-4 h-4 text-cyan-400" />}
+                  {servico.icon === "trending" && (
+                    <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                  )}
+                  {servico.icon === "bot" && (
+                    <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  )}
+                  <span className="flex-1">{servico.name}</span>
+                  {servico.comingSoon && (
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-700 text-slate-400">
+                      Em breve
+                    </span>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <div className="flex items-center gap-4 border-l border-white/10 pl-6 ml-2">
             <Link
@@ -208,28 +263,75 @@ export default function Header({
                   </button>
                   {openSubmenu && (
                     <div className="mt-2 pl-4 flex flex-col gap-2 border-l border-cyan-500/20">
-                      {formacoes.map(formacao => (
+                      {formacoes.map((formacao) => (
                         <button
                           key={formacao.href}
                           onClick={() =>
                             handleMobileFormacaoClick(formacao.href)
                           }
-                          className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] text-sm rounded-lg text-left"
+                          className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] text-sm rounded-lg text-left flex items-center gap-2"
                         >
-                          {formacao.name}
+                          {formacao.icon === "trending" && <TrendingUp className="w-4 h-4 text-cyan-400" />}
+                          {formacao.icon === "code" && <Code className="w-4 h-4 text-cyan-400" />}
+                          {formacao.icon === "folder" && <FolderKanban className="w-4 h-4 text-cyan-400" />}
+                          {formacao.icon === "brain" && <Brain className="w-4 h-4 text-cyan-400" />}
+                          {formacao.icon === "globe" && <Languages className="w-4 h-4 text-cyan-400" />}
+                          <span>{formacao.name}</span>
                         </button>
                       ))}
                     </div>
                   )}
                 </div>
 
-                <Link
-                  href={t.servicesHref}
-                  onClick={() => setIsOpen(false)}
-                  className="px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg"
-                >
-                  {t.services}
-                </Link>
+                {/* Mobile Serviços Submenu */}
+                <div className="border-t border-cyan-500/20 pt-4">
+                  <button
+                    onClick={() => setOpenServicesSubmenu(!openServicesSubmenu)}
+                    className="w-full px-4 py-2 hover:bg-indigo-500/20 hover:text-cyan-400 transition-colors text-[#E2E8F0] rounded-lg flex items-center justify-between"
+                  >
+                    {t.services}
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${openServicesSubmenu ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {openServicesSubmenu && (
+                    <div className="mt-2 pl-4 flex flex-col gap-2 border-l border-cyan-500/20">
+                      {servicos.map((servico) => (
+                        <button
+                          key={servico.name}
+                          onClick={() => {
+                            if (!servico.comingSoon) {
+                              handleNavigation(servico.href);
+                            }
+                          }}
+                          className={`px-4 py-2 transition-colors text-sm rounded-lg text-left flex items-center gap-2 ${
+                            servico.comingSoon
+                              ? 'text-slate-500 cursor-not-allowed'
+                              : 'hover:bg-indigo-500/20 hover:text-cyan-400 text-[#E2E8F0]'
+                          }`}
+                        >
+                          {servico.icon === "sparkles" && <Sparkles className="w-4 h-4 text-cyan-400" />}
+                          {servico.icon === "trending" && (
+                            <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                            </svg>
+                          )}
+                          {servico.icon === "bot" && (
+                            <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                          )}
+                          <span className="flex-1">{servico.name}</span>
+                          {servico.comingSoon && (
+                            <span className="text-[10px] px-2 py-0.5 rounded-full bg-slate-700 text-slate-400">
+                              Em breve
+                            </span>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 <div className="border-t border-cyan-500/20 pt-6 mt-2 pb-4 flex flex-col gap-4">
                   <Link

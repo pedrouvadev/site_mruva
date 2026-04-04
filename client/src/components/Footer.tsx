@@ -75,6 +75,25 @@ export default function Footer({ lang = "pt" }: { lang?: "pt" | "en" }) {
         </div>
 
         <div className="mt-8 pt-6 border-t border-white/5">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm">
+            <a href="/" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+              {lang === "en" ? "Home" : "Início"}
+            </a>
+            <span className="text-[#475569]">|</span>
+            <a href="/servicos/prompt-specialist" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+              Prompt Specialist
+            </a>
+            <span className="text-[#475569]">|</span>
+            <a href="/servicos" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+              {lang === "en" ? "Services" : "Serviços"}
+            </a>
+            <span className="text-[#475569]">|</span>
+            <a href="/ia" className="text-[#64748B] hover:text-cyan-400 transition-colors">
+              {lang === "en" ? "AI & Cloud" : "IA & Cloud"}
+            </a>
+          </div>
+
           <p className="text-xs text-center text-[#475569]">
             {lang === "en"
               ? "This website was developed by Pedro Uva using:"
