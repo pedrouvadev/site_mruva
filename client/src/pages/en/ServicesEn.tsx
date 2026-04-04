@@ -9,6 +9,7 @@ import {
   Rocket,
   Shield,
   Target,
+  BarChart3,
 } from "lucide-react";
 import { useLocation } from "wouter";
 import { useEffect } from "react";
@@ -99,6 +100,22 @@ export default function ServicesEn() {
       ],
       cta: "Transform my company",
       color: "from-purple-500 to-purple-600",
+    },
+    {
+      icon: BarChart3,
+      title: "Growth Marketing",
+      headline: "Dominate algorithms and crush competitors with advanced traffic management.",
+      description:
+        "Expert traffic management strategist specializing in paid and organic traffic. Google Ads + Meta Ads + Technical SEO = predictable sales machine with proven ROI above 300%.",
+      features: [
+        "Paid Traffic Management (Google/Meta)",
+        "Advanced Technical SEO",
+        "Real-Time Data Analytics",
+        "Conversion Rate Optimization",
+        "Growth Hacking Strategies",
+      ],
+      cta: "Dominate my market",
+      color: "from-green-500 to-green-600",
     },
   ];
 

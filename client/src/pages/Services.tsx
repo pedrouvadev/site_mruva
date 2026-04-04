@@ -9,6 +9,7 @@ import {
   Rocket,
   Shield,
   Target,
+  BarChart3,
 } from "lucide-react";
 import { useLocation } from "wouter";
 import { useEffect } from "react";
@@ -101,6 +102,22 @@ export default function Services() {
       ],
       cta: "Transformar minha empresa",
       color: "from-purple-500 to-purple-600",
+    },
+    {
+      icon: BarChart3,
+      title: "Growth Marketing",
+      headline: "Domine algoritmos e esmague concorrentes com gestão de tráfego avançada.",
+      description:
+        "Estrategista especializado em gestão de tráfego pago e orgânico. Google Ads + Meta Ads + SEO técnico = máquina de vendas previsível com ROI comprovado acima de 300%.",
+      features: [
+        "Gestão de Tráfego Pago (Google/Meta)",
+        "SEO Técnico Avançado",
+        "Análise de Dados em Tempo Real",
+        "Otimização de Taxa de Conversão",
+        "Estratégias de Growth Hacking",
+      ],
+      cta: "Dominar meu mercado",
+      color: "from-green-500 to-green-600",
     },
   ];
 

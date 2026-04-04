@@ -15,6 +15,7 @@ const AI = lazy(() => import("./pages/AI"));
 const Services = lazy(() => import("./pages/Services"));
 const Ingles = lazy(() => import("./pages/ingles"));
 const PromptSpecialist = lazy(() => import("./pages/PromptSpecialist"));
+const GrowthMarketing = lazy(() => import("./pages/GrowthMarketing"));
 const En = lazy(() => import("./pages/en"));
 const MarketingEn = lazy(() => import("./pages/en/MarketingEn"));
 const DevelopmentEn = lazy(() => import("./pages/en/DevelopmentEn"));
@@ -23,6 +24,7 @@ const AIEn = lazy(() => import("./pages/en/AIEn"));
 const ServicesEn = lazy(() => import("./pages/en/ServicesEn"));
 const English = lazy(() => import("./pages/en/english"));
 const PromptSpecialistEn = lazy(() => import("./pages/en/PromptSpecialistEn"));
+const GrowthMarketingEn = lazy(() => import("./pages/en/GrowthMarketingEn"));
 
 function Router() {
   return (
@@ -34,6 +36,7 @@ function Router() {
       <Route path="/ia" component={AI} />
       <Route path="/servicos" component={Services} />
       <Route path="/servicos/prompt-specialist" component={PromptSpecialist} />
+      <Route path="/servicos/growth-marketing" component={GrowthMarketing} />
       <Route path="/ingles" component={Ingles} />
       <Route path="/en" component={En} />
       <Route path="/en/marketing" component={MarketingEn} />
@@ -42,6 +45,7 @@ function Router() {
       <Route path="/en/ai" component={AIEn} />
       <Route path="/en/services" component={ServicesEn} />
       <Route path="/en/services/prompt-specialist" component={PromptSpecialistEn} />
+      <Route path="/en/services/growth-marketing" component={GrowthMarketingEn} />
       <Route path="/en/english" component={English} />
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
