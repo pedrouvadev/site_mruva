@@ -298,21 +298,21 @@ export default function Home() {
               {[
                 {
                   icon: <Code className="w-10 h-10 text-cyan-400" />,
-                  title: "Programação",
-                  desc: "Aplicações web escaláveis de ponta a ponta usando React 19, Node.js e TypeScript. Arquitetura projetada para alto desempenho e fricção zero.",
+                  title: "Dev",
+                  desc: "Desenvolvimento de aplicações web escaláveis de ponta a ponta usando React 19, Node.js e TypeScript. Arquitetura projetada para alto desempenho e fricção zero.",
                   tags: ["Full-Stack", "Arquitetura", "Performance"],
                   link: "/desenvolvimento",
                 },
                 {
                   icon: <Bot className="w-10 h-10 text-indigo-400" />,
-                  title: "Inteligência Artificial",
+                  title: "IA",
                   desc: "Integrações personalizadas de LLM, automação de fluxo de trabalho e análise preditiva. Coloco a IA para trabalhar pelo seu lucro, não apenas pelo hype.",
                   tags: ["LLMs", "Automação", "GPT-4"],
                   link: "/ia",
                 },
                 {
                   icon: <TrendingUp className="w-10 h-10 text-blue-400" />,
-                  title: "Growth Marketing",
+                  title: "Tráfego",
                   desc: "Campanhas globais baseadas em dados. Gestão de anúncios Google e Meta focada em ROI e SEO técnico avançado para mercados internacionais.",
                   tags: ["ROI", "Google Ads", "SEO"],
                   link: "/marketing",
@@ -411,73 +411,95 @@ export default function Home() {
             <div className="space-y-6">
               {/* Timeline Item 1 */}
               <div className="glass-card p-6 border-l-4 border-indigo-500">
-                <div className="flex items-start gap-4">
-                  <Code2 className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">
-                      1998-2001: Primeiros Passos em Tech
-                    </h3>
-                    <p className="text-[#94A3B8] mb-2">
-                      Comecei como técnico de suporte em empresas de
-                      telecomunicações (UOL, AT&T Latin America). Aprendi a trabalhar sob pressão,
-                      resolver problemas complexos e lidar com clientes em larga
-                      escala.
-                    </p>
-                    <p className="text-sm text-cyan-400">
-                      Tecnologias: Hardware, Redes, Suporte Técnico
-                    </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <Code2 className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        1998-2001: Primeiros Passos em Tech
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Comecei como técnico de suporte em empresas de
+                        telecomunicações (UOL, AT&T Latin America). Aprendi a trabalhar sob pressão,
+                        resolver problemas complexos e lidar com clientes em larga
+                        escala.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: Hardware, Redes, Suporte Técnico
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/b/bd/UOL_logo.png"
+                      alt="UOL - Universo Online"
+                      className="h-10 w-auto object-contain max-w-[140px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AT%26T_logo_2016.svg/1200px-AT%26T_logo_2016.svg.png"
+                      alt="AT&T Latin America"
+                      className="h-8 w-auto object-contain max-w-[100px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Timeline Item 1.5 */}
               <div className="glass-card p-6 border-l-4 border-orange-500">
-                <div className="flex items-start gap-4">
-                  <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">
-                      2001-2008: Gestão e Inovação no Negócio Familiar
-                    </h3>
-                    <p className="text-[#94A3B8] mb-2">
-                      Atuei na gestão operacional da Lavanderia Umarizal, empresa especializada em lavagem industrial de tapetes. Durante esse período, mergulhei na administração de ponta a ponta: do controle de insumos químicos e logística à gestão de equipes e atendimento ao cliente. Foi nesta fase que iniciei minha transição para o ambiente digital, implantando um ERP com CRM, desenvolvendo os primeiros sites da empresa e implementando controles eletrônicos e estratégias iniciais de SEO e Google Ads para modernizar o modelo de negócio tradicional.
-                    </p>
-                    <p className="text-sm text-cyan-400">
-                      Tecnologias: Gestão de Processos, HTML/CSS, Planejamento Estratégico, Marketing Digital Primitivo
-                    </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        2001-2008: Gestão e Inovação no Negócio Familiar
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Atuei na gestão operacional da Lavanderia Umarizal, empresa especializada em lavagem industrial de tapetes. Durante esse período, mergulhei na administração de ponta a ponta: do controle de insumos químicos e logística à gestão de equipes e atendimento ao cliente. Foi nesta fase que iniciei minha transição para o ambiente digital, implantando um ERP com CRM, desenvolvendo os primeiros sites da empresa e implementando controles eletrônicos e estratégias iniciais de SEO e Google Ads para modernizar o modelo de negócio tradicional.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: Gestão de Processos, HTML/CSS, Planejamento Estratégico, Marketing Digital Primitivo
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center md:flex-shrink-0 md:self-center">
+                    <img
+                      src="https://lavanderiaumarizal.com.br/assets/img/Logotipo-Lavanderia-Umarizal-invertido-fundo-transparente.png"
+                      alt="Lavanderia Umarizal"
+                      className="h-8 w-auto object-contain max-w-[120px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Timeline Item 2 */}
               <div className="glass-card p-6 border-l-4 border-cyan-500">
-                <div className="flex flex-col md:flex-row items-start gap-6">
-                  <div className="flex-1">
-                    <div className="flex items-start gap-4">
-                      <TrendingUp className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">
-                          2008-2013: Mercado Financeiro
-                        </h3>
-                        <p className="text-[#94A3B8] mb-2">
-                          Trabalhei como trader e especialista comercial na Um
-                          Investimentos. Liderei a campanha "Retomada ao Topo"
-                          com Google Ads, captando 340 novos investidores com
-                          ROI comprovado. Consolidei conhecimento em finanças,
-                          marketing e resiliência.
-                        </p>
-                        <p className="text-sm text-cyan-400">
-                          Tecnologias: Trading, Google Ads, Marketing Digital
-                        </p>
-                      </div>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <TrendingUp className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        2008-2013: Mercado Financeiro
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Trabalhei como trader e especialista comercial na Um
+                        Investimentos. Liderei a campanha "Retomada ao Topo"
+                        com Google Ads, captando 340 novos investidores com
+                        ROI comprovado. Consolidei conhecimento em finanças,
+                        marketing e resiliência.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: Trading, Google Ads, Marketing Digital
+                      </p>
                     </div>
                   </div>
-                  <div className="md:w-48 flex-shrink-0">
+                  <div className="flex items-center md:flex-shrink-0 md:self-center">
                     <img
-                      src="https://res.cloudinary.com/dtfsdkdu6/image/upload/v1775319813/pedrouva-mesa_vgcdmm.webp"
-                      alt="Uva - Trader Profissional do Mercado Financeiro"
-                      className="w-full h-auto rounded-lg shadow-lg"
-                      width="1123"
-                      height="793"
+                      src="https://akeloo.com.br/wp-content/uploads/2022/05/Um-investimentos-400x200.webp"
+                      alt="Um Investimentos"
+                      className="h-8 w-auto object-contain max-w-[120px]"
                       loading="lazy"
                     />
                   </div>
@@ -486,67 +508,127 @@ export default function Home() {
 
               {/* Timeline Item 3 */}
               <div className="glass-card p-6 border-l-4 border-orange-500">
-                <div className="flex items-start gap-4">
-                  <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">
-                      2013-2020: Empreendedorismo
-                    </h3>
-                    <p className="text-[#94A3B8] mb-2">
-                      Fundei Respiro Aventura (turismo de aventura) e Engenharia
-                      de Conteúdo (agência digital). Desenvolvi habilidades em
-                      gestão, criação de conteúdo, SEO e marketing digital.
-                      Operei como trader autônomo com disciplina e gestão de
-                      risco.
-                    </p>
-                    <p className="text-sm text-cyan-400">
-                      Tecnologias: PHP, MySQL, SEO, Google Ads, Meta Ads
-                    </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <Briefcase className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        2013-2020: Empreendedorismo
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Fundei Respiro Aventura (turismo de aventura) e Engenharia
+                        de Conteúdo (agência digital). Desenvolvi habilidades em
+                        gestão, criação de conteúdo, SEO e marketing digital.
+                        Operei como trader autônomo com disciplina e gestão de
+                        risco.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: PHP, MySQL, SEO, Google Ads, Meta Ads
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/424171605875384320/6u5SPt9e_400x400.jpeg"
+                      alt="Respiro Aventura"
+                      className="h-8 w-auto object-contain max-w-[80px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://engenhariadeconteudo.com.br/assets/images/brand-ec-120x35.png"
+                      alt="Engenharia de Conteúdo"
+                      className="h-8 w-auto object-contain max-w-[120px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Timeline Item 4 */}
               <div className="glass-card p-6 border-l-4 border-indigo-500">
-                <div className="flex items-start gap-4">
-                  <Zap className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">
-                      2020-2025: Transformação Digital
-                    </h3>
-                    <p className="text-[#94A3B8] mb-2">
-                      Retornei à Lavanderia Umarizal (negócio familiar) e
-                      implementei transformação digital completa: novo site,
-                      campanhas Google Ads (ROI 220%), automação de processos,
-                      IA para atendimento. Gerencio time de colaboradores e
-                      infraestrutura VPS própria.
-                    </p>
-                    <p className="text-sm text-cyan-400">
-                      Tecnologias: React, Node.js, IA, Google Cloud, DevOps
-                    </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <Zap className="w-6 h-6 text-indigo-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        2020-2025: Transformação Digital
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Retornei à Lavanderia Umarizal (negócio familiar) e
+                        implementei transformação digital completa: novo site,
+                        campanhas Google Ads (ROI 220%), automação de processos,
+                        IA para atendimento. Gerencio time de colaboradores e
+                        infraestrutura VPS própria.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: React, Node.js, IA, Google Cloud, DevOps
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png"
+                      alt="Google Cloud"
+                      className="h-8 w-auto object-contain max-w-[100px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://lavanderiaumarizal.com.br/assets/img/Logotipo-Lavanderia-Umarizal-invertido-fundo-transparente.png"
+                      alt="Lavanderia Umarizal"
+                      className="h-8 w-auto object-contain max-w-[120px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
 
               {/* Timeline Item 5 */}
               <div className="glass-card p-6 border-l-4 border-cyan-500">
-                <div className="flex items-start gap-4">
-                  <Globe className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">
-                      2025-2026: Formação & Especialização
-                    </h3>
-                    <p className="text-[#94A3B8] mb-2">
-                      Curso Tecnólogo em Desenvolvimento de Sistemas
-                      (FAT/Fatec), participo do Oracle ONE e mantenho prática
-                      contínua de inglês no Cambly, atualmente em nível B1
-                      (intermediário). Acumulei 25 Google Cloud Skill Badges em
-                      IA/ML. Preparo-me para atuar em nível internacional com
-                      transparência sobre minha evolução.
-                    </p>
-                    <p className="text-sm text-cyan-400">
-                      Tecnologias: Full Stack, IA, Google Cloud, Inglês B1
-                    </p>
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex items-start gap-4 flex-1">
+                    <Globe className="w-6 h-6 text-cyan-400 mt-1 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-2">
+                        2025-2026: Formação & Especialização
+                      </h3>
+                      <p className="text-[#94A3B8] mb-2">
+                        Curso Tecnólogo em Desenvolvimento de Sistemas
+                        (FAT/Fatec), participo do Oracle ONE e mantenho prática
+                        contínua de inglês no Cambly, atualmente em nível B1
+                        (intermediário). Acumulei 25 Google Cloud Skill Badges em
+                        IA/ML. Preparo-me para atuar em nível internacional com
+                        transparência sobre minha evolução.
+                      </p>
+                      <p className="text-sm text-cyan-400">
+                        Tecnologias: Full Stack, IA, Google Cloud, Inglês B1
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png"
+                      alt="Google Cloud"
+                      className="h-8 w-auto object-contain max-w-[100px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1200px-Oracle_logo.svg.png"
+                      alt="Oracle"
+                      className="h-8 w-auto object-contain max-w-[100px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://www.fatecsp.br/img/logofatec2.png"
+                      alt="FATEC"
+                      className="h-8 w-auto object-contain max-w-[80px]"
+                      loading="lazy"
+                    />
+                    <img
+                      src="https://cdn.imp-multimedia.com/logos/br/cupom-de-desconto-cambly.png"
+                      alt="Cambly"
+                      className="h-8 w-auto object-contain max-w-[100px]"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -574,11 +656,11 @@ export default function Home() {
                   Front-end
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
-                  <li>✓ React 19 + TypeScript</li>
-                  <li>✓ HTML5 + CSS3</li>
-                  <li>✓ Tailwind CSS v4</li>
-                  <li>✓ JavaScript Avançado</li>
-                  <li>✓ Responsive Design</li>
+                  <li>✓ <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">React 19</a> + <a href="https://www.typescriptlang.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">TypeScript</a></li>
+                  <li>✓ <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">HTML5</a> + <a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">CSS3</a></li>
+                  <li>✓ <a href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Tailwind CSS v4</a></li>
+                  <li>✓ <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">JavaScript Avançado</a></li>
+                  <li>✓ <a href="https://developer.mozilla.org/docs/Learn/CSS/CSS_layout/Responsive_design" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Responsive Design</a></li>
                 </ul>
               </div>
 
@@ -587,11 +669,11 @@ export default function Home() {
                   Back-end
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
-                  <li>✓ Node.js + Express</li>
-                  <li>✓ PHP + Laravel</li>
-                  <li>✓ MySQL + PostgreSQL</li>
-                  <li>✓ APIs REST</li>
-                  <li>✓ Autenticação & Segurança</li>
+                  <li>✓ <a href="https://nodejs.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Node.js</a> + <a href="https://expressjs.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Express</a></li>
+                  <li>✓ <a href="https://www.php.net" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">PHP</a> + <a href="https://laravel.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Laravel</a></li>
+                  <li>✓ <a href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">MySQL</a> + <a href="https://www.postgresql.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">PostgreSQL</a></li>
+                  <li>✓ <a href="https://developer.mozilla.org/docs/Glossary/REST" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">APIs REST</a></li>
+                  <li>✓ <a href="https://developer.mozilla.org/docs/Web/Security" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Autenticação & Segurança</a></li>
                 </ul>
               </div>
 
@@ -600,11 +682,11 @@ export default function Home() {
                   DevOps
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
-                  <li>✓ Linux (25+ anos)</li>
-                  <li>✓ Docker & Containers</li>
-                  <li>✓ Git & GitHub</li>
-                  <li>✓ VPS & Cloud</li>
-                  <li>✓ CI/CD Pipelines</li>
+                  <li>✓ <a href="https://www.linux.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Linux (25+ anos)</a></li>
+                  <li>✓ <a href="https://www.docker.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Docker & Containers</a></li>
+                  <li>✓ <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Git</a> & <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">GitHub</a></li>
+                  <li>✓ <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">VPS & Cloud</a></li>
+                  <li>✓ <a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">CI/CD Pipelines</a></li>
                 </ul>
               </div>
 
@@ -613,10 +695,10 @@ export default function Home() {
                   Marketing Digital
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
-                  <li>✓ Google Ads & GA4</li>
-                  <li>✓ Meta Ads</li>
-                  <li>✓ SEO On-page & Off-page</li>
-                  <li>✓ Content Strategy</li>
+                  <li>✓ <a href="https://ads.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Google Ads</a> & <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">GA4</a></li>
+                  <li>✓ <a href="https://www.facebook.com/business/ads" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Meta Ads</a></li>
+                  <li>✓ <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">SEO On-page & Off-page</a></li>
+                  <li>✓ <a href="https://contentmarketinginstitute.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Content Strategy</a></li>
                   <li>✓ ROI Mensurável</li>
                 </ul>
               </div>
@@ -626,11 +708,11 @@ export default function Home() {
                   IA & Automação
                 </h3>
                 <ul className="space-y-2 text-[#94A3B8] text-sm">
-                  <li>✓ ChatGPT & LLMs</li>
-                  <li>✓ Automação de Processos</li>
-                  <li>✓ Google Cloud AI/ML</li>
+                  <li>✓ <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">ChatGPT</a> & <a href="https://openai.com/research" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">LLMs</a></li>
+                  <li>✓ <a href="https://zapier.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Automação de Processos</a></li>
+                  <li>✓ <a href="https://cloud.google.com/ai" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Google Cloud AI/ML</a></li>
                   <li>✓ Integrações Avançadas</li>
-                  <li>✓ Prompt Engineering</li>
+                  <li>✓ <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 hover:underline transition-colors">Prompt Engineering</a></li>
                 </ul>
               </div>
 
