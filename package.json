@@ -58,7 +58,7 @@
     "react-resizable-panels": "^4.8.0",
     "recharts": "^3.8.1",
     "sonner": "^2.0.7",
-    "streamdown": "^2.5.0",
+    "streamdown": "^2.4.0",
     "tailwind-merge": "^3.5.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.183.2",
@@ -67,7 +67,6 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@builder.io/vite-plugin-jsx-loc": "^0.1.1",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.2",
     "@types/express": "5.0.6",

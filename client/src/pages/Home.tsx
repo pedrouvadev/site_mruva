@@ -429,11 +429,11 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                  <div className="flex flex-row items-center gap-4 md:flex-shrink-0 md:self-center justify-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/b/bd/UOL_logo.png"
                       alt="UOL - Universo Online"
-                      className="h-10 w-auto object-contain max-w-[140px]"
+                      className="h-8 w-auto object-contain max-w-[100px]"
                       loading="lazy"
                     />
                     <img
@@ -463,11 +463,11 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center md:flex-shrink-0 md:self-center">
+                  <div className="flex items-center md:flex-shrink-0 md:self-center justify-center">
                     <img
                       src="https://lavanderiaumarizal.com.br/assets/img/Logotipo-Lavanderia-Umarizal-invertido-fundo-transparente.png"
                       alt="Lavanderia Umarizal"
-                      className="h-8 w-auto object-contain max-w-[120px]"
+                      className="h-12 w-auto object-contain max-w-[150px]"
                       loading="lazy"
                     />
                   </div>
@@ -495,11 +495,11 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center md:flex-shrink-0 md:self-center">
+                  <div className="flex items-center md:flex-shrink-0 md:self-center justify-center">
                     <img
                       src="https://akeloo.com.br/wp-content/uploads/2022/05/Um-investimentos-400x200.webp"
                       alt="Um Investimentos"
-                      className="h-8 w-auto object-contain max-w-[120px]"
+                      className="h-12 w-auto object-contain max-w-[150px]"
                       loading="lazy"
                     />
                   </div>
@@ -527,17 +527,17 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                  <div className="flex flex-row items-center gap-4 md:flex-shrink-0 md:self-center justify-center">
                     <img
                       src="https://pbs.twimg.com/profile_images/424171605875384320/6u5SPt9e_400x400.jpeg"
                       alt="Respiro Aventura"
-                      className="h-8 w-auto object-contain max-w-[80px]"
+                      className="h-10 w-auto object-contain max-w-[100px]"
                       loading="lazy"
                     />
                     <img
                       src="https://engenhariadeconteudo.com.br/assets/images/brand-ec-120x35.png"
                       alt="Engenharia de Conteúdo"
-                      className="h-8 w-auto object-contain max-w-[120px]"
+                      className="h-10 w-auto object-contain max-w-[150px]"
                       loading="lazy"
                     />
                   </div>
@@ -565,17 +565,17 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
+                  <div className="flex flex-row items-center gap-4 md:flex-shrink-0 md:self-center justify-center">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png"
                       alt="Google Cloud"
-                      className="h-8 w-auto object-contain max-w-[100px]"
+                      className="h-10 w-auto object-contain max-w-[120px]"
                       loading="lazy"
                     />
                     <img
                       src="https://lavanderiaumarizal.com.br/assets/img/Logotipo-Lavanderia-Umarizal-invertido-fundo-transparente.png"
                       alt="Lavanderia Umarizal"
-                      className="h-8 w-auto object-contain max-w-[120px]"
+                      className="h-10 w-auto object-contain max-w-[150px]"
                       loading="lazy"
                     />
                   </div>
@@ -593,7 +593,7 @@ export default function Home() {
                       </h3>
                       <p className="text-[#94A3B8] mb-2">
                         Curso Tecnólogo em Desenvolvimento de Sistemas
-                        (FAT/Fatec), participo do Oracle ONE e mantenho prática
+                        (FAT/Fatec), participo do Oracle ONE, estou me formando no Instituto Vai na Web e mantenho prática
                         contínua de inglês no Cambly, atualmente em nível B1
                         (intermediário). Acumulei 25 Google Cloud Skill Badges em
                         IA/ML. Preparo-me para atuar em nível internacional com
@@ -604,31 +604,40 @@ export default function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center gap-2 md:flex-shrink-0 md:self-center">
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png"
-                      alt="Google Cloud"
-                      className="h-8 w-auto object-contain max-w-[100px]"
-                      loading="lazy"
-                    />
-                    <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1200px-Oracle_logo.svg.png"
-                      alt="Oracle"
-                      className="h-8 w-auto object-contain max-w-[100px]"
-                      loading="lazy"
-                    />
-                    <img
-                      src="https://www.fatecsp.br/img/logofatec2.png"
-                      alt="FATEC"
-                      className="h-8 w-auto object-contain max-w-[80px]"
-                      loading="lazy"
-                    />
-                    <img
-                      src="https://cdn.imp-multimedia.com/logos/br/cupom-de-desconto-cambly.png"
-                      alt="Cambly"
-                      className="h-8 w-auto object-contain max-w-[100px]"
-                      loading="lazy"
-                    />
+                  <div className="flex flex-col items-center gap-4 md:flex-shrink-0 md:self-center justify-center">
+                    <div className="flex flex-row items-center gap-4 justify-center">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png"
+                        alt="Google Cloud"
+                        className="h-10 w-auto object-contain max-w-[120px]"
+                        loading="lazy"
+                      />
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/1200px-Oracle_logo.svg.png"
+                        alt="Oracle"
+                        className="h-10 w-auto object-contain max-w-[120px]"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="flex flex-row items-center gap-4 justify-center">
+                      <img
+                        src="https://www.fatecsp.br/img/logofatec2.png"
+                        alt="FATEC"
+                        className="h-10 w-auto object-contain max-w-[100px]"
+                        loading="lazy"
+                      />
+                      <div className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-3 py-2 rounded-lg font-bold text-sm">
+                        Vai na Web
+                      </div>
+                    </div>
+                    <div className="flex flex-row items-center gap-4 justify-center">
+                      <img
+                        src="https://cdn.imp-multimedia.com/logos/br/cupom-de-desconto-cambly.png"
+                        alt="Cambly"
+                        className="h-10 w-auto object-contain max-w-[120px]"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
